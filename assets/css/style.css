@@ -1,4 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800,900|Poppins:300,400,500,600,700,800,900&display=swap");
+
+/* Global variables */
+:root {
+    --header-menu-color: #490505;
+    --header-text-color: #690909;
+    --main-red-color: #CF1515;
+    --red-brighter-color: rgb(255, 37, 37);
+    --red-color-from-isometric: #E26161;
+    --purple-color-from-isometric: #8C50FF;
+}
+
+
 .white-bg {
   background: #ffffff;
 }
@@ -15,7 +27,7 @@
   background: #16161a;
 }
 .theme-bg {
-  background: #8f1bdc;
+  background: var(--main-red-color);
 }
 .brand-bg {
   background: #f1f4fa;
@@ -30,28 +42,28 @@
   color: #16161a;
 }
 .theme-color {
-  color: #8f1bdc;
+  color: var(--main-red-color);
 }
 .boxed-btn {
   background: #fff;
-  color: #8f1bdc !important;
+  color: var(--main-red-color) !important;
   display: inline-block;
   padding: 18px 44px;
   font-family: "Nunito", sans-serif;
   font-size: 14px;
   font-weight: 400;
   border: 0;
-  border: 1px solid #8f1bdc;
+  border: 1px solid var(--main-red-color);
   letter-spacing: 3px;
   text-align: center;
-  color: #8f1bdc;
+  color: var(--main-red-color);
   text-transform: uppercase;
   cursor: pointer;
 }
 .boxed-btn:hover {
-  background: #8f1bdc;
+  background: var(--main-red-color);
   color: #fff !important;
-  border: 1px solid #8f1bdc;
+  border: 1px solid var(--main-red-color);
 }
 .boxed-btn:focus {
   outline: none;
@@ -112,7 +124,7 @@ h4,
 h5,
 h6 {
   font-family: "Nunito", sans-serif;
-  color: #2b044d;
+  color: var(--header-text-color);
   margin-top: 0px;
   font-style: normal;
   font-weight: 500;
@@ -325,7 +337,7 @@ hr {
   background: #ff3500;
 }
 .btn {
-  background: #f9218d;
+  background: var(--red-brighter-color);
   -moz-user-select: none;
   text-transform: capitalize;
   color: #fff;
@@ -353,7 +365,7 @@ hr {
   top: 0;
   width: 100%;
   height: 100%;
-  background: #da1276;
+  background: var(--main-red-color);
   z-index: 1;
   border-radius: 5px;
   transition: transform 0.5s;
@@ -397,11 +409,11 @@ hr {
 .border-btn {
   background: none;
   -moz-user-select: none;
-  border: 2px solid #8f1bdc;
+  border: 2px solid var(--main-red-color);
   padding: 18px 38px;
   margin: 10px;
   text-transform: capitalize;
-  color: #8f1bdc;
+  color: var(--main-red-color);
   cursor: pointer;
   display: inline-block;
   font-size: 14px;
@@ -423,7 +435,7 @@ hr {
   top: 0;
   width: 100%;
   height: 100%;
-  background: #8f1bdc;
+  background: var(--main-red-color);
   z-index: -1;
   transition: transform 0.5s;
   transition-timing-function: ease;
@@ -439,7 +451,7 @@ hr {
   padding: 17px 52px;
 }
 .send-btn {
-  background: #8f1bdc;
+  background: var(--main-red-color);
   color: #fff;
   font-size: 14px;
   width: 100%;
@@ -461,7 +473,7 @@ hr {
   width: 100%;
   height: 100%;
   background: #e6373d;
-  color: #8f1bdc;
+  color: var(--main-red-color);
   z-index: -1;
   transition: transform 0.5s;
   transition-timing-function: ease;
@@ -478,7 +490,7 @@ hr {
   color: #888;
 }
 #scrollUp {
-  background: #8f1bdc;
+  background: var(--main-red-color);
   height: 50px;
   width: 50px;
   right: 31px;
@@ -1564,7 +1576,7 @@ hr {
   position: relative;
   border-style: solid;
   border-width: 3px;
-  border-top-color: #8f1bdc;
+  border-top-color: var(--main-red-color);
   border-bottom-color: transparent;
   border-left-color: transparent;
   border-right-color: transparent;
@@ -2017,7 +2029,7 @@ hr {
   background: #16161a;
 }
 .theme-bg {
-  background: #8f1bdc;
+  background: var(--main-red-color);
 }
 .brand-bg {
   background: #f1f4fa;
@@ -2032,7 +2044,7 @@ hr {
   color: #16161a;
 }
 .theme-color {
-  color: #8f1bdc;
+  color: var(--main-red-color);
 }
 .latest-blog-area .area-heading {
   margin-bottom: 70px;
@@ -2044,7 +2056,7 @@ hr {
 }
 .blog_area a:hover,
 .blog_area a :hover {
-  background: -webkit-linear-gradient(131deg, #8f1bdc 0%, #8f1bdc 99%);
+  background: -webkit-linear-gradient(131deg, var(--main-red-color) 0%, var(--main-red-color) 99%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-decoration: none;
@@ -2469,7 +2481,7 @@ hr {
   left: 10px;
   display: block;
   color: #fff;
-  background-color: #8f1bdc;
+  background-color: var(--main-red-color);
   padding: 8px 15px;
   border-radius: 5px;
 }
@@ -2538,7 +2550,7 @@ hr {
   box-shadow: none;
 }
 .blog_right_sidebar .search_widget .input-group button {
-  background: #8f1bdc;
+  background: var(--main-red-color);
   border-left: 0;
   border: 1px solid #f0e9ff;
   padding: 4px 15px;
@@ -2636,7 +2648,7 @@ hr {
   font-size: 13px;
 }
 .blog_right_sidebar .tag_cloud_widget ul li a:hover {
-  background: #8f1bdc;
+  background: var(--main-red-color);
   color: #fff !important;
   -webkit-text-fill-color: #fff;
   text-decoration: none;
@@ -4391,7 +4403,7 @@ del {
   margin: 0 5px;
 }
 .main-header .main-menu ul li > a {
-  color: #450b78;
+  color: var(--header-menu-color);
   font-weight: 400;
   padding: 39px 16px;
   font-weight: 400;
@@ -4413,7 +4425,7 @@ del {
   content: "";
   left: 0;
   bottom: 20px;
-  background: #a60dcf;
+  background: var(--header-menu-color);
   height: 2px;
   width: 0;
   transition: 0.3s;
@@ -4452,7 +4464,7 @@ del {
   position: absolute;
   content: "";
   left: -5px;
-  background: #a60dcf;
+  background: var(--header-menu-color);
   height: 2px;
   width: 0;
   transition: 0.3s;
@@ -4500,7 +4512,7 @@ del {
   bottom: 11px;
 }
 .slicknav_menu .slicknav_icon-bar {
-  background-color: #8f1bdc !important;
+  background-color: var(--main-red-color) !important;
 }
 .slicknav_nav {
   margin-top: 0px;
@@ -4513,7 +4525,7 @@ del {
 }
 .slicknav_menu .slicknav_nav a:hover {
   background: transparent;
-  color: #8f1bdc;
+  color: var(--main-red-color);
 }
 .slicknav_menu {
   background: transparent;
@@ -4584,15 +4596,15 @@ del {
 }
 .slider-area .hero__caption span {
   display: inline-block;
-  color: #2b044d;
+  color: var(--header-text-color);
   font-size: 16px;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
 .slider-area .hero__caption h1 {
-  font-size: 65px;
+  font-size: 55px;
   font-weight: 700;
-  color: #2b044d;
+  color: rgb(24, 24, 24);
   font-family: "Nunito", sans-serif;
   line-height: 1.3;
   margin-bottom: 32px;
@@ -4632,7 +4644,7 @@ del {
   }
 }
 .slider-area .hero__caption .slider-btns a.video-btn {
-  background: #d852e8;
+  background: var(--purple-color-from-isometric);
   width: 60px;
   height: 60px;
   display: inline-block;
@@ -4947,7 +4959,7 @@ z .slider-area .hero-cap h2 {
   }
 }
 .applic-apps .single-cases-info h3 {
-  color: #2b044d;
+  color: var(--header-text-color);
   font-size: 40px;
   font-weight: 700;
   line-height: 1.3;
@@ -5201,7 +5213,7 @@ z .slider-area .hero-cap h2 {
   }
 }
 .our-customer .single-customer .what-cap h4 a:hover {
-  color: #8f1bdc;
+  color: var(--main-red-color);
 }
 @media (max-width: 767px) {
   .our-customer .single-customer .what-cap p {
@@ -5631,7 +5643,7 @@ z .slider-area .hero-cap h2 {
   color: #fff;
   opacity: 0;
   visibility: hidden;
-  background: #8f1bdc;
+  background: var(--main-red-color);
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .testimonial-area .h1-testimonial-active button.slick-arrow {
@@ -5704,7 +5716,7 @@ z .slider-area .hero-cap h2 {
   font-weight: 300;
 }
 .footer-area .footer-tittle ul li a:hover {
-  color: #8f1bdc;
+  color: var(--main-red-color);
   padding-left: 5px;
 }
 .footer-area .footer-form {
@@ -5728,11 +5740,11 @@ z .slider-area .hero-cap h2 {
   border: 0;
   cursor: pointer;
   padding: 11px 22px;
-  background: #8f1bdc;
+  background: var(--main-red-color);
   line-height: 1;
 }
 .footer-area .info.error {
-  color: #8f1bdc;
+  color: var(--main-red-color);
 }
 .footer-area .footer-social a {
   width: 40px;
@@ -5772,10 +5784,10 @@ z .slider-area .hero-cap h2 {
   color: #f9218d;
 }
 .footer-area .footer-copy-right p a:hover {
-  color: #8f1bdc;
+  color: var(--main-red-color);
 }
 .footer-social a:hover {
-  background: #8f1bdc;
+  background: var(--main-red-color);
 }
 .footer-social a:hover i {
   color: #fff;
@@ -5798,7 +5810,7 @@ z .slider-area .hero-cap h2 {
   content: "";
   width: 75px;
   height: 3px;
-  background: #8f1bdc;
+  background: var(--main-red-color);
   left: 0;
   top: 52%;
   transform: translateY(-50%);
