@@ -4827,7 +4827,6 @@ z .slider-area .hero-cap h2 {
   font-size: 50px;
   font-weight: 700;
   line-height: 1.2;
-  margin-bottom: 90px;
 }
 @media (max-width: 767px) {
   .section-tittle h2 {
@@ -5034,7 +5033,7 @@ z .slider-area .hero-cap h2 {
 }
 .best-pricing.pricing-padding {
   padding-top: 110px;
-  padding-bottom: 280px;
+  padding-bottom: 110px;
   background-size: cover;
   background-repeat: no-repeat;
 }
