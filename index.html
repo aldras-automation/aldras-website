@@ -6,10 +6,15 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>Aldras | Process Automation</title>
     <script src="//code.jquery.com/jquery-3.3.1.js"></script>
+    <!-- <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"> -->
+</script>
     <script>
         $(function () {
-            $("#header").load("header.html");
             $("#footer").load("footer.html");
+            $("#header").load("header.html");
         });
     </script>
     <meta name="description" content="" />
@@ -33,6 +38,8 @@
 
 <body>
     <div id="header"></div>
+    
+    <!-- <div id="footer"></div> -->
 
     <main>
         <!-- Slider Area Start-->
@@ -81,13 +88,19 @@
         <!-- Best Features Start -->
         <section class="best-features-area section-padd4">
             <div class="container">
-                <div class="row justify-content-end">
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-4">
+                        <div class="hero__img d-none d-lg-block f-right" data-animation="fadeInRight"
+                            data-delay="1s">
+                            <img src="assets/img/hero/hero_right.png" alt="" style="width: 100%;"/>
+                        </div>
+                    </div>
                     <div class="col-xl-8 col-lg-10">
                         <!-- Section Tittle -->
                         <div class="row">
                             <div class="col-lg-10 col-md-10">
                                 <div class="section-tittle">
-                                    <h2>Some of the best features Of Our App!</h2>
+                                    <h2>Made for You</h2>
                                 </div>
                             </div>
                         </div>
@@ -95,56 +108,52 @@
                         <div class="row">
                             <div class="col-xl-6 col-lg-6 col-md-6">
                                 <div class="single-features mb-70">
-                                    <div class="features-icon">
-                                        <span class="flaticon-support"></span>
+                                    <div style="max-width: 20%;">
+                                        <a><img src="assets/img/icons/placeholder-icon.png" style="max-width: 100%;"></a>
                                     </div>
                                     <div class="features-caption">
-                                        <h3>Easy to Costomize</h3>
+                                        <h3>Drop In Usability</h3>
                                         <p>
-                                            Aorem psum olorsit amet ectetur adipiscing elit, sed
-                                            dov.
+                                            Designed for users without any coding experience to get up and running in minutes.
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-xl-6 col-lg-6 col-md-6">
                                 <div class="single-features mb-70">
-                                    <div class="features-icon">
-                                        <span class="flaticon-support"></span>
-                                    </div>
-                                    <div class="features-caption">
-                                        <h3>Extreme Security</h3>
-                                        <p>
-                                            Aorem psum olorsit amet ectetur adipiscing elit, sed
-                                            dov.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-6 col-lg-6 col-md-6">
-                                <div class="single-features mb-70">
-                                    <div class="features-icon">
-                                        <span class="flaticon-support"></span>
+                                    <div style="max-width: 20%;">
+                                        <a><img src="assets/img/icons/placeholder-icon.png" style="max-width: 100%;"></a>
                                     </div>
                                     <div class="features-caption">
                                         <h3>Customer Support</h3>
                                         <p>
-                                            Aorem psum olorsit amet ectetur adipiscing elit, sed
-                                            dov.
+                                            Your success is our success and we're here to answer any questions.
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-xl-6 col-lg-6 col-md-6">
                                 <div class="single-features mb-70">
-                                    <div class="features-icon">
-                                        <span class="flaticon-support"></span>
+                                    <div style="max-width: 20%;">
+                                        <a><img src="assets/img/icons/placeholder-icon.png" style="max-width: 100%;"></a>
                                     </div>
                                     <div class="features-caption">
-                                        <h3>Creative Design</h3>
+                                        <h3>Security and Privacy First</h3>
                                         <p>
-                                            Aorem psum olorsit amet ectetur adipiscing elit, sed
-                                            dov.
+                                            Our servers do not see your workflow data. Ever.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6">
+                                <div class="single-features mb-70">
+                                    <div style="max-width: 20%;">
+                                        <a><img src="assets/img/icons/placeholder-icon.png" style="max-width: 100%;"></a>
+                                    </div>
+                                    <div class="features-caption">
+                                        <h3>Customization</h3>
+                                        <p>
+                                            Comprehensive settings to ensure perfect execution of your workflows.
                                         </p>
                                     </div>
                                 </div>
@@ -152,10 +161,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- Shpe -->
-            <div class="features-shpae d-none d-lg-block">
-                <img src="assets/img/shape/best-features.png" alt="" style="width: 40%;"/>
             </div>
         </section>
         <!-- Best Features End -->
@@ -166,7 +171,7 @@
                 <div class="row d-flex justify-content-center">
                     <div class="col-lg-6">
                         <div class="section-tittle text-center">
-                            <h2>How Can We HelpYour<br />with Appco!</h2>
+                            <h2>What Makes Aldras Different?</h2>
                         </div>
                     </div>
                 </div>
@@ -175,27 +180,13 @@
                     <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="services-caption text-center mb-30">
                             <div class="service-icon">
-                                <span class="flaticon-businessman"></span>
+                                <a><img src="assets/img/icons/placeholder-icon.png" style="max-width: 90%;"></a>
+
                             </div>
                             <div class="service-cap">
-                                <h4><a href="#">Easily Manage</a></h4>
+                                <h4><a href="#">Workflow Recording</a></h4>
                                 <p>
-                                    Sorem spsum dolor sit amsectetur adipisclit, seddo eiusmod
-                                    tempor incididunt ut laborea.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="services-caption active text-center mb-30">
-                            <div class="service-icon">
-                                <span class="flaticon-pay"></span>
-                            </div>
-                            <div class="service-cap">
-                                <h4><a href="#">Get Payments Easily</a></h4>
-                                <p>
-                                    Sorem spsum dolor sit amsectetur adipisclit, seddo eiusmod
-                                    tempor incididunt ut laborea.
+                                    Directly record your workflow to execute later as many times as you like click for click.
                                 </p>
                             </div>
                         </div>
@@ -203,13 +194,25 @@
                     <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="services-caption text-center mb-30">
                             <div class="service-icon">
-                                <span class="flaticon-plane"></span>
+                                <a><img src="assets/img/icons/placeholder-icon.png" style="max-width: 90%;"></a>
                             </div>
                             <div class="service-cap">
-                                <h4><a href="#">Quick Messaging</a></h4>
+                                <h4><a href="#">Graphical UI</a></h4>
                                 <p>
-                                    Sorem spsum dolor sit amsectetur adipisclit, seddo eiusmod
-                                    tempor incididunt ut laborea.
+                                    No need to touch any code at all. Just click the buttons and record tedious actions.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="services-caption text-center mb-30">
+                            <div class="service-icon">
+                                <a><img src="assets/img/icons/placeholder-icon.png" style="max-width: 90%;"></a>
+                            </div>
+                            <div class="service-cap">
+                                <h4><a href="#">Collaboration</a></h4>
+                                <p>
+                                    Workflows can be shared with others contribute to your organization's collective tools.
                                 </p>
                             </div>
                         </div>
@@ -480,112 +483,8 @@
             </div>
         </div>
         <!-- Say Something End -->
+        
     </main>
-    <footer>
-        <!-- Footer Start-->
-        <div class="footer-main">
-            <div class="footer-area footer-padding">
-                <div class="container">
-                    <div class="row justify-content-between">
-                        <div class="col-lg-3 col-md-4 col-sm-8">
-                            <div class="single-footer-caption mb-30">
-                                <!-- logo -->
-                                <div class="footer-logo">
-                                    <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt="" /></a>
-                                </div>
-                                <div class="footer-tittle">
-                                    <div class="footer-pera">
-                                        <p class="info1">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit
-                                            sed do eiusmod tempor incididunt ut labore.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-4 col-sm-5">
-                            <div class="single-footer-caption mb-50">
-                                <div class="footer-tittle">
-                                    <h4>Quick Links</h4>
-                                    <ul>
-                                        <li><a href="#">About</a></li>
-                                        <li><a href="#">Features</a></li>
-                                        <li><a href="#">Pricing</a></li>
-                                        <li><a href="#">Download</a></li>
-                                        <li><a href="#">Reviews</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-4 col-sm-7">
-                            <div class="single-footer-caption mb-50">
-                                <div class="footer-tittle">
-                                    <h4>Support</h4>
-                                    <ul>
-                                        <li><a href="#">Report a bug</a></li>
-                                        <li><a href="#">Privacy Policy</a></li>
-                                        <li><a href="#">Terms & Conditions</a></li>
-                                        <li><a href="#">Sitemap</a></li>
-                                        <li><a href="#">FAQs</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-8">
-                            <div class="single-footer-caption mb-50">
-                                <div class="footer-tittle">
-                                    <h4>Newsletter</h4>
-                                    <div class="footer-pera footer-pera2">
-                                        <p>Heaven fruitful doesn't over lesser in days. Appear</p>
-                                    </div>
-                                    <!-- Form -->
-                                    <div class="footer-form">
-                                        <div id="mc_embed_signup">
-                                            <form target="_blank"
-                                                action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-                                                method="get" class="subscribe_form relative mail_part"
-                                                novalidate="true">
-                                                <input type="email" name="EMAIL" id="newsletter-form-email"
-                                                    placeholder=" Email Address " class="placeholder hide-on-focus"
-                                                    onfocus="this.placeholder = ''"
-                                                    onblur="this.placeholder = ' Email Address '" />
-                                                <div class="form-icon">
-                                                    <button type="submit" name="submit" id="newsletter-submit"
-                                                        class="email_icon newsletter-submit button-contactForm">
-                                                        <img src="assets/img/shape/form_icon.png" alt="" />
-                                                    </button>
-                                                </div>
-                                                <div class="mt-10 info"></div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Copy-Right -->
-                    <div class="row align-items-center">
-                        <div class="col-xl-12">
-                            <div class="footer-copy-right">
-                                <p>
-                                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                                    Copyright &copy;
-                                    <script>
-                                        document.write(new Date().getFullYear());
-                                    </script>
-                                    All rights reserved | This template is made with
-                                    <i class="ti-heart" aria-hidden="true"></i> by
-                                    <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Footer End-->
-    </footer>
 
     <!-- JS here -->
 

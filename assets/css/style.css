@@ -4649,7 +4649,7 @@ del {
   height: 60px;
   display: inline-block;
   text-align: center;
-  line-height: 60px;
+  line-height: 60px; 
   border-radius: 50%;
   position: relative;
   margin-left: 16px;
@@ -4873,7 +4873,7 @@ z .slider-area .hero-cap h2 {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-.service-area .services-caption .service-icon span {
+.service-area .services-caption .service-icon span, .service-area .services-caption .service-icon a {
   position: relative;
   color: #fff;
   font-size: 40px;
@@ -4883,7 +4883,7 @@ z .slider-area .hero-cap h2 {
   line-height: 105px;
   border-radius: 50%;
   text-align: center;
-  background: #e88cea;
+  background: var(--red-brighter-color);
   margin-bottom: 42px;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
@@ -4906,8 +4906,8 @@ z .slider-area .hero-cap h2 {
 .services-caption:hover .service-icon::before {
   right: -32px;
 }
-.services-caption:hover .service-icon span {
-  background: #835ef8;
+.services-caption:hover .service-icon span, .services-caption:hover .service-icon a {
+  background: #ff8282;
 }
 .services-caption.active {
   border: 1px solid #b8a2ff;
