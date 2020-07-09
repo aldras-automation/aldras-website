@@ -20,9 +20,45 @@
   background-color: #ffe5da;
 }
 
-/* html {
-	font-size: 62.5%;
-} */
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted white;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: max-content;
+  max-width: 30vw;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  top: -210%;
+  left: 150%;
+  padding: 15px;
+}
+
+/* Add left arrow */
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  right: 100%; /* To the left of the tooltip */
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
 
 .pricing-container {
   width: 90%;
@@ -131,6 +167,7 @@
 
 .pricing-wrapper {
   position: relative;
+  height: 100%;
 }
 
 .touch .pricing-wrapper {
@@ -198,6 +235,7 @@
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   outline: 1px solid gainsboro;
+  height: 100%;
 }
 
 .pricing-wrapper > li::after {
@@ -205,7 +243,6 @@
   position: absolute;
   top: 0;
   right: 0;
-  height: 100%;
   width: 50px;
   pointer-events: none;
   background: -webkit-linear-gradient(right, #ffffff, rgba(255, 255, 255, 0));
@@ -225,7 +262,6 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
   width: 100%;
   z-index: 1;
   -webkit-transform: rotateY(180deg);
@@ -292,15 +328,6 @@
   margin-top: 1em;
 }
 
-/* @media only screen and (min-width: 768px) {
-  .exclusive .pricing-wrapper > li::before {
-    display: none;
-  }
-  .exclusive + li .pricing-wrapper > li::before {
-    display: none;
-  }
-} */
-
 .pricing-header h2 {
   font-size: 1.75rem;
   letter-spacing: 2px;
@@ -322,27 +349,12 @@
   background-color: transparent;
 }
 
-/* .exclusive .pricing-header {
-  color: #1bbc9d;
-  background-color: transparent;
-} */
-
-/* .currency,
-.value {
-  font-size: 1.25rem;
-  font-weight: 300;
-} */
-
 .duration {
   font-weight: 700;
   font-size: 1.3rem;
   color: #8dc8e4;
   text-transform: uppercase;
 }
-
-/* .exclusive .duration {
-  color: #f3b6ab;
-} */
 
 .duration::before {
   content: "/";
@@ -358,11 +370,6 @@
 .duration {
   color: #1bbc9d;
 }
-
-/* .exclusive .currency,
-.exclusive .duration {
-  color: #2d3e50;
-} */
 
 .currency {
   display: inline-block;
@@ -439,18 +446,11 @@
 } */
 
 .pricing-footer {
-  position: absolute;
   z-index: 1;
-  top: 0;
-  left: 0;
   height: 80px;
   width: 100%;
-}
-
-.pricing-footer {
-  position: relative;
   height: auto;
-  padding: 1.8em 0;
+  padding: 4em 0;
   text-align: center;
 }
 
@@ -463,18 +463,9 @@
 }
 
 .select {
-  position: relative;
   z-index: 1;
-  display: block;
-  height: 100%;
   overflow: hidden;
-  text-indent: 100%;
   white-space: nowrap;
-  color: transparent;
-}
-
-.select {
-  position: static;
   display: inline-block;
   height: auto;
   padding: 1.3em 2em;
@@ -487,29 +478,15 @@
   letter-spacing: 2px;
   transition: all 0.6s;
   width: 70%;
+  position: absolute;
+  bottom: 1em;
+  left: 15%;
 }
 
 .no-touch .select:hover {
   background-color: #1bbc9d;
   color: #ffffff;
 }
-
-/* .exclusive .select {
-  background-color: #1bbc9d;
-  color: #ffffff;
-} */
-
-/* .no-touch .exclusive .select:hover {
-  background-color: #24e0ba;
-}
-
-.secondary-theme .exclusive .select {
-  background-color: #1bbc9d;
-}
-
-.no-touch .secondary-theme .exclusive .select:hover {
-  background-color: #112e3c;
-} */
 
 .has-margins .select {
   display: block;
@@ -5045,7 +5022,7 @@ del {
 .switch-wrap {
   margin-bottom: 10px;
 }
-.header-transparrent {
+.header-transparent {
   position: absolute;
   top: 0;
   right: 0;
@@ -5237,26 +5214,31 @@ del {
   }
 }
 .slider-padding {
-  padding-top: 130px;
+  padding-top: 65px;
+  padding-bottom: 65px;
 }
 @media (max-width: 767px) {
   .slider-padding {
-    padding-top: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .slider-padding {
-    padding-top: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .slider-padding {
-    padding-top: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .slider-padding {
-    padding-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 .slider-area {
