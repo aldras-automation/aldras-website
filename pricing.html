@@ -65,7 +65,6 @@
             //detect which radio input item was checked
             var selected_filter = $(event.target).val();
 
-
             if (selected_filter == 'monthly') {
               document.getElementById('monthly-label').style.color = "var(--main-red-color)";
               document.getElementById('yearly-label').style.color = "grey";
@@ -74,13 +73,9 @@
               document.getElementById('yearly-label').style.color = "var(--main-red-color)";
             }
 
-
-
             //give higher z-index to the pricing table items selected by the radio input
             show_selected_items(table_elements[selected_filter]);
 
-            //rotate each pricing-wrapper 
-            //rotate each pricing-wrapper 
             //rotate each pricing-wrapper 
             //at the end of the animation hide the not-selected pricing tables and rotate back the .pricing-wrapper
 
@@ -155,7 +150,7 @@
       </div>
     </section>
 
-    <div class="pricing-container">
+    <div class="pricing-container" style="margin-bottom: 0;">
       <div class="pricing-switcher">
         <p class="fieldset">
           <input type="radio" name="duration-1" value="monthly" id="monthly-1" checked>
@@ -166,7 +161,7 @@
         </p>
       </div>
       <ul class="pricing-list bounce-invert" style="display: flex;">
-        <li>
+        <li class="outer-pricing-card">
           <ul class="pricing-wrapper">
             <li data-type="monthly" class="is-visible">
               <header class="pricing-header">
@@ -177,7 +172,7 @@
                   <span class="duration">mo</span>
                 </div>
               </header>
-              
+
               <div id="pricing_card_list_starter_monthly"></div>
               <footer class="pricing-footer">
                 <a class="btn select" href="#">Select</a>
@@ -231,7 +226,7 @@
             </li>
           </ul>
         </li>
-        <li>
+        <li class="outer-pricing-card">
           <ul class="pricing-wrapper">
             <li data-type="monthly" class="is-visible">
               <header class="pricing-header">
@@ -266,8 +261,47 @@
       </ul>
     </div>
 
+    <!-- Slider Area Start-->
+    <div class="slider-area">
+      <div class="single-slider slider-padding d-flex align-items-center">
+        <div class="container">
+          <div class="row d-flex align-items-center">
+            <div class="col-lg-6"
+              style="box-shadow: 0 4px 20px rgba(0,0,0,.12); border-radius: 0.5em; padding: 1.5em; max-width: 48.5%; margin-right: 1.5%;">
+              <img src="assets/img/hero/hero_right.png" alt=""
+                style="display: block; margin-left: auto; margin-right: auto; width: 30%;">
+              <h5 class="text-center" style="padding: 1em 2em; color: black;">
+                Looking to apply Aldras in a humanitarian cause? Reach out to see if you qualify for our nonprofit
+                organization program.
+              </h5>
+              <div class="text-center">
+                <a href="trial.html" class="btn radius-btn"
+                  style="padding: 25px 30px; background-color: #53B9C7;">Nonprofit Program</a>
+              </div>
+            </div>
+            <div class="col-lg-6"
+              style="box-shadow: 0 4px 20px rgba(0,0,0,.12); border-radius: 0.5em; padding: 1.5em; max-width: 48.5%; margin-left: 1.5%;">
+              <img src="assets/img/hero/hero_right.png" alt=""
+                style="display: block; margin-left: auto; margin-right: auto; width: 30%;">
+              <h5 class="text-center" style="padding: 1em 2em; color: black;">
+                If your organization is fighting or is strongly affected by COVID-19, contact us to participate in our
+                COVID program.
+              </h5>
+              <div class="text-center">
+                <a href="trial.html" class="btn radius-btn" style="padding: 25px 30px; background-color: #53B9C7;">COVID
+                  Program</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Slider Area End -->
+
+
     <div class="whole-wrap">
-      <div class="container box_1170" style="box-shadow: 0 4px 20px rgba(0,0,0,.12); border-radius: 0.5em; padding: 0;">
+      <div class="container box_1170"
+        style="margin-top: 10px; box-shadow: 0 4px 20px rgba(0,0,0,.12); border-radius: 0.5em; padding: 0;">
         <div class="section-top-border">
           <h3 class="mb-30" style="text-align: center; color: black;">Full feature comparison</h3>
           <div class="progress-table-wrap">
@@ -279,7 +313,7 @@
                 <div class="plan-title smb-col">Small Business</div>
                 <div class="plan-title enterprise-col">Custom</div>
               </div>
-              
+
               <div class="table-head table-section-header">
                 <div class="feature-col table-section-title">General features</div>
               </div>
@@ -421,12 +455,115 @@
                 <div class="smb-col">✓</div>
                 <div class="enterprise-col">✓</div>
               </div>
+
+              <div class="table-row">
+                <div class="feature-col" style="background-color: white;"></div>
+                <div class="starter-col" style="background-color: white;"><a class="btn select table-select"
+                    href="#">Select</a></div>
+                <div class="pro-col" style="background-color: white;"><a class="btn select table-select"
+                    href="#">Select</a></div>
+                <div class="smb-col" style="background-color: white;"><a class="btn select table-select"
+                    href="#">Contact</a></div>
+                <div class="enterprise-col" style="background-color: white;"><a class="btn select table-select"
+                    href="#">Contact</a></div>
+              </div>
             </div>
           </div>
         </div>
 
       </div>
     </div>
+
+
+
+
+    <!-- FAQs Start-->
+    <div class="slider-area">
+
+      <div class="single-slider slider-padding d-flex align-items-center">
+        <div class="container">
+          <h1 style="text-align: center; padding-bottom: 1em; color: black;">
+            Frequently asked questions
+          </h1>
+
+          <div class="row d-flex">
+
+            <div class="col-lg-6 hero__caption">
+              <h3>
+                How does the <a href="#" style="text-decoration: underline;">free trial</a> work?
+              </h3>
+              <p>
+                The <a href="#" style="text-decoration: underline;">free trial</a> allows access to the <i>Professional</i> plan for 30 days with no credit card required. Simply enter your email address to receive your trial key, download Aldras, and enter the trial key to activate.
+              </p>
+            </div>
+
+            <div class="col-lg-6 hero__caption">
+              <h3>
+                Do you offer any discounts?
+              </h3>
+              <p>
+                Yes! Our mission includes additional effort to facilitate the work of students, nonprofits, and those fighting COVID-19. See more about those specialty programs above. Plans with multiple users also come with discounts.
+              </p>
+            </div>
+
+            <div class="col-lg-6 hero__caption">
+              <h3>
+                Can I change my plan?
+              </h3>
+              <p>
+                Yes, you can change or cancel your plan at any time and scale up or down as you desire. Billing takes place at the beginning of the service period.
+              </p>
+            </div>
+
+            <div class="col-lg-6 hero__caption">
+              <h3>
+                How do I access support?
+              </h3>
+              <p>
+                All plans can utilize the <a href="#" style="text-decoration: underline;">Docs</a> and send emails to the Aldras team. Tickets from plans with priority support are addressed first and also have access to phone support and consultation.
+              </p>
+            </div>
+
+            <div class="col-lg-6 hero__caption">
+              <h3>
+                What can I automate?
+              </h3>
+              <p>
+                You can program nearly anything that you as a human do to interact with your computer. This includes
+                mouse movements and clicks, keyboard strokes, hotkeys, pauses, and more!
+              </p>
+            </div>
+
+            <div class="col-lg-6 hero__caption">
+              <h3>
+                What can I not automate?
+              </h3>
+              <p>
+                Unfortunately, due to the unique implementations in different operating systems, programs,
+                and devices, scrolling is very inconsistent and has therefore been removed. See the <a href="#" style="text-decoration: underline;">Docs</a> for recommendations.
+              </p>
+            </div>
+
+
+            <div class="col-lg-9 hero__caption" style="margin: auto;">
+              <h3 style="text-align: center;">
+                Is Aldras for me?
+              </h3>
+              <p>
+                Aldras is for individuals or organizations that would like to accelerate straightforward repetitive
+                computer tasks to concentrate their own time and effort on more valuable responsibilities. We have
+                seen applications of Aldras in the areas of engineering, customer success, sales, paperwork, data processing, and much more.
+                <br><br>
+                Aldras is about delivering value for people. Even so, we know that Aldras is not for everyone. From a
+                simple return on investment perspective, if we assume your time is valued at $10 per hour and you have
+                less than one hour of repetitive computer work every month, Aldras is likely not the best fit for you at this time. Additionally, if your team has direct access to the developers of the programs that you use in your workflows, you may have already worked with them to streamline your processes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FAQs End -->
 
 
   </main>

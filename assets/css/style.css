@@ -6,6 +6,7 @@
   --header-text-color: #8a0707;
   --main-red-color: #cf1515;
   --red-brighter-color: rgb(255, 37, 37);
+  --red-lighter-color: rgba(255, 37, 37, 0.8);
   --red-color-from-isometric: #e26161;
   --purple-color-from-isometric: #8c50ff;
   --red-background-color: #e4eaf1;
@@ -137,7 +138,6 @@
 
 .pricing-list > li {
   position: relative;
-  margin-bottom: 1em;
 }
 
 @media only screen and (min-width: 768px) {
@@ -457,6 +457,13 @@
 
 .select::before {
   transition: transform 0s !important;
+}
+
+.table-select {
+  position: relative !important;
+  bottom: 0;
+  left: 0;
+  padding: 1.5em 2em !important;
 }
 
 .no-touch .select:hover {
@@ -836,7 +843,7 @@ a {
   color: #635c5c;
 }
 a:hover {
-  color: #fff;
+  color: var(--red-color-from-isometric);
 }
 a:focus,
 a:hover,
@@ -846,7 +853,6 @@ a:hover,
 }
 a,
 button {
-  color: #fff;
   outline: medium none;
 }
 button:focus,
@@ -4283,7 +4289,7 @@ del {
   overflow-x: auto;
 }
 .progress-table {
-  padding: 15px 0px 30px 0px;
+  padding-top: 1em;
   min-width: 800px;
 }
 .progress-table .feature-col {
@@ -5000,7 +5006,7 @@ del {
   margin-top: 10px;
 }
 .section-top-border {
-  padding: 50px 0;
+  padding-top: 50px;
   border-top: 1px dotted #eee;
 }
 .mb-30 {
@@ -5250,7 +5256,7 @@ del {
   margin-bottom: 20px;
 }
 .slider-area .hero__caption h1 {
-  font-size: 55px;
+  font-size: 40px;
   font-weight: 700;
   color: rgb(24, 24, 24);
   font-family: "Nunito", sans-serif;
@@ -5276,8 +5282,8 @@ del {
   }
 }
 .slider-area .hero__caption p {
-  margin-bottom: 54px;
-  padding-right: 155px;
+  /* margin-bottom: 54px; */
+  /* padding-right: 155px; */
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .slider-area .hero__caption p {
