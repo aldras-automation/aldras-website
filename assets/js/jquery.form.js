@@ -110,15 +110,15 @@ $.fn.ajaxSubmit = function(options) {
     // hook for manipulating the form data before it is extracted;
     // convenient for use with rich editors like tinyMCE or FCKEditor
     var veto = {};
-    this.trigger('form-pre-serialize', [this, options, veto]);
+    this.trigger('form-pre-feature-colize', [this, options, veto]);
     if (veto.veto) {
-        log('ajaxSubmit: submit vetoed via form-pre-serialize trigger');
+        log('ajaxSubmit: submit vetoed via form-pre-feature-colize trigger');
         return this;
     }
 
-    // provide opportunity to alter form data before it is serialized
-    if (options.beforeSerialize && options.beforeSerialize(this, options) === false) {
-        log('ajaxSubmit: submit aborted via beforeSerialize callback');
+    // provide opportunity to alter form data before it is feature-colized
+    if (options.beforefeature-colize && options.beforefeature-colize(this, options) === false) {
+        log('ajaxSubmit: submit aborted via beforefeature-colize callback');
         return this;
     }
 
@@ -233,17 +233,17 @@ $.fn.ajaxSubmit = function(options) {
     this.trigger('form-submit-notify', [this, options]);
     return this;
 
-    // utility fn for deep serialization
-    function deepSerialize(extraData){
-        var serialized = $.param(extraData).split('&');
-        var len = serialized.length;
+    // utility fn for deep feature-colization
+    function deepfeature-colize(extraData){
+        var feature-colized = $.param(extraData).split('&');
+        var len = feature-colized.length;
         var result = [];
         var i, part;
         for (i=0; i < len; i++) {
             // #252; undo param space replacement
-            serialized[i] = serialized[i].replace(/\+/g,' ');
-            part = serialized[i].split('=');
-            // #278; use array instead of object storage, favoring array serializations
+            feature-colized[i] = feature-colized[i].replace(/\+/g,' ');
+            part = feature-colized[i].split('=');
+            // #278; use array instead of object storage, favoring array feature-colizations
             result.push([decodeURIComponent(part[0]), decodeURIComponent(part[1])]);
         }
         return result;
@@ -258,10 +258,10 @@ $.fn.ajaxSubmit = function(options) {
         }
 
         if (options.extraData) {
-            var serializedData = deepSerialize(options.extraData);
-            for (i=0; i < serializedData.length; i++)
-                if (serializedData[i])
-                    formdata.append(serializedData[i][0], serializedData[i][1]);
+            var feature-colizedData = deepfeature-colize(options.extraData);
+            for (i=0; i < feature-colizedData.length; i++)
+                if (feature-colizedData[i])
+                    formdata.append(feature-colizedData[i][0], feature-colizedData[i][1]);
         }
 
         options.data = null;
@@ -308,7 +308,7 @@ $.fn.ajaxSubmit = function(options) {
         var deferred = $.Deferred();
 
         if (a) {
-            // ensure that every serialized input is still enabled
+            // ensure that every feature-colized input is still enabled
             for (i=0; i < elements.length; i++) {
                 el = $(elements[i]);
                 if ( hasProp )
@@ -929,19 +929,19 @@ $.fn.formToArray = function(semantic, elements) {
 };
 
 /**
- * Serializes form data into a 'submittable' string. This method will return a string
+ * feature-colizes form data into a 'submittable' string. This method will return a string
  * in the format: name1=value1&amp;name2=value2
  */
-$.fn.formSerialize = function(semantic) {
+$.fn.formfeature-colize = function(semantic) {
     //hand off to jQuery.param for proper encoding
     return $.param(this.formToArray(semantic));
 };
 
 /**
- * Serializes all field elements in the jQuery object into a query string.
+ * feature-colizes all field elements in the jQuery object into a query string.
  * This method will return a string in the format: name1=value1&amp;name2=value2
  */
-$.fn.fieldSerialize = function(successful) {
+$.fn.fieldfeature-colize = function(successful) {
     var a = [];
     this.each(function() {
         var n = this.name;

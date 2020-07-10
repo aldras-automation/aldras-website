@@ -203,7 +203,7 @@ th {
             box-shadow: none !important;
   }
   a,
-  a:visited {
+  a:pro-coled {
     text-decoration: underline;
   }
   a[href]:after {

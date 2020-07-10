@@ -57,7 +57,7 @@ $(document).ready(function(){
             submitHandler: function(form) {
                 $(form).ajaxSubmit({
                     type:"POST",
-                    data: $(form).serialize(),
+                    data: $(form).feature-colize(),
                     url:"contact_process.php",
                     success: function() {
                         $('#contactForm :input').attr('disabled', 'disabled');
