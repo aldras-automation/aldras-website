@@ -14,11 +14,13 @@
 
 .feature-header-area {
   margin-top: 130px;
-  min-height: 65vh;
+  min-height: 45vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ffe5da;
+  background-image: url(../img/header_bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* Tooltip container */
@@ -4630,7 +4632,7 @@ del {
   width: 35px;
   height: 17px;
   border-radius: 8.5px;
-  background: #f9f9ff;
+  background: var(--red-brighter-color);
   position: relative;
   cursor: pointer;
 }
@@ -4689,9 +4691,9 @@ del {
 .confirm-switch input:checked + label:after {
   left: 19px;
 }
-.confirm-switch input:checked + label:before {
-  background: #4cd3e3;
-}
+/* .confirm-switch input:checked + label:before { */
+  /* background: var(--red-brighter-color); */
+/* } */
 .primary-checkbox {
   width: 16px;
   height: 16px;
@@ -5256,7 +5258,7 @@ del {
   margin-bottom: 20px;
 }
 .slider-area .hero__caption h1 {
-  font-size: 40px;
+  font-size: 32px;
   font-weight: 700;
   color: rgb(24, 24, 24);
   font-family: "Nunito", sans-serif;
@@ -5283,6 +5285,9 @@ del {
 }
 .slider-area .hero__caption h3 {
   font-size: 22px;
+}
+.slider-area .hero__caption h4 {
+  font-size: 19px;
 }
 .slider-area .hero__caption p {
   color: black;
@@ -6360,13 +6365,13 @@ z .slider-area .hero-cap h2 {
 }
 .footer-area .footer-title h4 {
   color: #000;
-  font-size: 18px;
-  margin-bottom: 48px;
+  font-size: 17px;
+  margin-bottom: 25px;
   font-weight: 700;
 }
 .footer-area .footer-title ul li {
   color: #012f5f;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 .footer-area .footer-title ul li a {
   color: #868c98;

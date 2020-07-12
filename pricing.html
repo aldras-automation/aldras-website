@@ -51,7 +51,7 @@
           var filter_list_container = pricing_table.children('.pricing-switcher'),
             filter_radios = filter_list_container.find('input[type="radio"]'),
             pricing_table_wrapper = pricing_table.find('.pricing-wrapper');
-
+          
           //store pricing table items
           var table_elements = {};
           filter_radios.each(function () {
@@ -61,6 +61,7 @@
 
           //detect input change event
           filter_radios.on('change', function (event) {
+            // alert('Event')
             event.preventDefault();
             //detect which radio input item was checked
             var selected_filter = $(event.target).val();
@@ -68,9 +69,12 @@
             if (selected_filter == 'monthly') {
               document.getElementById('monthly-label').style.color = "var(--main-red-color)";
               document.getElementById('yearly-label').style.color = "grey";
+              document.getElementById('confirm-switch').click()
             } else if (selected_filter == 'yearly') {
               document.getElementById('monthly-label').style.color = "grey";
               document.getElementById('yearly-label').style.color = "var(--main-red-color)";
+              document.getElementById('confirm-switch').click()
+
             }
 
             //give higher z-index to the pricing table items selected by the radio input
@@ -107,6 +111,8 @@
           }
         });
       }
+
+
     });
   </script>
   <meta name="description" content="" />
@@ -142,8 +148,8 @@
               <h2 style="color: black;">Choose the plan that works for you</h2>
               <br><br>
               <h4>Simple, straightforward pricing with no hidden charges on plans that scale with your needs</h4>
-              <br>
-              <a href="#" class="btn">Try Free</a>
+              <br><br>
+              <a href="#" class="btn radius-btn" style="color: white; padding: 20px 25px;">30 Day Free Trial</a>
             </div>
           </div>
         </div>
@@ -152,13 +158,24 @@
 
     <div class="pricing-container" style="margin-bottom: 0;">
       <div class="pricing-switcher">
-        <p class="fieldset">
+        <div class="fieldset">
           <input type="radio" name="duration-1" value="monthly" id="monthly-1" checked>
-          <label for="monthly-1" id="monthly-label">Monthly</label>
+          <label for="monthly-1" style="padding-right: 20px;" id="monthly-label">Monthly</label>
+
+          <!-- <div class="confirm-switch" style="display: inherit;">
+            <input type="checkbox" id="confirm-switch" unchecked>
+            <label for="confirm-switch"></label>
+          </div> -->
+
+          <div class="confirm-switch" style="display: inherit;">
+            <input type="radio" id="confirm-switch" unchecked>
+            <label for="confirm-switch"></label>
+          </div>
+
           <input type="radio" name="duration-1" value="yearly" id="yearly-1">
-          <label for="yearly-1" style="padding-left: 40px;" id="yearly-label">Yearly (Save 25%)</label>
+          <label for="yearly-1" style="padding-left: 20px;" id="yearly-label">Yearly (Save 25%)</label>
           <span class="switch"></span>
-        </p>
+        </div>
       </div>
       <ul class="pricing-list bounce-invert" style="display: flex;">
         <li class="outer-pricing-card">
@@ -456,7 +473,7 @@
                 <div class="enterprise-col">✓</div>
               </div>
 
-              <div class="table-row">
+              <div class="table-row" id="faqs">
                 <div class="feature-col" style="background-color: white;"></div>
                 <div class="starter-col" style="background-color: white;"><a class="btn select table-select"
                     href="#">Select</a></div>
@@ -493,7 +510,9 @@
                 How does the <a href="#" style="text-decoration: underline;">free trial</a> work?
               </h3>
               <p>
-                The <a href="#" style="text-decoration: underline;">free trial</a> allows access to the <i>Professional</i> plan for 30 days with no credit card required. Simply enter your email address to receive your trial key, download Aldras, and enter the trial key to activate.
+                The <a href="#" style="text-decoration: underline;">free trial</a> allows access to the
+                <i>Professional</i> plan for 30 days with no credit card required. Simply enter your email address to
+                receive your trial key, download Aldras, and enter the trial key to activate.
               </p>
             </div>
 
@@ -502,7 +521,9 @@
                 Do you offer any discounts?
               </h3>
               <p>
-                Yes! Our mission includes additional effort to facilitate the work of students, nonprofits, and those fighting COVID-19. See more about those specialty programs above. Plans with multiple users also come with discounts.
+                Yes! Our mission includes additional effort to facilitate the work of students, nonprofits, and those
+                fighting COVID-19. See more about those specialty programs above. Plans with multiple users also come
+                with discounts.
               </p>
             </div>
 
@@ -511,7 +532,8 @@
                 Can I change my plan?
               </h3>
               <p>
-                Yes, you can change or cancel your plan at any time and scale up or down as you desire. Billing takes place at the beginning of the service period.
+                Yes, you can change or cancel your plan at any time and scale up or down as you desire. Billing takes
+                place at the beginning of the service period.
               </p>
             </div>
 
@@ -520,7 +542,9 @@
                 How do I access support?
               </h3>
               <p>
-                All plans can utilize the <a href="#" style="text-decoration: underline;">Docs</a> and send emails to the Aldras team. Tickets from plans with priority support are addressed first and also have access to phone support and consultation.
+                All plans can utilize the <a href="#" style="text-decoration: underline;">Docs</a> and send emails to
+                the Aldras team. Tickets from plans with priority support are addressed first and also have access to
+                phone support and consultation.
               </p>
             </div>
 
@@ -540,7 +564,8 @@
               </h3>
               <p>
                 Unfortunately, due to the unique implementations in different operating systems, programs,
-                and devices, scrolling is very inconsistent and has therefore been removed. See the <a href="#" style="text-decoration: underline;">Docs</a> for recommendations.
+                and devices, scrolling is very inconsistent and has therefore been removed. See the <a href="#"
+                  style="text-decoration: underline;">Docs</a> for recommendations.
               </p>
             </div>
 
@@ -552,11 +577,14 @@
               <p>
                 Aldras is for individuals or organizations that would like to accelerate straightforward repetitive
                 computer tasks to concentrate their own time and effort on more valuable responsibilities. We have
-                seen applications of Aldras in the areas of engineering, customer success, sales, paperwork, data processing, and much more.
+                seen applications of Aldras in the areas of engineering, customer success, sales, paperwork, data
+                processing, and much more.
                 <br><br>
                 Aldras is about delivering value for people. Even so, we know that Aldras is not for everyone. From a
                 simple return on investment perspective, if we assume your time is valued at $10 per hour and you have
-                less than one hour of repetitive computer work every month, Aldras is likely not the best fit for you at this time. Additionally, if your team has direct access to the developers of the programs that you use in your workflows, you may have already worked with them to streamline your processes.
+                less than one hour of repetitive computer work every month, Aldras is likely not the best fit for you at
+                this time. Additionally, if your team has direct access to the developers of the programs that you use
+                in your workflows, you may have already worked with them to streamline your processes.
               </p>
             </div>
           </div>

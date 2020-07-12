@@ -1,22 +1,4 @@
-/* ----------------------------------------------------
-  
-    File Name: style.css
-    Template Name: Documentation
-    Created By: Surjith S M
-    http://themeforest.net/user/surjithctly
-
-    1. IMPORT
-    2. SKELETON
-    
-------------------------------------------------------- */
-/* ----------------------------------------------------
-    IMPORT  
-------------------------------------------------------- */
-
 @import url(http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic);
-/* ----------------------------------------------------
-    SKELETON    
-------------------------------------------------------- */
 
 body {
     background: #fff;
@@ -208,7 +190,6 @@ strong {
     font-size: 48px;
     font-weight: 300;
     margin-bottom: 0;
-    text-transform: capitalize;
     padding-bottom: 0;
 }
 
@@ -259,10 +240,6 @@ h4 a {
     color: #030303;
     font-weight: 400;
     font-size: 16px;
-}
-
-.lead {
-    text-transform: capitalize;
 }
 
 .left-align img {
