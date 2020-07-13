@@ -111,23 +111,24 @@
 
 .pricing-switcher .switch {
   position: absolute;
-  bottom: 8px;
-  left: -5px;
+  bottom: -12px;
+  left: -106px;
   height: 2px;
   width: 90px;
   background-color: var(--main-red-color);
-  -webkit-transition: -webkit-transform 0.5s;
-  -moz-transition: -moz-transform 0.5s;
-  transition: transform 0.5s;
+  -webkit-transition: -webkit-transform 0.5s, width 0.5s;
+  -moz-transition: -moz-transform 0.5s, width 0.5s;
+  transition: transform 0.5s, width 0.5s;
 }
 
-.pricing-switcher input[type="radio"]:checked + label + .switch,
-.pricing-switcher input[type="radio"]:checked + label:nth-of-type(n) + .switch {
-  -webkit-transform: translateX(160px);
-  -moz-transform: translateX(160px);
-  -ms-transform: translateX(160px);
-  -o-transform: translateX(160px);
-  transform: translateX(160px);
+.pricing-switcher input[type="radio"]:checked + label + .switch {
+  --translation-val: 155px;
+  -webkit-transform: translateX(var(--translation-val));
+  -moz-transform: translateX(var(--translation-val));
+  -ms-transform: translateX(var(--translation-val));
+  -o-transform: translateX(var(--translation-val));
+  transform: translateX(var(--translation-val));
+  width: 170px;
 }
 
 .no-js .pricing-switcher {
@@ -4666,10 +4667,10 @@ del {
   height: 100%;
   background: transparent;
   border-radius: 8.5px;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  transition: all 0.2s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
   cursor: pointer;
 }
 .confirm-switch input + label:after {
@@ -4681,10 +4682,10 @@ del {
   height: 15px;
   border-radius: 50%;
   background: #fff;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  transition: all 0.2s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
   box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
@@ -4692,7 +4693,7 @@ del {
   left: 19px;
 }
 /* .confirm-switch input:checked + label:before { */
-  /* background: var(--red-brighter-color); */
+/* background: var(--red-brighter-color); */
 /* } */
 .primary-checkbox {
   width: 16px;

@@ -59,42 +59,61 @@
             table_elements[filter_type] = pricing_table_wrapper.find('li[data-type="' + filter_type + '"]');
           });
 
-          //detect input change event
-          filter_radios.on('change', function (event) {
-            // alert('Event')
-            event.preventDefault();
-            //detect which radio input item was checked
-            var selected_filter = $(event.target).val();
+          var m = document.getElementById("monthly-label"),
+              y = document.getElementById("yearly-label"),
+              t = document.getElementById("confirm-switch"),
+              selected_filter = "monthly";
 
-            if (selected_filter == 'monthly') {
-              document.getElementById('monthly-label').style.color = "var(--main-red-color)";
-              document.getElementById('yearly-label').style.color = "grey";
-              document.getElementById('confirm-switch').click()
-            } else if (selected_filter == 'yearly') {
-              document.getElementById('monthly-label').style.color = "grey";
-              document.getElementById('yearly-label').style.color = "var(--main-red-color)";
-              document.getElementById('confirm-switch').click()
+              m.addEventListener("click", function(){
+                t.checked = false;
+                m.style.color = "var(--main-red-color)";
+                y.style.color = "grey";
+                selected_filter = "monthly";
+                showTable(selected_filter);
+              });
 
-            }
+              y.addEventListener("click", function(){
+                t.checked = true;
+                y.style.color = "var(--main-red-color)";
+                m.style.color = "grey";
+                selected_filter = "yearly";
+                showTable(selected_filter);
+              });
 
-            //give higher z-index to the pricing table items selected by the radio input
-            show_selected_items(table_elements[selected_filter]);
+              t.addEventListener("click", function(){
+                if (m.style.color == "grey") {
+                  t.checked = false;
+                  m.style.color = "var(--main-red-color)";
+                  y.style.color = "grey";
+                  selected_filter = "monthly";
+                }
+                else {
+                  t.checked = true;
+                  y.style.color = "var(--main-red-color)";
+                  m.style.color = "grey";
+                  selected_filter = "yearly";
+                }
+                showTable(selected_filter);
+              });
+            
+            function showTable(selected_filter) {
+              //give higher z-index to the pricing table items selected by the radio input
+              show_selected_items(table_elements[selected_filter]);
 
-            //rotate each pricing-wrapper 
-            //at the end of the animation hide the not-selected pricing tables and rotate back the .pricing-wrapper
-
-            if (!Modernizr.cssanimations) {
-              hide_not_selected_items(table_elements, selected_filter);
-              pricing_table_wrapper.removeClass('is-switched');
-            } else {
-              pricing_table_wrapper.addClass('is-switched').eq(0).one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function () {
+              //rotate each pricing-wrapper 
+              //at the end of the animation hide the not-selected pricing tables and rotate back the .pricing-wrapper
+              if (!Modernizr.cssanimations) {
                 hide_not_selected_items(table_elements, selected_filter);
                 pricing_table_wrapper.removeClass('is-switched');
-                //change rotation direction if .pricing-list has the .bounce-invert class
-                if (pricing_table.find('.pricing-list').hasClass('bounce-invert')) pricing_table_wrapper.toggleClass('reverse-animation');
-              });
+              } else {
+                pricing_table_wrapper.addClass('is-switched').eq(0).one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function () {
+                  hide_not_selected_items(table_elements, selected_filter);
+                  pricing_table_wrapper.removeClass('is-switched');
+                  //change rotation direction if .pricing-list has the .bounce-invert class
+                  if (pricing_table.find('.pricing-list').hasClass('bounce-invert')) pricing_table_wrapper.toggleClass('reverse-animation');
+                });
+              }
             }
-          });
         });
       }
       function show_selected_items(selected_elements) {
@@ -161,20 +180,15 @@
         <div class="fieldset">
           <input type="radio" name="duration-1" value="monthly" id="monthly-1" checked>
           <label for="monthly-1" style="padding-right: 20px;" id="monthly-label">Monthly</label>
-
-          <!-- <div class="confirm-switch" style="display: inherit;">
-            <input type="checkbox" id="confirm-switch" unchecked>
-            <label for="confirm-switch"></label>
-          </div> -->
-
+          
           <div class="confirm-switch" style="display: inherit;">
-            <input type="radio" id="confirm-switch" unchecked>
-            <label for="confirm-switch"></label>
+              <input type="radio" id="confirm-switch">
+              <label for="confirm-switch"></label>
+              <span class="switch"></span>
           </div>
 
           <input type="radio" name="duration-1" value="yearly" id="yearly-1">
           <label for="yearly-1" style="padding-left: 20px;" id="yearly-label">Yearly (Save 25%)</label>
-          <span class="switch"></span>
         </div>
       </div>
       <ul class="pricing-list bounce-invert" style="display: flex;">
