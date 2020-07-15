@@ -6,6 +6,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <title>Aldras | Process Automation</title>
   <script src="//code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="https://js.stripe.com/v3"></script>
   <script>
     $(function () {
       $("#header").load("assets/html/header.html");
@@ -51,7 +52,7 @@
           var filter_list_container = pricing_table.children('.pricing-switcher'),
             filter_radios = filter_list_container.find('input[type="radio"]'),
             pricing_table_wrapper = pricing_table.find('.pricing-wrapper');
-          
+
           //store pricing table items
           var table_elements = {};
           filter_radios.each(function () {
@@ -60,60 +61,60 @@
           });
 
           var m = document.getElementById("monthly-label"),
-              y = document.getElementById("yearly-label"),
-              t = document.getElementById("confirm-switch"),
+            y = document.getElementById("yearly-label"),
+            t = document.getElementById("confirm-switch"),
+            selected_filter = "monthly";
+
+          m.addEventListener("click", function () {
+            t.checked = false;
+            m.style.color = "var(--main-red-color)";
+            y.style.color = "grey";
+            selected_filter = "monthly";
+            showTable(selected_filter);
+          });
+
+          y.addEventListener("click", function () {
+            t.checked = true;
+            y.style.color = "var(--main-red-color)";
+            m.style.color = "grey";
+            selected_filter = "yearly";
+            showTable(selected_filter);
+          });
+
+          t.addEventListener("click", function () {
+            if (m.style.color == "grey") {
+              t.checked = false;
+              m.style.color = "var(--main-red-color)";
+              y.style.color = "grey";
               selected_filter = "monthly";
+            }
+            else {
+              t.checked = true;
+              y.style.color = "var(--main-red-color)";
+              m.style.color = "grey";
+              selected_filter = "yearly";
+            }
+            showTable(selected_filter);
+          });
 
-              m.addEventListener("click", function(){
-                t.checked = false;
-                m.style.color = "var(--main-red-color)";
-                y.style.color = "grey";
-                selected_filter = "monthly";
-                showTable(selected_filter);
-              });
+          function showTable(selected_filter) {
+            //give higher z-index to the pricing table items selected by the radio input
+            show_selected_items(table_elements[selected_filter]);
 
-              y.addEventListener("click", function(){
-                t.checked = true;
-                y.style.color = "var(--main-red-color)";
-                m.style.color = "grey";
-                selected_filter = "yearly";
-                showTable(selected_filter);
-              });
-
-              t.addEventListener("click", function(){
-                if (m.style.color == "grey") {
-                  t.checked = false;
-                  m.style.color = "var(--main-red-color)";
-                  y.style.color = "grey";
-                  selected_filter = "monthly";
-                }
-                else {
-                  t.checked = true;
-                  y.style.color = "var(--main-red-color)";
-                  m.style.color = "grey";
-                  selected_filter = "yearly";
-                }
-                showTable(selected_filter);
-              });
-            
-            function showTable(selected_filter) {
-              //give higher z-index to the pricing table items selected by the radio input
-              show_selected_items(table_elements[selected_filter]);
-
-              //rotate each pricing-wrapper 
-              //at the end of the animation hide the not-selected pricing tables and rotate back the .pricing-wrapper
-              if (!Modernizr.cssanimations) {
+            //rotate each pricing-wrapper 
+            //at the end of the animation hide the not-selected pricing tables and rotate back the .pricing-wrapper
+            if (!Modernizr.cssanimations) {
+              hide_not_selected_items(table_elements, selected_filter);
+              pricing_table_wrapper.removeClass('is-switched');
+            } else {
+              pricing_table_wrapper.addClass('is-switched').eq(0).one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function () {
                 hide_not_selected_items(table_elements, selected_filter);
                 pricing_table_wrapper.removeClass('is-switched');
-              } else {
-                pricing_table_wrapper.addClass('is-switched').eq(0).one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function () {
-                  hide_not_selected_items(table_elements, selected_filter);
-                  pricing_table_wrapper.removeClass('is-switched');
-                  //change rotation direction if .pricing-list has the .bounce-invert class
-                  if (pricing_table.find('.pricing-list').hasClass('bounce-invert')) pricing_table_wrapper.toggleClass('reverse-animation');
-                });
-              }
+                //change rotation direction if .pricing-list has the .bounce-invert class
+                if (pricing_table.find('.pricing-list').hasClass('bounce-invert')) pricing_table_wrapper.toggleClass('reverse-animation');
+              });
             }
+          }
         });
       }
       function show_selected_items(selected_elements) {
@@ -134,6 +135,7 @@
 
     });
   </script>
+
   <meta name="description" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="manifest" href="site.webmanifest" />
@@ -180,11 +182,11 @@
         <div class="fieldset">
           <input type="radio" name="duration-1" value="monthly" id="monthly-1" checked>
           <label for="monthly-1" style="padding-right: 20px;" id="monthly-label">Monthly</label>
-          
+
           <div class="confirm-switch" style="display: inherit;">
-              <input type="radio" id="confirm-switch">
-              <label for="confirm-switch"></label>
-              <span class="switch"></span>
+            <input type="radio" id="confirm-switch">
+            <label for="confirm-switch"></label>
+            <span class="switch"></span>
           </div>
 
           <input type="radio" name="duration-1" value="yearly" id="yearly-1">
@@ -206,7 +208,7 @@
 
               <div id="pricing_card_list_starter_monthly"></div>
               <footer class="pricing-footer">
-                <a class="btn select" href="#">Select</a>
+                <button class="btn select stripe-btn" id="price_1H5F8RLq4bTyrlC4QUfAP7Uw" role="link">Select</button>
               </footer>
             </li>
             <li data-type="yearly" class="is-hidden">
@@ -220,7 +222,7 @@
               </header>
               <div id="pricing_card_list_starter_yearly"></div>
               <footer class="pricing-footer">
-                <a class="btn select" href="#">Select</a>
+                <button class="btn select stripe-btn" id="price_1H5F8SLq4bTyrlC4Et8iSMuH" role="link">Select</button>
               </footer>
             </li>
           </ul>
@@ -238,7 +240,7 @@
               </header>
               <div id="pricing_card_list_pro_monthly"></div>
               <footer class="pricing-footer">
-                <a class="btn select" href="#">Select</a>
+                <button class="btn select stripe-btn" id="price_1H5FkDLq4bTyrlC4lSSgb3Pj" role="link">Select</button>
               </footer>
             </li>
             <li data-type="yearly" class="is-hidden">
@@ -252,7 +254,7 @@
               </header>
               <div id="pricing_card_list_pro_yearly"></div>
               <footer class="pricing-footer">
-                <a class="btn select" href="#">Select</a>
+                <button class="btn select stripe-btn" id="price_1H5FkDLq4bTyrlC4Bl2rIWU3" role="link">Select</button>
               </footer>
             </li>
           </ul>
@@ -292,6 +294,8 @@
       </ul>
     </div>
 
+    <div id="error-message"></div>
+
     <!-- Slider Area Start-->
     <div class="slider-area">
       <div class="single-slider slider-padding d-flex align-items-center">
@@ -328,7 +332,6 @@
       </div>
     </div>
     <!-- Slider Area End -->
-
 
     <div class="whole-wrap">
       <div class="container box_1170"
@@ -489,10 +492,15 @@
 
               <div class="table-row" id="faqs">
                 <div class="feature-col" style="background-color: white;"></div>
-                <div class="starter-col" style="background-color: white;"><a class="btn select table-select"
-                    href="#">Select</a></div>
-                <div class="pro-col" style="background-color: white;"><a class="btn select table-select"
-                    href="#">Select</a></div>
+                <div class="starter-col" style="background-color: white;">
+                  <button class="btn select table-select stripe-btn" id="price_1H5F8RLq4bTyrlC4QUfAP7Uw"
+                    role="link">Select</button>
+                </div>
+
+                <div class="pro-col" style="background-color: white;">
+                  <button class="btn select table-select stripe-btn" id="price_1H5FkDLq4bTyrlC4lSSgb3Pj"
+                    role="link">Select</button>
+                  </div>
                 <div class="smb-col" style="background-color: white;"><a class="btn select table-select"
                     href="#">Contact</a></div>
                 <div class="enterprise-col" style="background-color: white;"><a class="btn select table-select"
@@ -504,9 +512,6 @@
 
       </div>
     </div>
-
-
-
 
     <!-- FAQs Start-->
     <div class="slider-area">
@@ -607,13 +612,43 @@
     </div>
     <!-- FAQs End -->
 
-
   </main>
   <div id="footer"></div>
 
   <!-- JS here -->
 
-  <!-- All JS Custom Plugins Link Here here -->
+  <!-- Strip payment processing -->
+  <script>
+    (function () {
+      var stripe = Stripe('pk_test_51H4T6uLq4bTyrlC4HPacAKpu0a3a1poq5EIsz8RI7yjmD3MrfSDhLKxHtnRCa5shTPQV19Rj3cPOoqRuYeSLsdQx00Cz6U8oC1');
+
+      document.querySelectorAll('.stripe-btn').forEach(checkoutButton => {
+        checkoutButton.addEventListener('click', function () {
+          var targetElementPrice = checkoutButton.id.replace('checkout-button-', '')
+
+          stripe.redirectToCheckout({
+            lineItems: [{ price: targetElementPrice, quantity: 1 }],
+            mode: 'subscription',
+            // Instead use one of the strategies described in https://stripe.com/docs/payments/checkout/fulfillment
+            successUrl: window.location.protocol + '//aldras.com/success',
+            cancelUrl: window.location.protocol + '//aldras.com/pricing',
+          })
+            .then(function (result) {
+              if (result.error) {
+                // Display the localized error message
+                var displayError = document.getElementById('error-message');
+                displayError.textContent = result.error.message;
+                alert(result.error.message)
+              }
+            });
+        });
+
+      })
+
+    })();
+  </script>
+
+  <!-- All JS Custom Plugins Link -->
   <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
 
   <!-- Jquery, Popper, Bootstrap -->

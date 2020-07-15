@@ -5,7 +5,7 @@
   --header-menu-color: #490505;
   --header-text-color: #8a0707;
   --main-red-color: #cf1515;
-  --red-brighter-color: rgb(255, 37, 37);
+  --red-brighter-color: #ff2525;
   --red-lighter-color: rgba(255, 37, 37, 0.8);
   --red-color-from-isometric: #e26161;
   --purple-color-from-isometric: #8c50ff;
@@ -112,7 +112,7 @@
 .pricing-switcher .switch {
   position: absolute;
   bottom: -12px;
-  left: -106px;
+  left: -105px;
   height: 2px;
   width: 90px;
   background-color: var(--main-red-color);
@@ -122,7 +122,7 @@
 }
 
 .pricing-switcher input[type="radio"]:checked + label + .switch {
-  --translation-val: 155px;
+  --translation-val: 154px;
   -webkit-transform: translateX(var(--translation-val));
   -moz-transform: translateX(var(--translation-val));
   -ms-transform: translateX(var(--translation-val));
