@@ -348,7 +348,7 @@
   font-weight: 700;
   font-size: 1.3rem;
   color: #8dc8e4;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .duration::before {
@@ -785,8 +785,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  color: var(--header-text-color);
+h6 {  
+  color: rgb(24, 24, 24);
   margin-top: 0px;
   font-style: normal;
   font-weight: 500;
@@ -5186,6 +5186,8 @@ del {
   background: transparent;
   margin-top: 5px !important;
 }
+
+
 .mobile_menu {
   position: absolute;
   right: 0px;
@@ -5261,7 +5263,7 @@ del {
 .slider-area .hero__caption h1 {
   font-size: 32px;
   font-weight: 700;
-  color: rgb(24, 24, 24);
+  color: var(--header-text-color);
   font-family: "Nunito", sans-serif;
   line-height: 1.3;
   margin-bottom: 32px;
@@ -5286,6 +5288,7 @@ del {
 }
 .slider-area .hero__caption h3 {
   font-size: 22px;
+  color: var(--header-text-color);
 }
 .slider-area .hero__caption h4 {
   font-size: 19px;
@@ -5361,6 +5364,11 @@ z .slider-area .hero-cap h2 {
   .slider-height2 {
     min-height: 260px;
   }
+}
+.feature-card {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+  border: 1px solid gainsboro;
+  border-radius: 0.5em;
 }
 .services-area {
   padding-top: 270px;
@@ -5492,6 +5500,7 @@ z .slider-area .hero-cap h2 {
   font-size: 50px;
   font-weight: 500;
   line-height: 1.2;
+  color: rgb(24, 24, 24);
 }
 @media (max-width: 767px) {
   .section-title h2 {
