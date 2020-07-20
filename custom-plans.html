@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Aldras - Contact</title>
+    <title>Aldras - Business and Custom Plans</title>
     <script src="//code.jquery.com/jquery-3.3.1.js"></script>
     <script>
         $(function () {
@@ -45,10 +45,10 @@
                 <div class="row d-flex justify-content-center">
                     <div class="col-lg-8">
                         <div class="section-title text-center">
-                            <h2 style="color: black;">Let's Connect</h2>
+                            <h2 style="color: black;">Business and custom plans</h2>
                             <br>
                             <br>
-                            <h4>We’re here to help and excited to answer any questions you might have!</h4>
+                            <h4>Customize your plan to fit your personal or business needs</h4>
                         </div>
                     </div>
                 </div>
@@ -57,39 +57,59 @@
 
         <div class="container contact-container">
             <div style="display: flex;">
-                <form class="form contact-form" name="general-contact-form" method="POST" data-netlify="true">
+                <form class="form contact-form" style="width: 100%;" name="custom-plan-contact-form" method="POST"
+                    data-netlify="true">
                     <div id="basic_form_elements"></div>
-                    <p type="Message:"><textarea name="Message"></textarea></p>
+
+                    <div style="display: flex; margin-left: 30px;">
+                        <p type="Number of users:" style="width: 32%; margin-right: 1%;">
+                            <br>
+                            <input name="Users" placeholder="" style="width: 20%; min-width: 120px; margin-left: 10px;">
+                        </p>
+
+                        <p type="Management portal:" style="width: 32%; margin-left: 1%; margin-right: 1%;">
+                            <i class="fa fa-info-circle form-info-icon tooltip">
+                                <span class="tooltiptext">
+                                    Manage the license keys in your organization.
+                                </span>
+                            </i>
+                            <br>
+                            <span style="margin-top: 10px; margin-left: 10px; display: block;">
+                                <input type="radio" name="management-portal" id="yes-management-portal"
+                                    value="yes-management-portal" style="width: auto;">
+                                <label for="yes-management-portal" style="margin-right: 20px;">Yes</label>
+
+                                <input type="radio" name="management-portal" id="no-management-portal"
+                                    value="no-management-portal" style="width: auto;">
+                                <label for="no-management-portal">No</label>
+                            </span>
+                        </p>
+
+                        <p type="Usage type:" style="width: 32%; margin-left: 1%;">
+                            <i class="fa fa-info-circle form-info-icon tooltip">
+                                <span class="tooltiptext">
+                                    Individual usage plans distribute license keys for each user to use without limits.<br>Floating usage allows for a pool of licenses to be shared within your organization.
+                                </span>
+                            </i>
+                            <br>
+                            <span style="margin-top: 10px; margin-left: 10px; display: block;">
+                                <input type="checkbox" name="individual-usage" id="individual-usage" value="Individual"
+                                    style="width: auto;">
+                                <label for="individual-usage" style="margin-right: 20px;"> Individual</label>
+
+                                <input type="checkbox" name="floating-usage" id="floating-usage" value="Floating"
+                                    style="width: auto;">
+                                <label for="floating-usage"> Floating</label>
+                            </span>
+                        </p>
+                    </div>
+
+                    <p type="Comments:"><textarea name="Comments"></textarea></p>
                     <br>
-                    <div style="text-align: right;">
-                        <button class="btn">Send Message</button>
+                    <div style="text-align: center;">
+                        <button class="btn">Submit</button>
                     </div>
                 </form>
-
-                <div class="contact-sidebar">
-                    <h3>How can we help?</h3>
-                    <br><br>
-                    <a href="features.html">
-                        <div class="hover-section">
-                            <p><b>Want to learn more about Aldras?</b></p>
-                            <p>Learn about the features and use cases of Aldras.</p>
-                        </div>
-                    </a>
-                    <br>
-                    <a href="docs.html">
-                        <div class="hover-section">
-                            <p><b>Curious how to accelerate something?</b></p>
-                            <p>Delve into the Aldras guides and docs.</p>
-                        </div>
-                    </a>
-                    <br>
-                    <a href="custom-plans.html">
-                        <div class="hover-section">
-                            <p><b>Looking for business or custom multi-user plans?</b></p>
-                            <p>Contact us to identify the best solution for you.</p>
-                        </div>
-                    </a>
-                </div>
             </div>
         </div>
 

@@ -34,6 +34,7 @@
 .tooltip .tooltiptext {
   visibility: hidden;
   width: max-content;
+  line-height: normal;
   max-width: 30vw;
   background-color: black;
   color: #fff;
@@ -45,6 +46,8 @@
   top: -210%;
   left: 150%;
   padding: 15px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: normal;
 }
 
 /* Add left arrow */
@@ -842,9 +845,12 @@ a:focus,
   outline: none;
 }
 a {
-  color: white;
+  color: black;
 }
 a:hover {
+  color: darkgray;
+}
+.btn:hover{
   color: white;
 }
 a:focus,
@@ -3735,22 +3741,29 @@ input {
   background: none;
   outline: none;
   resize: none;
-  transition: all 0.3s;
   border-radius: 3px;
   border: 1px solid #ddd;
+  transition: border 0.3s;
 }
-input:focus {
-  border: 1px solid #78788c;
+textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+  transition: border 0.3s;
 }
-.form-large-text {
-  overflow: auto;
-  resize: vertical;
+input:focus, textarea:focus {
+  border: 1px solid grey;
 }
+
 form p:before {
   content: attr(type);
-  display: block;
+  /* display: block; */
   margin-top: 28px;
   font-size: 14px;
+  font-weight: 500;
   color: #5a5a5a;
 }
 
@@ -3761,7 +3774,6 @@ form p:before {
 
 .contact-container {
   margin-top: 5em;
-  margin-bottom: 3em;
 }
 
 .contact-form {
@@ -3797,6 +3809,39 @@ form p:before {
 .hover-section p {
   margin: 0;
 }
+
+.form-info-icon {
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+.form-info-icon .tooltiptext {
+  --width-val: 250px;
+  width: var(--width-val);
+  margin-left: calc(-1*var(--width-val)/2);
+  /* top: 200%; */
+  /* left: 50%; */
+  top: auto;
+  position: absolute;
+  z-index: 1;
+  bottom: 200%;
+  left: 50%;
+  text-align: left;
+}
+/* Add bottom arrow */
+.form-info-icon .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  right: auto;
+  margin-top: auto;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
 
 .special-program-card {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
