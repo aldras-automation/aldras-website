@@ -796,7 +796,7 @@ h6 {
   text-transform: normal;
 }
 p {
-  color: #707b8e;
+  color: #5a5a5a;
   font-size: 16px;
   line-height: 30px;
   margin-bottom: 16px;
@@ -3764,7 +3764,6 @@ form p:before {
   margin-top: 28px;
   font-size: 14px;
   font-weight: 500;
-  color: #5a5a5a;
 }
 
 :root {
