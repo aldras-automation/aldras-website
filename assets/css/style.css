@@ -944,10 +944,6 @@ hr {
   z-index: -1;
   opacity: 0.5;
 }
-.section-padding {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
 .separator {
   border-top: 1px solid #f2f2f2;
 }
@@ -5633,9 +5629,22 @@ z .slider-area .hero-cap h2 {
     font-size: 40px;
   }
 }
+
+.no-hover-feature-card {
+  padding-top: 50px !important;
+}
+.no-hover-feature-card:hover {
+  border: 1px solid transparent !important;
+}
+.no-hover-feature-card img {
+  max-width: 60%;
+  padding-bottom: 2em;
+}
+
 .service-area .services-caption {
   background: #fff;
-  padding: 84px 45px 56px;
+  height: 100%;
+  padding: 84px 45px 10px;
   border: 1px solid transparent;
   border-radius: 7px;
   -webkit-transition: 0.5s;
@@ -5645,7 +5654,7 @@ z .slider-area .hero-cap h2 {
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .service-area .services-caption {
-    padding: 84px 25px 56px;
+    padding: 84px 25px 10px;
   }
 }
 .service-area .services-caption .service-icon {
@@ -5686,16 +5695,15 @@ z .slider-area .hero-cap h2 {
 }
 .service-area .services-caption .service-cap h4 a {
   font-size: 24px;
-  font-weight: 700;
   line-height: 1.2;
   margin-bottom: 27px;
   display: inline-block;
 }
 .service-area .services-caption .service-cap h4 a:hover {
-  color: #835ef8;
+  color: var(--purple-color-from-isometric);
 }
 .services-caption:hover {
-  border: 1px solid #b8a2ff;
+  border: 1px solid var(--purple-color-from-isometric);
 }
 .services-caption:hover .service-icon::before {
   right: -32px;
