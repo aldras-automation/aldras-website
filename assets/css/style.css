@@ -68,18 +68,18 @@
   visibility: visible;
 }
 
-.privacy {
+.legal {
   width: 80%;
   margin: auto;
 }
-.privacy h2 {
+.legal h2 {
   padding-top: 16px;
   padding-bottom: 10px;
 }
-.privacy a {
+.legal a {
   text-decoration: underline;
 }
-.privacy > .indent-one {
+.legal > .indent-one {
   padding-left: 30px;
 }
 
@@ -916,12 +916,16 @@ ul {
   list-style: none;
 }
 
-.privacy ul {
-  padding-left: 50px;
+.legal ul {
+  margin-left: 50px;
+  margin-bottom: 16px;
 }
-.privacy li {
+.legal li {
   list-style-position: outside;
   padding-bottom: 8px;
+}
+.legal ol li {
+  padding-left: 8px;
 }
 
 hr {
