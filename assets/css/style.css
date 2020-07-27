@@ -6,9 +6,12 @@
   --header-text-color: #8a0707;
   --main-red-color: #cf1515;
   --red-brighter-color: #ff2525;
-  --red-lighter-color: rgba(255, 37, 37, 0.8);
+  --red-light-color: rgba(255, 37, 37, 0.8);
+  --red-lighter-color: rgba(255, 37, 37, 0.5);
+  --red-lightest-color: rgba(255, 37, 37, 0.2);
   --red-color-from-isometric: #e26161;
   --purple-color-from-isometric: #8c50ff;
+  --purple-light-color-from-isometric: #8d50ff2f;
   --red-background-color: #e4eaf1;
 }
 
@@ -828,7 +831,7 @@ p {
 .cta-bg-1 {
   background-image: url(../img/background-img/bg-img-3.jpg);
 }
-.img {
+img {
   max-width: 100%;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
@@ -3885,7 +3888,7 @@ form p:before {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 30%;
+  width: 25%;
 }
 .special-program-card h5 {
   padding: 1em 2em;
@@ -3940,50 +3943,6 @@ form p:before {
 }
 .contact-section .btn_2:hover {
   background-color: #222;
-}
-.breadcam_bg {
-  background-image: url(../img/banner/bradcam.png);
-}
-.breadcam_bg_1 {
-  background-image: url(../img/banner/bradcam2.png);
-}
-.breadcam_bg_2 {
-  background-image: url(../img/banner/bradcam3.png);
-}
-.bradcam_area {
-  background-size: cover;
-  background-position: center center;
-  padding: 160px 0;
-  background-position: bottom;
-  background-repeat: no-repeat;
-}
-@media (max-width: 767px) {
-  .bradcam_area {
-    padding: 150px 0;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .bradcam_area {
-    padding: 150px 0;
-  }
-}
-.bradcam_area h3 {
-  font-size: 50px;
-  color: #fff;
-  font-weight: 900;
-  margin-bottom: 0;
-  font-family: "Nunito", sans-serif;
-  text-transform: capitalize;
-}
-@media (max-width: 767px) {
-  .bradcam_area h3 {
-    font-size: 30px;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .bradcam_area h3 {
-    font-size: 40px;
-  }
 }
 .popup_box {
   background: #fff;
@@ -5496,6 +5455,9 @@ del {
     right: 0px;
   }
 }
+.row .image-col {
+  padding: 0 70px;
+}
 z .slider-area .hero-cap h2 {
   color: #fff;
   font-size: 50px;
@@ -5594,54 +5556,8 @@ z .slider-area .hero-cap h2 {
     font-size: 13px;
   }
 }
-.best-features-area .features-shpae {
-  position: absolute;
-  left: 30px;
-  top: 100px;
-}
-.best-features-area .features-shpae.features-shpae2 {
-  top: 300px;
-}
-@media (min-width: 1200px) and (max-width: 1500px) {
-  .best-features-area .features-shpae.features-shpae2 {
-    top: 246px !important;
-    transform: translateY(0);
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .best-features-area .features-shpae.features-shpae2 {
-    top: 300px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .best-features-area .features-shpae.features-shpae2 {
-    top: 300px;
-  }
-}
-@media only screen and (min-width: 1200px) and (max-width: 1300px) {
-  .best-features-area .features-shpae {
-    top: 50%;
-    transform: translateY(-50%);
-  }
-}
-.best-features-area .features-shpae img {
-  max-width: 80%;
-}
-@media (min-width: 1200px) and (max-width: 1500px) {
-  .best-features-area .features-shpae img {
-    max-width: 70%;
-  }
-}
-@media only screen and (min-width: 1200px) and (max-width: 1300px) {
-  .best-features-area .features-shpae img {
-    max-width: 50%;
-    top: 50%;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .best-features-area .features-shpae img {
-    display: none !important;
-  }
+.single-features .image {
+  max-width: 25%;
 }
 .section-title h2 {
   font-size: 50px;
@@ -5693,7 +5609,7 @@ z .slider-area .hero-cap h2 {
   position: relative;
 }
 .service-area .services-caption .service-icon::before {
-  background-image: url(../img/shape/dot-bg.png);
+  background-image: url(../img/dot-bg.png);
   content: "";
   width: 80px;
   height: 135px;
@@ -5707,7 +5623,7 @@ z .slider-area .hero-cap h2 {
   transition: 0.5s;
 }
 .service-area .services-caption .service-icon span,
-.service-area .services-caption .service-icon a {
+.service-area .services-caption .service-icon div {
   position: relative;
   color: #fff;
   font-size: 40px;
@@ -5717,14 +5633,14 @@ z .slider-area .hero-cap h2 {
   line-height: 105px;
   border-radius: 50%;
   text-align: center;
-  background: var(--red-brighter-color);
+  background: var(--purple-light-color-from-isometric);
   margin-bottom: 42px;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-.service-area .services-caption .service-cap h4 a {
+.service-area .services-caption .service-cap h4 {
   font-size: 24px;
   line-height: 1.2;
   margin-bottom: 27px;
@@ -5734,23 +5650,14 @@ z .slider-area .hero-cap h2 {
   color: var(--purple-color-from-isometric);
 }
 .services-caption:hover {
-  border: 1px solid var(--purple-color-from-isometric);
+  border: 1px solid var(--main-red-color);
 }
 .services-caption:hover .service-icon::before {
   right: -32px;
 }
 .services-caption:hover .service-icon span,
 .services-caption:hover .service-icon a {
-  background: #ff8282;
-}
-.services-caption.active {
-  border: 1px solid #b8a2ff;
-}
-.services-caption.active .service-icon::before {
-  right: -32px;
-}
-.services-caption.active .service-icon span {
-  background: #835ef8;
+  background: var(--purple-color-from-isometric);
 }
 .applic-apps {
   overflow: hidden;

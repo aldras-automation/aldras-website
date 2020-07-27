@@ -57,28 +57,25 @@
 
         <div class="container contact-container">
             <div style="display: flex;">
-                <form class="form contact-form" style="width: 100%;" name="change-plan-form" method="POST"
-                    data-netlify="true">
+                <form class="form contact-form" id="pythonanywhere-form" style="width: 100%;" name="change-plan-form"
+                    action="http://aldrastest.pythonanywhere.com/" method="POST" data-netlify="true">
                     <div id="basic_form_elements"></div>
 
-                    <p type="License key(s):"><input name="License keys" placeholder="Separate multiple keys with commas"></input></p>
+                    <p type="License key(s):"><input name="License keys"
+                            placeholder="Separate multiple keys with commas"></input></p>
 
-                    <p style="font-weight: 500; margin-bottom: 0; margin-top: 30px; font-size: 14px;">Business Options</p>
+                    <p style="font-weight: 500; margin-bottom: 0; margin-top: 30px; font-size: 14px;">Business Options
+                    </p>
                     <div id="form_plan_option_elements"></div>
-                    
+
                     <p type="Comments:"><textarea name="Comments"></textarea></p>
                     <br>
                     <div style="text-align: center;">
-                        <button class="btn">Submit</button>
+                        <button class="btn" type="submit">Submit</button>
                     </div>
                 </form>
             </div>
         </div>
-
-        
-        <p style="width: 60%; margin: 2em auto; text-align: center;">
-            The Aldras nonprofit program is a provisional program. Admittance is not guaranteed and Aldras reserves the right to revoke enrollment.
-        </p>
 
         <br><br>
 
@@ -88,6 +85,29 @@
     <div id="footer"></div>
 
     <!-- JS here -->
+
+    <!-- Form submission script -->
+    <script>
+        $('#pythonanywhere-form').submit(function (event) {
+            event.preventDefault(); // avoid the html submission of the form
+
+            var form = $(this);
+
+            $.ajax({
+                type: 'POST',
+                url: form.attr('action'),
+                data: form.serialize(), // serializes the form's elements
+                success: function (json) { },
+                complete: function (json) { console.log(json) }
+
+            }).always(function (data) {
+                console.log('Finally', data)
+                // window.location.href = "index.html";
+
+            })
+            return false;
+        });
+    </script>
 
     <!-- All JS Custom Plugins Link Here here -->
     <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
