@@ -15,6 +15,10 @@
   --red-background-color: #e4eaf1;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .feature-header-area {
   margin-top: 130px;
   min-height: 45vh;
