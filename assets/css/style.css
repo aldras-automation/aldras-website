@@ -502,7 +502,16 @@ html {
 }
 
 .step-description {
-  padding-left: 10px;
+  padding-left: 20px;
+}
+
+.step-text {
+  width: 55%;
+  padding-right: 5%;
+}
+
+.step-screenshot {
+  width: 40%;
 }
 
 .has-margins .select {
@@ -845,6 +854,10 @@ img {
   -ms-transition: all 0.3s ease-out 0s;
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
+}
+.screenshot {
+  border: lightgrey 1px solid;
+  border-radius: 2px;
 }
 .f-left {
   float: left;

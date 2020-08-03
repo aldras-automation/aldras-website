@@ -366,7 +366,7 @@ h6 {
 }
 .lead {
   font-size: 1.25rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 .display-1 {
   font-size: 6rem;
@@ -530,8 +530,6 @@ pre code {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
 }
 .no-gutters {
   margin-right: 0;
