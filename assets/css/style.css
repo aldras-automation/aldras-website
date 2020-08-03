@@ -501,6 +501,10 @@ html {
   color: #ffffff;
 }
 
+.step-description {
+  padding-left: 10px;
+}
+
 .has-margins .select {
   display: block;
   padding: 1.7em 0;
