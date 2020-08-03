@@ -37,7 +37,7 @@
   }
   .affix {
     position: fixed;
-    top: 20px;
+    top: 90px;
   }
   .affix-bottom {
     position: absolute;
