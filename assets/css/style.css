@@ -20,9 +20,15 @@ html {
 }
 
 @media (max-width: 768px) {
-.header-logo-container {
-  max-width: 70%;
+  .header-logo-container {
+    max-width: 70%;
+  }
 }
+@media (min-width: 768px) and (max-width: 992px) {
+  .header-logo-container {
+    max-width: 50%;
+    flex: unset;
+  }
 }
 
 .feature-header-area {
@@ -5177,11 +5183,6 @@ del {
 @media (max-width: 767px) {
   .main-header {
     padding: 11px 0;
-  }
-}
-@media only screen and (min-width: 1200px) and (max-width: 1600px) {
-  .main-header .main-menu {
-    margin-right: 30px;
   }
 }
 .main-header .main-menu ul li {
