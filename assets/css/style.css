@@ -19,6 +19,12 @@ html {
   scroll-behavior: smooth;
 }
 
+@media (max-width: 768px) {
+.header-logo-container {
+  max-width: 70%;
+}
+}
+
 .feature-header-area {
   margin-top: 130px;
   min-height: 45vh;
