@@ -31,6 +31,16 @@ html {
   }
 }
 
+
+@media (max-width: 992px) {
+  .main-graphic {
+    max-width: 75%;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+}
+
+
 .feature-header-area {
   margin-top: 130px;
   min-height: 45vh;
@@ -2555,26 +2565,14 @@ hr {
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .section-padding {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+@media (max-width: 991px) {
+  .section-padding {
     padding-top: 40px;
     padding-bottom: 40px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .section-padding {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-}
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-  .section-padding {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-}
-@media (max-width: 767px) {
-  .section-padding {
-    padding-top: 20px;
-    padding-bottom: 20px;
   }
 }
 .testimonial-padding {
@@ -5351,12 +5349,6 @@ del {
   padding-top: 65px;
   padding-bottom: 65px;
 }
-@media (max-width: 767px) {
-  .slider-padding {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-}
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .slider-padding {
     padding-top: 20px;
@@ -5394,29 +5386,23 @@ del {
   margin-bottom: 20px;
 }
 .slider-area .hero__caption h1 {
-  font-size: 32px;
+  font-size: 50px;
   font-weight: 500;
   color: var(--header-text-color);
   /* font-family: "Nunito", sans-serif; */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  line-height: 1.3;
+  line-height: 1.2;
   margin-bottom: 32px;
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (min-width: 768px) and (max-width: 992px) {
   .slider-area .hero__caption h1 {
-    font-size: 55px;
-    line-height: 1.2;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .slider-area .hero__caption h1 {
-    font-size: 50px;
+    font-size: 45px;
     line-height: 1.2;
   }
 }
 @media (max-width: 767px) {
   .slider-area .hero__caption h1 {
-    font-size: 29px;
+    font-size: 35px;
     line-height: 1.4;
   }
 }
@@ -5538,12 +5524,7 @@ z .slider-area .hero-cap h2 {
   display: flex;
   padding: 20px;
   border-radius: 10px;
-  margin-bottom: 30px;
-}
-@media (max-width: 767px) {
-  .best-features-area .single-features {
-    margin-bottom: 30px;
-  }
+  margin-bottom: 0;
 }
 .best-features-area .single-features .features-icon span {
   position: relative;
@@ -5580,8 +5561,12 @@ z .slider-area .hero-cap h2 {
   }
 }
 @media (max-width: 767px) {
+  .best-features-area .single-features {
+    padding: 10px;
+  }
   .best-features-area .single-features .features-caption p {
     font-size: 13px;
+    margin: 0;
   }
 }
 .single-features .image {
@@ -5595,13 +5580,13 @@ z .slider-area .hero-cap h2 {
 }
 @media (max-width: 767px) {
   .section-title h2 {
-    font-size: 30px;
+    font-size: 40px;
     line-height: 1.3;
   }
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (min-width: 767px) and (max-width: 1199px) {
   .section-title h2 {
-    font-size: 40px;
+    font-size: 45px;
   }
 }
 
