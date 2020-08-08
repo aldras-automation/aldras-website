@@ -5356,19 +5356,7 @@ del {
   padding-top: 65px;
   padding-bottom: 65px;
 }
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-  .slider-padding {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .slider-padding {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+@media (max-width: 767px) {
   .slider-padding {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -5466,6 +5454,13 @@ del {
 .slider-area .hero__img img {
   position: relative;
 }
+@media only screen and (min-width: 575px) and (max-width: 991px) {
+  .slider-area .hero__img img {
+    width: 65%;
+    margin: auto;
+    display: block;
+  }
+}
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .slider-area .hero__img img {
     right: 0px;
@@ -5478,6 +5473,7 @@ del {
 }
 .row .image-col {
   padding: 0 70px;
+  margin: auto;
 }
 z .slider-area .hero-cap h2 {
   color: #fff;
