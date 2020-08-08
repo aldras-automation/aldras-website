@@ -3899,14 +3899,15 @@ form p:before {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
   border-radius: 0.5em;
   padding: 1.5em;
-  max-width: 48.5%;
+  margin-top: 20px;
+  /* max-width: 48.5%; */
 }
-.special-program-card.left {
+/* .special-program-card.left {
   margin-right: 1.5%;
 }
 .special-program-card.right {
   margin-left: 1.5%;
-}
+} */
 .special-program-card img {
   display: block;
   margin-left: auto;
@@ -4423,7 +4424,7 @@ del {
 }
 .progress-table {
   padding-top: 1em;
-  min-width: 800px;
+  min-width: 1100px;
 }
 .progress-table .feature-col {
   width: 24%;
