@@ -50,7 +50,14 @@ html {
   background-image: url(../img/header_bg.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center top;
 }
+@media (max-width: 760px) {
+  .feature-header-area {
+    background-size: contain;
+  }
+}
+
 
 /* Tooltip container */
 .tooltip {
@@ -6439,6 +6446,21 @@ z .slider-area .hero-cap h2 {
 .testimonial-area .slick-initialized .slick-slide {
   outline: 0;
 }
+
+@media (max-width: 767px) {
+  .single-footer-caption {
+    text-align: center;
+  }
+  .single-footer-caption li {
+    list-style: none;
+  }
+}
+
+.footer-mobile-group {
+  /* margin: auto; */
+  display: flex;
+}
+
 .footer-area .footer-logo {
   margin-bottom: 30px;
 }
@@ -6462,6 +6484,7 @@ z .slider-area .hero-cap h2 {
 .footer-area .footer-title ul li {
   color: #012f5f;
   margin-bottom: 5px;
+  list-style-position: inside;
 }
 .footer-area .footer-title ul li a {
   color: #868c98;
