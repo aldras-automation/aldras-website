@@ -3830,16 +3830,16 @@ form p:before {
 }
 
 .contact-form {
-  width: var(--contact-form-width);
-  margin-right: calc(var(--contact-padding) / 2);
+  /* width: var(--contact-form-width); */
+  /* margin-right: calc(var(--contact-padding) / 2); */
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
   border: 1px solid gainsboro;
   border-radius: 0.5em;
 }
 
 .contact-sidebar {
-  width: calc(100% - var(--contact-form-width) - var(--contact-padding));
-  margin-left: calc(var(--contact-padding) / 2);
+  /* width: calc(100% - var(--contact-form-width) - var(--contact-padding)); */
+  /* margin-left: calc(var(--contact-padding) / 2); */
 }
 .contact-sidebar h3 {
   padding-left: 10px;
