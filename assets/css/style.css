@@ -6430,15 +6430,6 @@ z .slider-area .hero-cap h2 {
   outline: 0;
 }
 
-@media (max-width: 767px) {
-  .single-footer-caption {
-    text-align: center;
-  }
-  .single-footer-caption li {
-    list-style: none;
-  }
-}
-
 .footer-mobile-group {
   /* margin: auto; */
   display: flex;
@@ -6501,6 +6492,20 @@ z .slider-area .hero-cap h2 {
   background: var(--main-red-color);
   line-height: 1;
 }
+
+@media (max-width: 767px) {
+  .single-footer-caption {
+    text-align: center;
+  }
+  .single-footer-caption li {
+    list-style: none;
+  }
+  .footer-area .footer-title h4 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+}
+
 .footer-area .info.error {
   color: var(--main-red-color);
 }
