@@ -15,6 +15,8 @@
         $(function () {
             $("#header").load("assets/html/header.html");
             $("#footer").load("assets/html/footer.html");
+            $("#docs-nav-desktop").load("assets/html/docs_nav.html");
+            $("#docs-nav-mobile").load("assets/html/docs_nav.html");
             $("#trial_banner").load("assets/html/trial_banner.html");
         });
     </script>
@@ -62,36 +64,22 @@
 
             <div class="row">
 
-                <div class="col-md-3">
-                    <nav class="docs-sidebar" data-spy="affix" data-offset-top="300" data-offset-bottom="500"
-                        role="navigation">
-                        <ul class="nav">
-                            <li><a href="#introduction">Introduction</a></li>
-                            <li><a href="#installation">Installation</a></li>
-                            <li><a href="#quickstart">Getting Started</a></li>
-                            <li><a href="#commands">Commands</a>
-                                <ul class="nav">
-                                    <li><a href="#mouse-click">Mouse-click</a></li>
-                                    <li><a href="#mouse-move">Mouse-move</a></li>
-                                    <li><a href="#double-click">Double-click</a></li>
-                                    <li><a href="#triple-click">Triple-click</a></li>
-                                    <li><a href="#type">Type</a></li>
-                                    <li><a href="#special-key">Special key</a></li>
-                                    <li><a href="#function-key">Function key</a></li>
-                                    <li><a href="#media-key">Media key</a></li>
-                                    <li><a href="#hotkey">Hotkey</a></li>
-                                    <li><a href="#wait">Wait</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#recording">Recording</a></li>
-                            <li><a href="#executing">Executing</a></li>
-                            <li><a href="#adv-commands">Advanced Commands</a></li>
-                            <li><a href="#adv-editing">Advanced Editing</a></li>
-                            <li><a href="#support">Support</a></li>
-                        </ul>
+                <div class="col-lg-3">
+                    <nav class="docs-sidebar d-none d-lg-block" data-spy="affix" data-offset-top="300"
+                        data-offset-bottom="500" role="navigation">
+                        <div id="docs-nav-desktop"></div>
+                    </nav>
+
+                    <nav class="docs-sidebar d-block d-lg-none" role="navigation">
+                        <div id="docs-nav-mobile" style="width: fit-content; margin: auto; margin-bottom: 60px;"></div>
                     </nav>
                 </div>
-                <div class="col-md-9">
+
+
+
+
+
+                <div class="col-lg-9">
                     <section id="introduction" class="welcome">
 
                         <div class="row">
