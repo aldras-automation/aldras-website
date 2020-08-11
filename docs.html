@@ -37,6 +37,15 @@
 
 </head>
 
+<style>
+    html,
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: inherit;
+        line-height: 1.5;
+    }
+</style>
+
 <body>
 
     <div id="header"></div>
@@ -292,7 +301,296 @@
                     </section>
                     <!-- end section -->
 
-                    <section id="commands" class="section">
+                    <section id="commands" class="section" style="padding-bottom: 0;">
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Commands
+                                    <hr>
+                                </h2>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- end section -->
+
+                    <section id="mouse-button">
+                        <div class="row parameters">
+                            <div class="col-md-12 full">
+                                <h3>Mouse-button</h3>
+                                <div>
+                                    <table class="docs-indented">
+                                        <tr>
+                                            <td>Button</td>
+                                            <td><button>Left</button><button>Right</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Action</td>
+                                            <td><button>Click</button><button>Press</button><button>Release</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>x-coordinate</td>
+                                            <td><button>Any integer</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>y-coordinate</td>
+                                            <td><button>Any integer</button></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <h4>Example</h4>
+                                <div class="command-example">
+                                    <p>Tap the left mouse-button (left-click) at the point (10,10)</p>
+                                    <img src="assets/img/docs/commands/mouse-button.PNG">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="mouse-move">
+                        <div class="row parameters">
+                            <div class="col-md-12 full">
+                                <h3>Mouse-move</h3>
+                                <div>
+                                    <table class="docs-indented">
+                                        <tr>
+                                            <td>x-coordinate</td>
+                                            <td><button>Any integer</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>y-coordinate</td>
+                                            <td><button>Any integer</button></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <h4>Example</h4>
+                                <div class="command-example">
+                                    <p>Move the mouse cursor to the point (10,10)</p>
+                                    <img src="assets/img/docs/commands/mouse-move.PNG">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="double-click">
+                        <div class="row parameters">
+                            <div class="col-md-12 full">
+                                <h3>Double-click</h3>
+                                <div>
+                                    <table class="docs-indented">
+                                        <tr>
+                                            <td>x-coordinate</td>
+                                            <td><button>Any integer</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>y-coordinate</td>
+                                            <td><button>Any integer</button></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <h4>Example</h4>
+                                <div class="command-example">
+                                    <p>Double-click at the point (10,10)</p>
+                                    <img src="assets/img/docs/commands/double-click.PNG">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="triple-click">
+                        <div class="row parameters">
+                            <div class="col-md-12 full">
+                                <h3>Triple-click</h3>
+                                <div>
+                                    <table class="docs-indented">
+                                        <tr>
+                                            <td>x-coordinate</td>
+                                            <td><button>Any integer</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>y-coordinate</td>
+                                            <td><button>Any integer</button></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <h4>Example</h4>
+                                <div class="command-example">
+                                    <p>Triple-click at the point (10,10)</p>
+                                    <img src="assets/img/docs/commands/triple-click.PNG">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="type">
+                        <div class="row parameters">
+                            <div class="col-md-12 full">
+                                <h3>Type</h3>
+                                <div>
+                                    <table class="docs-indented">
+                                        <tr>
+                                            <td>Text to type</td>
+                                            <td><button>Text</button></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <h4>Example</h4>
+                                <div class="command-example">
+                                    <p>Type "Hello, this is some text with 44 characters!"</p>
+                                    <img src="assets/img/docs/commands/type.PNG">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="special-key">
+                        <div class="row parameters">
+                            <div class="col-md-12 full">
+                                <h3>Special key</h3>
+                                <div>
+                                    <table class="docs-indented">
+                                        <tr>
+                                            <td>Special key</td>
+                                            <td>
+                                                <button>Backspace</button><button>Del</button><button>Enter</button><button>Tab</button><button>Left</button><button>Right</button><button>Up</button><button>Down</button><button>Home</button><button>End</button><button>PageUp</button><button>PageDown</button><button>Space</button><button>Shift</button><button>Esc</button><button>Ctrl</button><button>Alt</button><button>Win</button><button>Command</button><button>Option</button><button>BrowserBack</button><button>BrowserForward</button><button>Insert</button><button>NumLock</button><button>PrntScrn</button><button>ScrollLock</button><button>Pause</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="parameter-separator-cell"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Action</td>
+                                            <td><button>Tap</button><button>Press</button><button>Release</button>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <h4>Example</h4>
+                                <div class="command-example">
+                                    <p>Tap the Tab key</p>
+                                    <img src="assets/img/docs/commands/special-key.PNG">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="function-key">
+                        <div class="row parameters">
+                            <div class="col-md-12 full">
+                                <h3>Function key</h3>
+                                <div>
+                                    <table class="docs-indented">
+                                        <tr>
+                                            <td>Function key</td>
+                                            <td>
+                                                <button>F1-F12</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Action</td>
+                                            <td><button>Tap</button><button>Press</button><button>Release</button>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <h4>Example</h4>
+                                <div class="command-example">
+                                    <p>Tap the F5 key</p>
+                                    <img src="assets/img/docs/commands/function-key.PNG">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="media-key">
+                        <div class="row parameters">
+                            <div class="col-md-12 full">
+                                <h3>Media key</h3>
+                                <div>
+                                    <table class="docs-indented">
+                                        <tr>
+                                            <td>Media key</td>
+                                            <td>
+                                                <button>PlayPause</button><button>NextTrack</button><button>PrevTrack</button><button>VolumeMute</button><button>VolumeUp</button><button>VolumeDown</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="parameter-separator-cell"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Action</td>
+                                            <td><button>Tap</button><button>Press</button><button>Release</button>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <h4>Example</h4>
+                                <div class="command-example">
+                                    <p>Tap the VolumeMute key</p>
+                                    <img src="assets/img/docs/commands/media-key.PNG">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="hotkey">
+                        <div class="row parameters">
+                            <div class="col-md-12 full">
+                                <h3>Hotkey</h3>
+                                <div>
+                                    <table class="docs-indented">
+                                        <tr>
+                                            <td>Hotkey 1</td>
+                                            <td>
+                                                <button>Any Key</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Hotkey 2</td>
+                                            <td>
+                                                <button>Any Key</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>...</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <h4>Example</h4>
+                                <div class="command-example">
+                                    <p>Execute the Ctrl + Alt + Del hotkey</p>
+                                    <img src="assets/img/docs/commands/hotkey.PNG">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="wait">
+                        <div class="row parameters">
+                            <div class="col-md-12 full">
+                                <h3>Wait</h3>
+                                <div>
+                                    <table class="docs-indented">
+                                        <tr>
+                                            <td>Wait time</td>
+                                            <td>
+                                                <button>0 - 604800 seconds</button>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <h4>Example</h4>
+                                <div class="command-example">
+                                    <p>
+                                        Wait for 30 seconds for page to load or other process to complete before
+                                        proceeding
+                                    </p>
+                                    <img src="assets/img/docs/commands/wait.PNG">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="recording" class="section">
                         <div class="row">
                             <div class="col-md-12 left-align">
                                 <h2 class="dark-text">More to come!
@@ -324,15 +622,8 @@
                     </section>
                     <!-- end section -->
 
-                    <!-- <section id="mouse-click" class="section"></section>
-                    <section id="mouse-move" class="section"></section>
-                    <section id="double-click" class="section"></section>
-                    <section id="triple-click" class="section"></section>
-                    <section id="type" class="section"></section>
-                    <section id="special-key" class="section"></section>
-                    <section id="function-key" class="section"></section>
-                    <section id="media-key" class="section"></section>
-                    <section id="hotkey" class="section"></section>
+
+                    <!-- <section id="hotkey" class="section"></section>
                     <section id="wait" class="section"></section>
                     <section id="recording" class="section"></section>
                     <section id="executing" class="section"></section>
