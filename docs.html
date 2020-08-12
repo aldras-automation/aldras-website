@@ -84,10 +84,6 @@
                     </nav>
                 </div>
 
-
-
-
-
                 <div class="col-lg-9">
                     <section id="introduction" class="welcome">
 
@@ -385,81 +381,6 @@
                         </div>
                     </section>
 
-                    <section id="mouse-move">
-                        <div class="row parameters">
-                            <div class="col-md-12 full">
-                                <h3>Mouse-move</h3>
-                                <div>
-                                    <table class="docs-indented">
-                                        <tr>
-                                            <td>x-coordinate</td>
-                                            <td><button>Any integer</button></td>
-                                        </tr>
-                                        <tr>
-                                            <td>y-coordinate</td>
-                                            <td><button>Any integer</button></td>
-                                        </tr>
-                                    </table>
-                                </div>
-                                <h4>Example</h4>
-                                <div class="command-example">
-                                    <p>Move the mouse cursor to the point (10,10)</p>
-                                    <img src="assets/img/docs/commands/mouse-move.PNG">
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section id="double-click">
-                        <div class="row parameters">
-                            <div class="col-md-12 full">
-                                <h3>Double-click</h3>
-                                <div>
-                                    <table class="docs-indented">
-                                        <tr>
-                                            <td>x-coordinate</td>
-                                            <td><button>Any integer</button></td>
-                                        </tr>
-                                        <tr>
-                                            <td>y-coordinate</td>
-                                            <td><button>Any integer</button></td>
-                                        </tr>
-                                    </table>
-                                </div>
-                                <h4>Example</h4>
-                                <div class="command-example">
-                                    <p>Double-click at the point (10,10)</p>
-                                    <img src="assets/img/docs/commands/double-click.PNG">
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section id="triple-click">
-                        <div class="row parameters">
-                            <div class="col-md-12 full">
-                                <h3>Triple-click</h3>
-                                <div>
-                                    <table class="docs-indented">
-                                        <tr>
-                                            <td>x-coordinate</td>
-                                            <td><button>Any integer</button></td>
-                                        </tr>
-                                        <tr>
-                                            <td>y-coordinate</td>
-                                            <td><button>Any integer</button></td>
-                                        </tr>
-                                    </table>
-                                </div>
-                                <h4>Example</h4>
-                                <div class="command-example">
-                                    <p>Triple-click at the point (10,10)</p>
-                                    <img src="assets/img/docs/commands/triple-click.PNG">
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
                     <section id="type">
                         <div class="row parameters">
                             <div class="col-md-12 full">
@@ -476,6 +397,32 @@
                                 <div class="command-example">
                                     <p>Type "Hello, this is some text with 44 characters!"</p>
                                     <img src="assets/img/docs/commands/type.PNG">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="wait">
+                        <div class="row parameters">
+                            <div class="col-md-12 full">
+                                <h3>Wait</h3>
+                                <div>
+                                    <table class="docs-indented">
+                                        <tr>
+                                            <td>Wait time</td>
+                                            <td>
+                                                <button>0 - 604800 seconds</button>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <h4>Example</h4>
+                                <div class="command-example">
+                                    <p>
+                                        Wait for 30 seconds for page to load or other process to complete before
+                                        proceeding
+                                    </p>
+                                    <img src="assets/img/docs/commands/wait.PNG">
                                 </div>
                             </div>
                         </div>
@@ -589,7 +536,8 @@
                                                 <button>Any Key</button>
                                             </td>
                                         </tr>
-                                        <tr>
+                                        <tr style="text-align: center;">
+                                            <td>...</td>
                                             <td>...</td>
                                         </tr>
                                     </table>
@@ -603,27 +551,195 @@
                         </div>
                     </section>
 
-                    <section id="wait">
+                    <section id="mouse-move">
                         <div class="row parameters">
                             <div class="col-md-12 full">
-                                <h3>Wait</h3>
+                                <h3>Mouse-move</h3>
                                 <div>
                                     <table class="docs-indented">
                                         <tr>
-                                            <td>Wait time</td>
+                                            <td>x-coordinate</td>
+                                            <td><button>Any integer</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>y-coordinate</td>
+                                            <td><button>Any integer</button></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <h4>Example</h4>
+                                <div class="command-example">
+                                    <p>Move the mouse cursor to the point (10,10)</p>
+                                    <img src="assets/img/docs/commands/mouse-move.PNG">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="double-click">
+                        <div class="row parameters">
+                            <div class="col-md-12 full">
+                                <h3>Double-click</h3>
+                                <div>
+                                    <table class="docs-indented">
+                                        <tr>
+                                            <td>x-coordinate</td>
+                                            <td><button>Any integer</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>y-coordinate</td>
+                                            <td><button>Any integer</button></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <h4>Example</h4>
+                                <div class="command-example">
+                                    <p>Double-click at the point (10,10)</p>
+                                    <img src="assets/img/docs/commands/double-click.PNG">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="triple-click">
+                        <div class="row parameters">
+                            <div class="col-md-12 full">
+                                <h3>Triple-click</h3>
+                                <div>
+                                    <table class="docs-indented">
+                                        <tr>
+                                            <td>x-coordinate</td>
+                                            <td><button>Any integer</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>y-coordinate</td>
+                                            <td><button>Any integer</button></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <h4>Example</h4>
+                                <div class="command-example">
+                                    <p>Triple-click at the point (10,10)</p>
+                                    <img src="assets/img/docs/commands/triple-click.PNG">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="comment">
+                        <div class="row parameters">
+                            <div class="col-md-12 full">
+                                <h3>Comment</h3>
+                                <div>
+                                    <table class="docs-indented">
+                                        <tr>
+                                            <td>Comment value</td>
+                                            <td><button>Text</button></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <p>
+                                    Comments are descriptive and are not executed.
+                                </p>
+                                <h4>Example</h4>
+                                <div class="command-example">
+                                    <p>Comment "Fill out customer details"</p>
+                                    <img src="assets/img/docs/commands/comment.PNG">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="assign">
+                        <div class="row parameters">
+                            <div class="col-md-12 full">
+                                <h3>Assign</h3>
+                                <div>
+                                    <table class="docs-indented">
+                                        <tr>
+                                            <td>Variable name</td>
+                                            <td><button>Text</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Variable value</td>
+                                            <td><button>Text</button></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <h4>Example</h4>
+                                <div class="command-example">
+                                    <p>Assign the variable "Name" the value "John Smith"</p>
+                                    <img src="assets/img/docs/commands/assign.PNG">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="conditional">
+                        <div class="row parameters">
+                            <div class="col-md-12 full">
+                                <h3>Conditional</h3>
+                                <div>
+                                    <table class="docs-indented">
+                                        <tr>
+                                            <td>Variable name</td>
+                                            <td><button>Text</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Comparator</td>
                                             <td>
-                                                <button>0 - 604800 seconds</button>
+                                                <button>Equals</button><button>Not equal
+                                                    to</button><button>Contains</button><button>Is
+                                                    in</button><button>></button><button>
+                                                    < </button><button>>=</button><button>
+                                                            <= </button>
                                             </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Comparison value</td>
+                                            <td><button>Text</button></td>
                                         </tr>
                                     </table>
                                 </div>
                                 <h4>Example</h4>
                                 <div class="command-example">
                                     <p>
-                                        Wait for 30 seconds for page to load or other process to complete before
-                                        proceeding
+                                        Type "This a engineering issue" if the <b>Subject</b> variable contains
+                                        'engineering'
                                     </p>
-                                    <img src="assets/img/docs/commands/wait.PNG">
+                                    <img src="assets/img/docs/commands/conditional.PNG">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="loop">
+                        <div class="row parameters">
+                            <div class="col-md-12 full">
+                                <h3>Loop</h3>
+                                <div>
+                                    <table class="docs-indented">
+                                        <tr>
+                                            <td>Loop type</td>
+                                            <td><button>Forever</button><button>Multiple times</button><button>For each
+                                                    element in list</button></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <h4>Examples</h4>
+                                <div class="command-example">
+                                    <p>
+                                        Tap the Tab key 4 times
+                                    </p>
+                                    <img src="assets/img/docs/commands/loop_multiple.PNG">
+                                </div>
+                                <br>
+                                <div class="command-example">
+                                    <p>
+                                        For each of 5 links in the list, click on the address bar at (345,50), then type
+                                        the link from the list.
+                                    </p>
+                                    <img src="assets/img/docs/commands/loop_list.PNG">
                                 </div>
                             </div>
                         </div>
