@@ -8,6 +8,29 @@
   margin-left: 20px;
 }
 
+.screenshot {
+  border: lightgrey 1px solid;
+  border-radius: 2px;
+  display: block;
+  margin: 10px auto;
+}
+
+
+.step-description {
+  padding-left: 20px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.step-text {
+  width: 55%;
+  padding-right: 5%;
+}
+
+.step-screenshot {
+  width: 40%;
+}
+
 .parameters {
   margin-bottom: 80px;
 }

@@ -141,13 +141,21 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <h3>Step 1</h3>
-                                <p class="step-description">
-                                    Download the Windows installer <a href="download.html">here</a>.
-                                </p>
-
+                                <div class="row align-items-center">
+                                    <div class="col-md-6">
+                                        <p class="step-description" style="padding-bottom: 0;">
+                                            Download the Windows installer.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6" style="text-align: center;">
+                                        <a href="download.html" class="btn radius-btn"
+                                            style="padding: 20px 25px;">Download</a>
+                                    </div>
+                                </div>
+                                <br>
+                                <h3>Step 2</h3>
                                 <div class="row d-flex align-items-center">
                                     <div class="step-text">
-                                        <h3>Step 2</h3>
                                         <p class="step-description">
                                             Run the installer. You may see some warnings during the beta testing pilot
                                             program. Click for more info, then continue and complete the installation
@@ -155,23 +163,22 @@
                                         </p>
                                     </div>
                                     <div class="step-screenshot">
-                                        <img src="assets/img/docs/installation.PNG" width: 100%;" class="screenshot">
+                                        <img src="assets/img/docs/installation.PNG" class="screenshot">
                                     </div>
                                 </div>
+                                <h3>Step 3</h3>
                                 <div class="row d-flex align-items-center">
                                     <div class="step-text">
-                                        <h3>Step 3</h3>
                                         <p class="step-description">
                                             Launch Aldras for the first time. You will be prompted to select a default
                                             folder where you would like to save your workflow automation files.
                                         </p>
                                     </div>
                                     <div class="step-screenshot">
-                                        <img src="assets/img/docs/default_save_folder_prompt.PNG" width: 100%;"
-                                            class="screenshot">
+                                        <img src="assets/img/docs/default_save_folder_prompt.PNG" class="screenshot">
                                     </div>
                                 </div>
-
+                                <br><br>
                                 <p>
                                     That's it! You're all set to start automating your workflows! See the <a
                                         href="#quickstart">Getting Started </a> section for more.
@@ -198,35 +205,55 @@
 
                         <h4>Your First Automation: Hello World</h4>
 
+                        <h3>Step 1 - Create workflow</h3>
                         <div class="row d-flex align-items-center">
                             <div class="step-text">
-                                <h3>Step 1</h3>
                                 <p class="step-description">
                                     Enter a name for your workflow and click 'OK'.
                                 </p>
                             </div>
                             <div class="step-screenshot">
-                                <img src="assets/img/docs/first_selection.PNG" width: 100%;" class="screenshot">
+                                <img src="assets/img/docs/first_selection.PNG" class="screenshot">
                             </div>
                         </div>
                         <br>
+
+                        <h3>Step 2 - Prime recording</h3>
                         <div class="row d-flex align-items-center">
                             <div class="step-text">
-                                <h3>Step 2</h3>
                                 <p class="step-description">
-                                    This will open the Edit window. Click 'Record' and configure your options to prime a
-                                    recording session. Press the right CTRL key three times to start recording your
-                                    actions.
+                                    This will open the Edit window where all your commands will go. Click 'Record'.
                                 </p>
                             </div>
                             <div class="step-screenshot">
-                                <img src="assets/img/docs/first_record.PNG" width: 100%;" class="screenshot">
+                                <img src="assets/img/docs/edit_frame_record.PNG" class="screenshot">
+                            </div>
+                        </div>
+                        <div class="row d-flex align-items-center">
+                            <div class="step-text">
+                                <p class="step-description">
+                                    Configure your options and click 'OK' to prime a recording session.
+                                </p>
+                            </div>
+                            <div class="step-screenshot">
+                                <img src="assets/img/docs/record_options.PNG" style="width: 80%;" class="screenshot">
+                            </div>
+                        </div>
+                        <div class="row d-flex align-items-center">
+                            <div class="step-text">
+                                <p class="step-description">
+                                    Press the right CTRL key three times to start recording your actions.
+                                </p>
+                            </div>
+                            <div class="step-screenshot">
+                                <img src="assets/img/docs/first_record.PNG" class="screenshot">
                             </div>
                         </div>
                         <br>
+
+                        <h3>Step 3 - Record</h3>
                         <div class="row d-flex align-items-center">
                             <div class="step-text">
-                                <h3>Step 3</h3>
                                 <p class="step-description">
                                     Press the left CTRL key once to record the position of your cursor without a click.
                                     Then move your mouse to a different position and press the left CTRL key again.
@@ -234,70 +261,82 @@
                                 </p>
                             </div>
                             <div class="step-screenshot">
-                                <img src="assets/img/docs/first_recording.PNG" width: 100%;" class="screenshot">
+                                <img src="assets/img/docs/first_recording.PNG" class="screenshot">
                             </div>
                         </div>
-                        <br>
+
                         <div class="row d-flex align-items-center">
                             <div class="step-text">
-                                <h3>Step 4</h3>
                                 <p class="step-description">
                                     Press right CTRL key three times again to stop recording and click 'Finish'.
                                 </p>
                             </div>
                             <div class="step-screenshot">
-                                <img src="assets/img/docs/first_recording_complete.PNG" width: 100%;"
-                                    class="screenshot">
+                                <img src="assets/img/docs/first_recording_complete.PNG" class="screenshot">
                             </div>
                         </div>
                         <br>
+
+                        <h3>Step 4 - Execute</h3>
                         <div class="row d-flex align-items-center">
                             <div class="step-text">
-                                <h3>Step 5</h3>
                                 <p class="step-description">
                                     This will return you to the Edit window where you can see the actions you just
-                                    recorded. Click 'Execute' and configure your options to prime the workflow for
-                                    execution. Press the right CTRL key three times to start executing your commands.
+                                    recorded. Click 'Execute'.
                                 </p>
                             </div>
                             <div class="step-screenshot">
-                                <img src="assets/img/docs/first_execution.PNG" width: 100%;" class="screenshot">
+                                <img src="assets/img/docs/edit_frame_execute.PNG" class="screenshot">
+                            </div>
+                        </div>
+                        <div class="row d-flex align-items-center">
+                            <div class="step-text">
+                                <p class="step-description">
+                                    Configure your options and click 'OK' to prime the workflow for execution.
+                                </p>
+                            </div>
+                            <div class="step-screenshot">
+                                <img src="assets/img/docs/execute_options.PNG" style="width: 80%;" class="screenshot">
+                            </div>
+                        </div>
+                        <div class="row d-flex align-items-center">
+                            <div class="step-text">
+                                <p class="step-description">
+                                    Press the right CTRL key three times to start executing your commands.
+                                </p>
+                            </div>
+                            <div class="step-screenshot">
+                                <img src="assets/img/docs/first_execution.PNG" class="screenshot">
                             </div>
                         </div>
                         <br>
+
+                        <h3>Step 5 - Fine tune</h3>
                         <div class="row d-flex align-items-center">
                             <div class="step-text">
-                                <h3>Step 6</h3>
                                 <p class="step-description">
                                     Adapt and change as you desire! All the actions you recorded are editable and you
                                     can add new commands with the '+' button.
                                 </p>
                             </div>
                             <div class="step-screenshot">
-                                <img src="assets/img/docs/first_edit_frame.PNG" width: 100%;" class="screenshot">
+                                <img src="assets/img/docs/first_edit_frame.PNG" class="screenshot">
                             </div>
                         </div>
                         <br>
+
+                        <h3>Bonus Tip</h3>
                         <div class="row d-flex align-items-center">
                             <div class="step-text">
-                                <h3>Bonus Tip</h3>
                                 <p class="step-description">
                                     The mouse monitor tool is located under Tools > Mouse Monitor in the menu bar and
                                     can help you identify mouse coordinates without recording.
                                 </p>
                             </div>
                             <div class="step-screenshot">
-                                <img src="assets/img/docs/mouse_monitor.PNG" width: 100%;" class="screenshot">
+                                <img src="assets/img/docs/mouse_monitor.PNG" class="screenshot">
                             </div>
                         </div>
-
-
-
-                        <!-- <p class="step-description">
-                            Click the '+' button to add a command. The default command is a Left mouse click at the
-                            coordinates of (10, 10). Learn more about the coordinates here.
-                        </p> -->
-
                     </section>
                     <!-- end section -->
 

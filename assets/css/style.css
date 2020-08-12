@@ -522,19 +522,6 @@ html {
   color: #ffffff;
 }
 
-.step-description {
-  padding-left: 20px;
-}
-
-.step-text {
-  width: 55%;
-  padding-right: 5%;
-}
-
-.step-screenshot {
-  width: 40%;
-}
-
 @-webkit-keyframes rotate {
   0% {
     -webkit-transform: perspective(2000px) rotateY(0);
@@ -869,10 +856,6 @@ img {
   -ms-transition: all 0.3s ease-out 0s;
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
-}
-.screenshot {
-  border: lightgrey 1px solid;
-  border-radius: 2px;
 }
 .f-left {
   float: left;
