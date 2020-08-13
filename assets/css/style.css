@@ -58,6 +58,10 @@ html {
   }
 }
 
+.enlargeable:hover {
+  opacity: 70%;
+  cursor: pointer;
+}
 
 /* Tooltip container */
 .tooltip {
