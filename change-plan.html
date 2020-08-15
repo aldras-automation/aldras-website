@@ -10,8 +10,6 @@
         $(function () {
             $("#header").load("assets/html/header.html");
             $("#footer").load("assets/html/footer.html");
-            $("#basic_form_elements").load("assets/html/basic_form_elements.html");
-            $("#form_plan_option_elements").load("assets/html/form_plan_option_elements.html");
             $("#trial_banner").load("assets/html/trial_banner.html");
         });
     </script>
@@ -59,7 +57,16 @@
             <div style="display: flex;">
                 <form class="form contact-form" id="pythonanywhere-form" style="width: 100%;" name="change-plan-form"
                     action="http://aldrastest.pythonanywhere.com/" method="POST" data-netlify="true">
-                    <div id="basic_form_elements"></div>
+                    <div style="display: flex;">
+                        <p type="First Name:" style="width: 49%; margin-right: 1%; margin-bottom: 0;">
+                            <input name="First name" placeholder=""></input>
+                        </p>
+                        <p type="Last Name:" style="width: 49%; margin-left: 1%; margin-bottom: 0;">
+                            <input name="Last name" placeholder=""></input>
+                        </p>
+                    </div>
+
+                    <p type="Email:"><input type="email" name="Email" placeholder="" required></input></p>
 
                     <p type="License key(s):"><input name="License keys"
                             placeholder="Separate multiple keys with commas" required></input></p>
