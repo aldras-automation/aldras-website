@@ -8,6 +8,17 @@
   margin-left: 20px;
 }
 
+table.docs-indented {
+  border-collapse:separate; 
+  border-spacing: 0 1em;
+}
+
+@media (max-width: 576px) {
+  table.docs-indented {
+    border-spacing: 0 1.5em;
+  }
+}
+
 .screenshot {
   border: lightgrey 1px solid;
   border-radius: 2px;
