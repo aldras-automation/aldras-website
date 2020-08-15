@@ -10,7 +10,6 @@
         $(function () {
             $("#header").load("assets/html/header.html");
             $("#footer").load("assets/html/footer.html");
-            $("#form_plan_option_elements").load("assets/html/form_plan_option_elements.html");
             $("#trial_banner").load("assets/html/trial_banner.html");
         });
     </script>
@@ -102,7 +101,54 @@
                     <p type="Address:"><input name="Address" placeholder="" required></input></p>
 
                     <br>
-                    <div id="form_plan_option_elements"></div>
+
+                    <hr style="margin-bottom: 15px; margin-top: 0;">
+                    <div class="row" style="margin-left: 30px;">
+                        <p type="Number of users:" class="col-lg-4 col-md-6">
+                            <br>
+                            <input name="Number of users" placeholder=""
+                                style="width: 20%; min-width: 120px; margin-left: 10px;">
+                        </p>
+
+                        <p type="Management portal:" class="col-lg-4 col-md-6">
+                            <i class="fa fa-info-circle form-info-icon tooltip">
+                                <span class="tooltiptext">
+                                    Manage the license keys in your organization.
+                                </span>
+                            </i>
+                            <br>
+                            <span style="margin-top: 10px; margin-left: 10px; display: block;">
+                                <input type="radio" name="management-portal" id="yes-management-portal" value="yes"
+                                    style="width: auto;">
+                                <label for="yes-management-portal" style="margin-right: 20px;">Yes</label>
+
+                                <input type="radio" name="management-portal" id="no-management-portal" value="no"
+                                    style="width: auto;">
+                                <label for="no-management-portal">No</label>
+                            </span>
+                        </p>
+
+                        <p type="Usage type:" class="col-lg-4 col-md-6">
+                            <i class="fa fa-info-circle form-info-icon tooltip">
+                                <span class="tooltiptext">
+                                    Individual usage plans distribute license keys for each user to use without
+                                    limits.<br>Floating usage allows for a pool of licenses to be shared within your
+                                    organization.
+                                </span>
+                            </i>
+                            <br>
+                            <span style="margin-top: 10px; margin-left: 10px; display: block;">
+                                <input type="checkbox" name="individual-usage" id="individual-usage" value="Individual"
+                                    style="width: auto;">
+                                <label for="individual-usage" style="margin-right: 20px;"> Individual</label>
+
+                                <input type="checkbox" name="floating-usage" id="floating-usage" value="Floating"
+                                    style="width: auto;">
+                                <label for="floating-usage"> Floating</label>
+                            </span>
+                        </p>
+                    </div>
+                    <hr style="margin-top: 0;">
 
                     <p type="How has COVID-19 impacted your organization?"><textarea name="COVID impact"
                             required></textarea></p>
