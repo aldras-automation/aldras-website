@@ -1,15 +1,16 @@
 $('img.enlargeable').addClass('img-modal').click(function () {
     var src = $(this).attr('src');
     var modal;
-    var size = 'auto'
-    if ($(this).hasClass('makebigwidth')) { var size = '50% auto' }
-    if ($(this).hasClass('makebigheight')) { var size = 'auto 50%' }
+    var size = 'contain'
 
     function removeModal() { modal.remove(); $('body').off('keyup.modal-close'); }
     modal = $('<div>').css({
         background: 'RGBA(0,0,0,.7) url(' + src + ') no-repeat center',
         backgroundSize: size,
-        width: '100%', height: '100%',
+        padding: '10%',
+        'background-origin': 'content-box',
+        width: '100%',
+        height: '100%',
         position: 'fixed',
         zIndex: '10000',
         top: '0', left: '0',
