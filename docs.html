@@ -44,6 +44,10 @@
         font-size: inherit;
         line-height: 1.5;
     }
+
+    .section a {
+        text-decoration: underline;
+    }
 </style>
 
 <body>
@@ -69,7 +73,7 @@
                 <hr>
 
             </section>
-            <!-- end section -->
+
 
             <div class="row">
 
@@ -179,7 +183,7 @@
                                 <br><br>
                                 <p>
                                     That's it! You're all set to start automating your workflows! See the <a
-                                        href="#quickstart">Getting Started </a> section for more.
+                                        href="#quickstart">Getting Started</a> section for more.
                                 </p>
                             </div>
                             <!-- end col -->
@@ -187,7 +191,6 @@
                         <!-- end row -->
 
                     </section>
-                    <!-- end section -->
 
                     <section id="quickstart" class="section">
 
@@ -316,7 +319,108 @@
                             </div>
                         </div>
                     </section>
-                    <!-- end section -->
+
+                    <section id="recording" class="section">
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Recording
+                                    <hr>
+                                </h2>
+                                <div class="row">
+                                    <div>
+                                        <div style="padding-bottom: 15px;">
+                                            Recording allows you to perform actions for Aldras to document for use
+                                            in your workflows.
+                                        </div>
+                                        <!-- Image to be shown only on mobile to display above text -->
+                                        <div class="d-block d-xl-none">
+                                            <img src="assets/img/record-desktop.png" alt="" style="display: block; margin:
+                                                auto; width: 60%; padding: 10px 0;">
+                                        </div>
+                                        <div class="row d-flex align-items-center">
+                                            <div class="col-xl-9" style="padding: 0;">
+                                                <h3>
+                                                    Compatibility tips
+                                                </h3>
+                                                <ul class="docs-list">
+                                                    <li>
+                                                        Complete the workflow manually multiple times prior to recording
+                                                    </li>
+                                                    <li>
+                                                        Use the arrow keys, scrollbars, or PageUp/PageDn to scroll
+                                                    </li>
+                                                    <li>
+                                                        Use keyboard shortcuts where possible
+                                                    </li>
+                                                    <li>
+                                                        Use a reproducible window layout arrangement
+                                                    </li>
+                                                    <li>
+                                                        Fine tune the recording options to minimize future cleanup
+                                                    </li>
+                                                    <li>
+                                                        Review the recorded actions before attempting execution
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-3 d-none d-xl-block" style="padding: 0;">
+                                                <img src="assets/img/record-desktop.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="executing" class="section">
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Executing
+                                    <hr>
+                                </h2>
+                                <div class="row">
+                                    <div>
+                                        <div style="padding-bottom: 15px;">
+                                            Execution is the automated completion of your workflow actions.
+                                        </div>
+                                        <!-- Image to be shown only on mobile to display above text -->
+                                        <div class="d-block d-xl-none">
+                                            <img src="assets/img/execution-desktop.png" alt="" style="display: block; margin:
+                                                auto; width: 60%; padding: 10px 0;">
+                                        </div>
+                                        <div class="row d-flex align-items-center">
+                                            <div class="col-xl-9" style="padding: 0;">
+                                                <h3>
+                                                    Compatibility tips
+                                                </h3>
+                                                <ul class="docs-list">
+                                                    <li>
+                                                        Replicate the conditions of the recording or previous execution
+                                                    </li>
+                                                    <li>
+                                                        Fine tune the execution speed options to speed up or slow down
+                                                    </li>
+                                                    <li>
+                                                        Start with slow execution, then gradually speed up
+                                                    </li>
+                                                    <li>
+                                                        Execute repetitive batch automation in stages or groups
+                                                    </li>
+                                                    <li>
+                                                        Human supervision is always required
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-3 d-none d-xl-block" style="padding: 0;">
+                                                <img src="assets/img/execution-desktop.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
 
                     <section id="commands" class="section" style="padding-bottom: 0;">
                         <div class="row">
@@ -327,7 +431,6 @@
                             </div>
                         </div>
                     </section>
-                    <!-- end section -->
 
                     <section id="mouse-button">
                         <div class="row parameters">
@@ -363,7 +466,7 @@
                         </div>
                     </section>
 
-                    <section id="type">
+                    <section id="type" class="parameter-section">
                         <div class="row parameters">
                             <div class="col-md-12 full">
                                 <h3>Type</h3>
@@ -384,7 +487,7 @@
                         </div>
                     </section>
 
-                    <section id="wait">
+                    <section id="wait" class="parameter-section">
                         <div class="row parameters">
                             <div class="col-md-12 full">
                                 <h3>Wait</h3>
@@ -410,7 +513,7 @@
                         </div>
                     </section>
 
-                    <section id="special-key">
+                    <section id="special-key" class="parameter-section">
                         <div class="row parameters">
                             <div class="col-md-12 full">
                                 <h3>Special key</h3>
@@ -438,7 +541,7 @@
                         </div>
                     </section>
 
-                    <section id="function-key">
+                    <section id="function-key" class="parameter-section">
                         <div class="row parameters">
                             <div class="col-md-12 full">
                                 <h3>Function key</h3>
@@ -466,7 +569,7 @@
                         </div>
                     </section>
 
-                    <section id="media-key">
+                    <section id="media-key" class="parameter-section">
                         <div class="row parameters">
                             <div class="col-md-12 full">
                                 <h3>Media key</h3>
@@ -494,7 +597,7 @@
                         </div>
                     </section>
 
-                    <section id="hotkey">
+                    <section id="hotkey" class="parameter-section">
                         <div class="row parameters">
                             <div class="col-md-12 full">
                                 <h3>Hotkey</h3>
@@ -527,7 +630,7 @@
                         </div>
                     </section>
 
-                    <section id="mouse-move">
+                    <section id="mouse-move" class="parameter-section">
                         <div class="row parameters">
                             <div class="col-md-12 full">
                                 <h3>Mouse-move</h3>
@@ -552,7 +655,7 @@
                         </div>
                     </section>
 
-                    <section id="double-click">
+                    <section id="double-click" class="parameter-section">
                         <div class="row parameters">
                             <div class="col-md-12 full">
                                 <h3>Double-click</h3>
@@ -577,7 +680,7 @@
                         </div>
                     </section>
 
-                    <section id="triple-click">
+                    <section id="triple-click" class="parameter-section">
                         <div class="row parameters">
                             <div class="col-md-12 full">
                                 <h3>Triple-click</h3>
@@ -602,7 +705,7 @@
                         </div>
                     </section>
 
-                    <section id="comment">
+                    <section id="comment" class="parameter-section">
                         <div class="row parameters">
                             <div class="col-md-12 full">
                                 <h3>Comment</h3>
@@ -626,7 +729,7 @@
                         </div>
                     </section>
 
-                    <section id="assign">
+                    <section id="assign" class="parameter-section">
                         <div class="row parameters">
                             <div class="col-md-12 full">
                                 <div class="row">
@@ -658,7 +761,7 @@
                         </div>
                     </section>
 
-                    <section id="conditional">
+                    <section id="conditional" class="parameter-section">
                         <div class="row parameters">
                             <div class="col-md-12 full">
                                 <div class="row">
@@ -703,7 +806,7 @@
                         </div>
                     </section>
 
-                    <section id="loop">
+                    <section id="loop" class="parameter-section">
                         <div class="row parameters">
                             <div class="col-md-12 full">
                                 <div class="row">
@@ -726,14 +829,14 @@
                                 <h4>Examples</h4>
                                 <div class="command-example">
                                     <p>
-                                        Tap the Tab key 4 times
+                                        Tap the Tab key 12 times
                                     </p>
                                     <img src="assets/img/docs/commands/loop_multiple.PNG" class="enlargeable">
                                 </div>
                                 <br>
                                 <div class="command-example">
                                     <p>
-                                        For each of 5 links in the list, click on the address bar at (345,50), then type
+                                        For each of 5 links in the list, click on the address bar at (345, 50) then type
                                         the link from the list.
                                     </p>
                                     <img src="assets/img/docs/commands/loop_list.PNG" class="enlargeable">
@@ -771,21 +874,14 @@
                         </div>
                     </section>
 
-
                     <!-- <section id="adv-editing" class="section"></section>
                     <section id="support" class="section"></section> -->
-
-
-
                 </div>
                 <!-- // end .col -->
-
             </div>
             <!-- // end .row -->
-
         </div>
         <!-- // end container -->
-
     </div>
     <!-- end wrapper -->
 

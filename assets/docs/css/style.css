@@ -76,8 +76,17 @@ img.aligncenter {
 }
 
 ul {
-    padding: 0;
-    list-style: none;
+    list-style-position: outside;
+}
+
+
+.docs-list {
+    padding-left: 35px;
+    font-size: 18px;
+}
+
+.docs-list li {
+    padding-bottom: 15px;
 }
 
 ol li ul li {
@@ -123,8 +132,7 @@ pre {
     margin-bottom: 18px;
 }
 
-.btn,
-a {
+.btn {
     outline: 0 !important;
     text-decoration: none !important;
 }
@@ -171,6 +179,10 @@ p {
     padding: 100px 0;
     position: relative;
     display: block;
+}
+
+.parameter-section {
+    padding-top: 100px;
 }
 
 .white {
