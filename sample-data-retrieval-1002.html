@@ -37,10 +37,11 @@
         <section class="feature-header-area" style="margin-top: 20px; min-height: 0; background-image: none;">
             <div class="col-md-11">
 
-                <a href="index.html" class="align-items-center back-to-home">
-                    <p>🠔</p>
-                    <img src=" assets/img/icon.png" style="width: 50px;">
+                <!-- <div class="col-sm-1"> -->
+                <a href="sample-data-retrieval-form.html" class="align-items-center">
+                    <p>⮜ Back</p>
                 </a>
+                <!-- </div> -->
 
                 <br>
                 <div class="row d-flex justify-content-center">
@@ -54,60 +55,49 @@
         </section>
 
         <br>
-        <p class="container col-lg-8" style="text-align: center; font-size: 18px;">
-            Mimics database systems like those for accounting records, manufacturing, or CRMs.
-        </p>
-        <br>
 
-        <div class="col-sm-11" style="margin: auto;">
-            <div style="display: flex;">
-                <form class="form contact-form sample-form" style="width: 100%;">
-                    <div class="row" style="padding-bottom: 10px;">
-                        <div class="col-sm-4">
-                            <p type="Lookup type:"></p>
-                        </div>
-                        <div class="col-sm-6">
-                            <p type="Value:"></p>
-                        </div>
-                    </div>
-                    <div class="row align-items-center">
-                        <div class="col-sm-4">
-                            <select style="width: 100%; padding: 10px;">
-                                <option>Customer ID</option>
-                                <option>Customer Name</option>
-                                <option>Account Number</option>
-                            </select>
-                        </div>
-                        <div class="col-sm-6">
-                            <input id="lookup-value" autofocus style="padding: 10px;"></input>
-                        </div>
-                        <div class="col-sm-2" style="text-align: center;">
-                            <button type="button" class="btn" id="database-submit"
-                                onclick="submit_database()">Submit</button>
-                        </div>
-                    </div>
-                    <br>
-                </form>
+        <div class="col-sm-11 contact-form" style="margin: auto; padding: 50px 30px;">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h5>Name</h5>
+                    <input readonly value="Jed Heaney">
+                </div>
+                <div class="col-sm-6">
+                    <h5>Customer ID</h5>
+                    <input readonly value="1002">
+                </div>
+            </div>
+
+            <br><br>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <h5>Account Number</h5>
+                    <input readonly value="298763">
+                </div>
+                <div class="col-sm-6">
+                    <h5>Account Manager</h5>
+                    <input readonly value="Ramiro Mata">
+                </div>
+            </div>
+            <br>
+        </div>
+
+        <br><br>
+
+        <div class="col-sm-12 sample-form row" style="margin: auto;">
+            <div class="col-sm-6">
+                <a href="sample-data-retrieval-form.html"><button type="button" class="btn radius-btn">⮜
+                        Search</button></a>
+            </div>
+            <div class="col-sm-6" style="text-align: right;">
+                <button type=" button" class="btn">Save</button>
             </div>
         </div>
 
         <br><br>
 
     </main>
-
-    <!-- JS here -->
-    <script>
-        function submit_database() {
-            var lookup_value = document.getElementById("lookup-value").value;
-
-            var known_lookup_values = ["1001", "1002", "1003", "1004", "1005"]
-
-            if (known_lookup_values.includes(lookup_value)) {
-                var lookup_url = "sample-data-retrieval-".concat(lookup_value, ".html")
-                window.open(lookup_url, "_self");
-            }
-        }
-    </script>
 
     <!-- All JS Custom Plugins Link Here here -->
     <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
