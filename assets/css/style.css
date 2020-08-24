@@ -40,6 +40,25 @@ html {
   }
 }
 
+input[type="radio"]:focus,
+button:focus {
+  outline: 1px solid highlight !important;
+}
+
+
+.back-to-home {
+  display: flex;
+}
+
+.back-to-home p {
+  margin: 0;
+  font-size: 24px;
+  padding-right: 5px;
+}
+
+.back-to-home:hover{
+  opacity: 50%;
+}
 
 .feature-header-area {
   margin-top: 130px;
@@ -900,18 +919,7 @@ a:hover,
 .portfolio-cat a:hover,
 .footer -menu li a:hover {
   text-decoration: none;
-}
-a,
-button {
-  outline: medium none;
-}
-button:focus,
-input:focus,
-input:focus,
-textarea,
-textarea:focus {
-  outline: 0;
-}
+} 
 .uppercase {
   text-transform: uppercase;
 }
@@ -3822,6 +3830,16 @@ form p:before {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
   border: 1px solid gainsboro;
   border-radius: 0.5em;
+}
+
+.sample-form input {
+  padding: 0 10px;
+}
+.sample-form p {
+  margin-bottom: 0;
+}
+.sample-form .btn {
+  padding: 20px 25px;
 }
 
 .contact-sidebar {
