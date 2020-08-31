@@ -39,7 +39,8 @@
     <main>
         <!-- Slider Area Start-->
         <div class="slider-area">
-            <div class="single-slider slider-height slider-padding d-flex align-items-center">
+            <div class="single-slider slider-height slider-padding d-flex align-items-center"
+                style="padding-bottom: 0;">
                 <div class="container">
                     <div class="row d-flex align-items-center">
                         <!-- Image to be shown only on mobile to display above text -->
@@ -69,8 +70,8 @@
 
                                         <!-- Video Btn -->
                                         <a data-animation="fadeInRight" data-delay="1.0s"
-                                            class="popup-video video-btn ani-btn" href=""><i class="fas fa-play"
-                                                style="color: white;"></i></a>
+                                            class="popup-video video-btn ani-btn" href="#intro-video"><i
+                                                class="fas fa-play" style="color: white;"></i></a>
                                     </div>
 
                                     <div class="d-block d-md-none" style="text-align: right;">
@@ -92,17 +93,18 @@
         </div>
         <!-- Slider Area End -->
 
-        <div class="container">
+        <div class="container" id="intro-video">
             <div class="row">
                 <div class="section-title" style="width: 100%; text-align: center;">
                     <h2 style="color: var(--header-text-color);">See Aldras in action</h2>
                 </div>
             </div>
             <br><br>
-            <video controls poster="assets/img/intro_thumbnail.png" style="width: 100%;">
-                <source src="assets/video/introduction.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe
+                    src="https://player.vimeo.com/video/453110523?title=0&byline=0&portrait=0"
+                    style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
+                    allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+            <script src="https://player.vimeo.com/api/player.js"></script>
         </div>
 
         <!-- Best Features Start -->
