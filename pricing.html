@@ -600,7 +600,8 @@
   <!-- Strip payment processing -->
   <script>
     (function () {
-      var stripe = Stripe('pk_test_51H4T6uLq4bTyrlC4HPacAKpu0a3a1poq5EIsz8RI7yjmD3MrfSDhLKxHtnRCa5shTPQV19Rj3cPOoqRuYeSLsdQx00Cz6U8oC1');
+      var publishable_key = 'pk_live_51H4T6uLq4bTyrlC4nkZLnyEWZdezPjufrL60Itm9KhhQC6UGyg5usBkkv2EfwMQ3Ju6u0g8HWUzJhxsrpP8NQbY5005UMRA1i6'
+      var stripe = Stripe(publishable_key);
 
       document.querySelectorAll('.stripe-btn').forEach(checkoutButton => {
         checkoutButton.addEventListener('click', function () {
@@ -609,7 +610,6 @@
           stripe.redirectToCheckout({
             lineItems: [{ price: targetElementPrice, quantity: 1 }],
             mode: 'subscription',
-            // Instead use one of the strategies described in https://stripe.com/docs/payments/checkout/fulfillment
             successUrl: window.location.protocol + '//aldras.com/success',
             cancelUrl: window.location.protocol + '//aldras.com/pricing',
           })
