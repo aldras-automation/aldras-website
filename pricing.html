@@ -7,22 +7,6 @@
   <title>Aldras Pricing: Workflow Software Automation</title>
   <meta name="description"
     content="Simple, straightforward pricing with no hidden charges on plans that scale with your needs." />
-  <script src="//code.jquery.com/jquery-3.3.1.js"></script>
-  <script src="https://js.stripe.com/v3"></script>
-  <script>
-    $(function () {
-      $("#header").load("assets/html/header.html");
-      $("#footer").load("assets/html/footer.html");
-      $("#pricing_card_list_starter_monthly").load("assets/html/pricing_card_list_starter.html");
-      $("#pricing_card_list_starter_yearly").load("assets/html/pricing_card_list_starter.html");
-      $("#pricing_card_list_pro_monthly").load("assets/html/pricing_card_list_pro.html");
-      $("#pricing_card_list_pro_yearly").load("assets/html/pricing_card_list_pro.html");
-      $("#pricing_card_list_smb_monthly").load("assets/html/pricing_card_list_smb.html");
-      $("#pricing_card_list_smb_yearly").load("assets/html/pricing_card_list_smb.html");
-      $("#pricing_special_program_cards").load("assets/html/pricing_special_program_cards.html");
-    });
-  </script>
-
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="manifest" href="site.webmanifest" />
   <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico" />
@@ -484,6 +468,20 @@
   <div id="footer"></div>
 
   <!-- JS here -->
+  <script src="//code.jquery.com/jquery-3.3.1.js"></script>
+  <script>
+    $(function () {
+      $("#header").load("assets/html/header.html");
+      $("#footer").load("assets/html/footer.html");
+      $("#pricing_card_list_starter_monthly").load("assets/html/pricing_card_list_starter.html");
+      $("#pricing_card_list_starter_yearly").load("assets/html/pricing_card_list_starter.html");
+      $("#pricing_card_list_pro_monthly").load("assets/html/pricing_card_list_pro.html");
+      $("#pricing_card_list_pro_yearly").load("assets/html/pricing_card_list_pro.html");
+      $("#pricing_card_list_smb_monthly").load("assets/html/pricing_card_list_smb.html");
+      $("#pricing_card_list_smb_yearly").load("assets/html/pricing_card_list_smb.html");
+      $("#pricing_special_program_cards").load("assets/html/pricing_special_program_cards.html");
+    });
+  </script>
 
   <script>
     jQuery(document).ready(function ($) {
@@ -601,6 +599,7 @@
   </script>
 
   <!-- Strip payment processing -->
+  <script src="https://js.stripe.com/v3"></script>
   <script>
     (function () {
       var publishable_key = 'pk_live_51H4T6uLq4bTyrlC4nkZLnyEWZdezPjufrL60Itm9KhhQC6UGyg5usBkkv2EfwMQ3Ju6u0g8HWUzJhxsrpP8NQbY5005UMRA1i6'
