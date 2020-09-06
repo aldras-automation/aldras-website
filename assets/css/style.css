@@ -40,8 +40,7 @@ html {
   }
 }
 
-input[type="radio"]:focus,
-button:focus {
+input[type="radio"]:focus {
   outline: 1px solid highlight !important;
 }
 
@@ -5413,6 +5412,7 @@ del {
 }
 .slider-area .hero__caption h4 {
   font-size: 19px;
+  line-height: 1.4;
 }
 .slider-area .hero__caption p {
   color: black;
