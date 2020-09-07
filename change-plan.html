@@ -48,7 +48,8 @@
         <div class="container contact-container">
             <div style="display: flex;">
                 <form class="form contact-form" id="pythonanywhere-form" style="width: 100%;" name="change-plan-form"
-                    method="POST" data-netlify="true" action="/form-success.html">
+                    method="POST" action="https://aldras.pythonanywhere.com/gw0UYqDyiKCVtwgUz4Un6KQhXYUnNqbmAMArcwTu/">
+                    <input type="hidden" name="Form" value="change_plan">
                     <div style="display: flex;">
                         <p type="First Name:" style="width: 49%; margin-right: 1%; margin-bottom: 0;">
                             <input name="First name" placeholder=""></input>
@@ -140,28 +141,7 @@
         });
     </script>
 
-    <!-- Form submission script -->
-    <script>
-        $('#pythonanywhere-form').submit(function (event) {
-            event.preventDefault(); // avoid the html submission of the form
-
-            var form = $(this);
-
-            $.ajax({
-                type: 'POST',
-                url: form.attr('action'),
-                data: form.serialize(), // serializes the form's elements
-                success: function (json) { },
-                complete: function (json) { console.log(json) }
-
-            }).always(function (data) {
-                console.log('Finally', data)
-                // window.location.href = "index.html";
-
-            })
-            return false;
-        });
-    </script>
+    <script src="./assets/js/prevent_multiple_form_submissions.js"></script>
 
     <!-- All JS Custom Plugins Link Here here -->
     <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
