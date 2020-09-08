@@ -3814,9 +3814,8 @@ form p:before {
   font-weight: 500;
 }
 
-:root {
-  --contact-form-width: 60%;
-  --contact-padding: 4%;
+.contact-container {
+  margin-top: 5em;
 }
 
 .contact-container {
@@ -3824,8 +3823,6 @@ form p:before {
 }
 
 .contact-form {
-  /* width: var(--contact-form-width); */
-  /* margin-right: calc(var(--contact-padding) / 2); */
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
   border: 1px solid gainsboro;
   border-radius: 0.5em;
@@ -3841,10 +3838,6 @@ form p:before {
   padding: 20px 25px;
 }
 
-.contact-sidebar {
-  /* width: calc(100% - var(--contact-form-width) - var(--contact-padding)); */
-  /* margin-left: calc(var(--contact-padding) / 2); */
-}
 .contact-sidebar h3 {
   padding-left: 10px;
 }
