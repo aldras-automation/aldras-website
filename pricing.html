@@ -612,6 +612,7 @@
           stripe.redirectToCheckout({
             lineItems: [{ price: targetElementPrice, quantity: 1 }],
             mode: 'subscription',
+            allow_promotion_codes=True,
             successUrl: window.location.protocol + '//aldras.com/success',
             cancelUrl: window.location.protocol + '//aldras.com/pricing',
           })
