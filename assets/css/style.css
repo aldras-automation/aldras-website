@@ -170,6 +170,7 @@ input[type="radio"]:focus {
 .pricing-switcher input[type="radio"] {
   position: absolute;
   opacity: 0;
+  width: auto;
 }
 
 .pricing-switcher label {
