@@ -1,10 +1,3 @@
-<head>
-    <!-- Event snippet for Sign-up conversion page -->
-    <script>
-        gtag('event', 'conversion', { 'send_to': 'AW-588489245/GQO5CJDE9eEBEJ3EzpgC' });
-    </script>
-</head>
-
 <!-- Download  Start-->
 <div class="available-app-area">
     <div class="container">
@@ -18,7 +11,7 @@
                         <h2>Download Aldras</h2>
                         <h2 style="font-size: 30px;">Aldras is the ultimate digital process automation solution</h2>
                         <a class="btn" href="../../downloads/aldras-setup-2020-3.exe" download
-                            style="color: white;">Download</a>
+                            style="color: white;" onclick="track_download()">Download</a>
                         <p
                             style="padding-top: 5px; padding-bottom: 0; padding-left: 30px; margin-bottom: 20px; font-size: 14px; color: lightgrey;">
                             * supports Windows 10</p>
@@ -48,6 +41,14 @@
     </div>
 </div>
 <!-- Download End-->
+
+
+<!-- Event snippet for Sign-up conversion page -->
+<script>
+    function track_download() {
+        gtag('event', 'conversion', { 'send_to': 'AW-588489245/GQO5CJDE9eEBEJ3EzpgC' });
+    }
+</script>
 
 <script>
     $('img.enlargeable').addClass('img-modal').click(function () {
