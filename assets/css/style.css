@@ -502,6 +502,18 @@ input[type="radio"]:focus {
   margin-bottom: 0;
 }
 
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--red-color-from-isometric);
+  color: white;
+  text-align: center;
+  z-index: 10;
+}
+
 .pricing-footer {
   z-index: 1;
   height: 80px;

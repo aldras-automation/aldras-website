@@ -1,675 +1,838 @@
 <!DOCTYPE html>
 <html class="no-js" lang="zxx">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Aldras Pricing: Macros and Software Automation</title>
+    <meta
+      name="description"
+      content="Simple, straightforward pricing with no hidden charges on plans that scale with your needs."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/img/favicon.ico"
+    />
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <title>Aldras Pricing: Macros and Software Automation</title>
-  <meta name="description"
-    content="Simple, straightforward pricing with no hidden charges on plans that scale with your needs." />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="manifest" href="site.webmanifest" />
-  <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/flaticon.css" />
+    <link rel="stylesheet" href="assets/css/slicknav.css" />
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
+    <link rel="stylesheet" href="assets/css/themify-icons.css" />
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="assets/css/nice-select.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
 
-  <!-- CSS here -->
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
-  <link rel="stylesheet" href="assets/css/flaticon.css" />
-  <link rel="stylesheet" href="assets/css/slicknav.css" />
-  <link rel="stylesheet" href="assets/css/animate.min.css" />
-  <link rel="stylesheet" href="assets/css/magnific-popup.css" />
-  <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
-  <link rel="stylesheet" href="assets/css/themify-icons.css" />
-  <link rel="stylesheet" href="assets/css/slick.css" />
-  <link rel="stylesheet" href="assets/css/nice-select.css" />
-  <link rel="stylesheet" href="assets/css/style.css" />
-</head>
+  <body>
+    <div id="header"></div>
 
-<body>
-  <div id="header"></div>
-
-
-  <main>
-    <section class="feature-header-area" style="min-height: 40vh;">
-      <div class="container">
-        <!-- Section title -->
-        <div class="row d-flex justify-content-center">
-          <div class="col-lg-9">
-            <div class="section-title text-center">
-              <h2 style="color: black;">Choose the plan that works for you</h2>
-              <br><br>
-              <h4>Simple, straightforward pricing with no hidden charges on plans that scale with your needs</h4>
-              <br><br>
-              <a href="trial.html" class="btn radius-btn" style="color: white; padding: 20px 25px;">14 Day Free
-                Trial</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="pricing-container" style="margin-bottom: 0;">
-      <div class="pricing-switcher">
-        <div class="fieldset">
-          <input type="radio" name="duration-1" value="monthly" id="monthly-1" checked>
-          <label for="monthly-1" style="padding-right: 20px;" id="monthly-label">Monthly</label>
-
-          <div class="confirm-switch" style="display: inherit;">
-            <input type="radio" id="confirm-switch">
-            <label for="confirm-switch"></label>
-            <span class="switch"></span>
-          </div>
-
-          <input type="radio" name="duration-1" value="yearly" id="yearly-1">
-          <label for="yearly-1" style="padding-left: 20px;" id="yearly-label">Yearly (Save 25%)</label>
-        </div>
-      </div>
-      <ul class="pricing-list bounce-invert">
-        <li class="col-xl-4 col-md-6 outer-pricing-card">
-          <ul class="pricing-wrapper">
-            <li data-type="monthly" class="is-visible">
-              <header class="pricing-header">
-                <h2 class="plan-title">Starter</h2>
-                <div class="price">
-                  <span class="currency">$</span>
-                  <span class="value">12</span>
-                  <span class="duration">mo</span>
-                </div>
-              </header>
-              <div id="pricing_card_list_starter_monthly"></div>
-              <footer class="pricing-footer">
-                <button class="btn select stripe-btn" id="price_1HEGlaLq4bTyrlC42dcmlk4E" role="link">Select</button>
-              </footer>
-            </li>
-
-            <li data-type="yearly" class="is-hidden">
-              <header class="pricing-header">
-                <h2 class="plan-title">Starter</h2>
-                <div class="price">
-                  <span class="currency">$</span>
-                  <span class="value">9</span>
-                  <span class="duration">mo</span>
-                </div>
-              </header>
-              <div id="pricing_card_list_starter_yearly"></div>
-              <footer class="pricing-footer">
-                <button class="btn select stripe-btn" id="price_1HEGlaLq4bTyrlC4GBbQifL9" role="link">Select</button>
-              </footer>
-            </li>
-          </ul>
-        </li>
-
-        <li class="col-xl-4 col-md-6">
-          <ul class="pricing-wrapper">
-            <li data-type="monthly" class="is-visible">
-              <header class="pricing-header">
-                <h2 class="plan-title">Professional</h2>
-                <div class="price">
-                  <span class="currency">$</span>
-                  <span class="value">40</span>
-                  <span class="duration">mo</span>
-                </div>
-              </header>
-              <div id="pricing_card_list_pro_monthly"></div>
-              <footer class="pricing-footer">
-                <button class="btn select stripe-btn" id="price_1HEGlSLq4bTyrlC4W4ovfizh" role="link">Select</button>
-              </footer>
-            </li>
-
-            <li data-type="yearly" class="is-hidden">
-              <header class="pricing-header">
-                <h2 class="plan-title">Professional</h2>
-                <div class="price">
-                  <span class="currency">$</span>
-                  <span class="value">30</span>
-                  <span class="duration">mo</span>
-                </div>
-              </header>
-              <div id="pricing_card_list_pro_yearly"></div>
-              <footer class="pricing-footer">
-                <button class="btn select stripe-btn" id="price_1HEGlSLq4bTyrlC4BI2CZz3b" role="link">Select</button>
-              </footer>
-            </li>
-          </ul>
-        </li>
-
-        <li class="col-xl-4 col-md-6 outer-pricing-card">
-          <ul class="pricing-wrapper">
-            <li data-type="monthly" class="is-visible">
-              <header class="pricing-header">
-                <h2 class="plan-title">Small Business</h2>
-                <div class="price">
-                  <span class="currency">$</span>
-                  <span class="value">300</span>
-                  <span class="duration">mo</span>
-                </div>
-              </header>
-              <div id="pricing_card_list_smb_monthly"></div>
-              <footer class="pricing-footer">
-                <a class="btn select" href="custom-plans.html">Contact Us</a>
-              </footer>
-            </li>
-            <li data-type="yearly" class="is-hidden">
-              <header class="pricing-header">
-                <h2 class="plan-title">Small Business</h2>
-                <div class="price">
-                  <span class="currency">$</span>
-                  <span class="value">225</span>
-                  <span class="duration">mo</span>
-                </div>
-              </header>
-              <div id="pricing_card_list_smb_yearly"></div>
-              <footer class="pricing-footer">
-                <a class="btn select" href="custom-plans.html">Contact Us</a>
-              </footer>
-            </li>
-          </ul>
-        </li>
-      </ul>
+    <div class="footer">
+      <p style="color: black; margin: 20px 50px ;">
+        Aldras is now available as a free, open-source project. This page
+        remains as a part of the portfolio project for archival reference
+        purposes only.
+      </p>
     </div>
 
-    <div id="error-message"></div>
-
-    <div class="d-block d-md-none" style="padding-top: 60px;">
-      <hr>
-    </div>
-
-    <div id="pricing_special_program_cards"></div>
-
-    <div class="d-block d-md-none">
-      <hr>
-    </div>
-
-    <div class="whole-wrap d-none d-md-block">
-      <div class="container box_1170"
-        style="margin-top: 10px; box-shadow: 0 4px 20px rgba(0,0,0,.12); border-radius: 0.5em; padding: 0;">
-        <div class="section-top-border">
-          <h3 class="mb-30" style="text-align: center; color: black;">Full feature comparison</h3>
-          <div class="progress-table-wrap">
-            <div class="progress-table">
-              <div class="table-head">
-                <div class="feature-col"></div>
-                <div class="plan-title starter-col">Starter</div>
-                <div class="plan-title pro-col">Professional</div>
-                <div class="plan-title smb-col">Small Business</div>
-                <div class="plan-title enterprise-col">Custom</div>
-              </div>
-
-              <div class="table-head table-section-header">
-                <div class="feature-col table-section-title">General features</div>
-              </div>
-              <div class="table-row">
-                <div class="feature-col">Users</div>
-                <div class="starter-col">1</div>
-                <div class="pro-col">1</div>
-                <div class="smb-col">10</div>
-                <div class="enterprise-col">1-100</div>
-              </div>
-              <div class="table-row">
-                <div class="feature-col">Workflows</div>
-                <div class="starter-col">Unlimited</div>
-                <div class="pro-col">Unlimited</div>
-                <div class="smb-col">Unlimited</div>
-                <div class="enterprise-col">Unlimited</div>
-              </div>
-
-              <div class="table-head table-section-header">
-                <div class="feature-col table-section-title">Editing features</div>
-              </div>
-              <div class="table-row">
-                <div class="feature-col">Workflow macro recording</div>
-                <div class="starter-col green">✓</div>
-                <div class="pro-col green">✓</div>
-                <div class="smb-col green">✓</div>
-                <div class="enterprise-col green">✓</div>
-              </div>
-              <div class="table-row">
-                <div class="feature-col">Graphical workflow manipulation</div>
-                <div class="starter-col green">✓</div>
-                <div class="pro-col green">✓</div>
-                <div class="smb-col green">✓</div>
-                <div class="enterprise-col green">✓</div>
-              </div>
-              <div class="table-row">
-                <div class="feature-col">Advanced text-based editor</div>
-                <div class="starter-col grey">✖</div>
-                <div class="pro-col green">✓</div>
-                <div class="smb-col green">✓</div>
-                <div class="enterprise-col green">✓</div>
-              </div>
-              <div class="table-row">
-                <div class="feature-col">Loop repetition</div>
-                <div class="starter-col grey">✖</div>
-                <div class="pro-col green">✓</div>
-                <div class="smb-col green">✓</div>
-                <div class="enterprise-col green">✓</div>
-              </div>
-              <div class="table-row">
-                <div class="feature-col">Conditional IF statements</div>
-                <div class="starter-col grey">✖</div>
-                <div class="pro-col green">✓</div>
-                <div class="smb-col green">✓</div>
-                <div class="enterprise-col green">✓</div>
-              </div>
-              <div class="table-row">
-                <div class="feature-col">Variable assignments</div>
-                <div class="starter-col grey">✖</div>
-                <div class="pro-col green">✓</div>
-                <div class="smb-col green">✓</div>
-                <div class="enterprise-col green">✓</div>
-              </div>
-
-              <div class="table-head table-section-header">
-                <div class="feature-col table-section-title">Execution features</div>
-              </div>
-              <div class="table-row">
-                <div class="feature-col">Customizable execution settings</div>
-                <div class="starter-col green">✓</div>
-                <div class="pro-col green">✓</div>
-                <div class="smb-col green">✓</div>
-                <div class="enterprise-col green">✓</div>
-              </div>
-              <div class="table-row">
-                <div class="feature-col">Internet connection detection</div>
-                <div class="starter-col grey">✖</div>
-                <div class="pro-col green">✓</div>
-                <div class="smb-col green">✓</div>
-                <div class="enterprise-col green">✓</div>
-              </div>
-              <div class="table-row">
-                <div class="feature-col">Clipboard detection</div>
-                <div class="starter-col grey">✖</div>
-                <div class="pro-col green">✓</div>
-                <div class="smb-col green">✓</div>
-                <div class="enterprise-col green">✓</div>
-              </div>
-              <div class="table-row">
-                <div class="feature-col">Repeat workflow execution</div>
-                <div class="starter-col green">✓</div>
-                <div class="pro-col green">✓</div>
-                <div class="smb-col green">✓</div>
-                <div class="enterprise-col green">✓</div>
-              </div>
-              <div class="table-row">
-                <div class="feature-col">Workflow sharing</div>
-                <div class="starter-col green">✓</div>
-                <div class="pro-col green">✓</div>
-                <div class="smb-col green">✓</div>
-                <div class="enterprise-col green">✓</div>
-              </div>
-              <div class="table-row">
-                <div class="feature-col">Common .txt file format</div>
-                <div class="starter-col grey">✖</div>
-                <div class="pro-col green">✓</div>
-                <div class="smb-col green">✓</div>
-                <div class="enterprise-col green">✓</div>
-              </div>
-
-              <div class="table-head table-section-header">
-                <div class="feature-col table-section-title">Administration features</div>
-              </div>
-              <div class="table-row">
-                <div class="feature-col">Management portal</div>
-                <div class="starter-col grey">✖</div>
-                <div class="pro-col grey">✖</div>
-                <div class="smb-col">Available</div>
-                <div class="enterprise-col">Available</div>
-              </div>
-              <div class="table-row">
-                <div class="feature-col">Floating licenses</div>
-                <div class="starter-col grey">✖</div>
-                <div class="pro-col grey">✖</div>
-                <div class="smb-col">Available</div>
-                <div class="enterprise-col">Available</div>
-              </div>
-              <div class="table-row">
-                <div class="feature-col">Email and documentation support</div>
-                <div class="starter-col green">✓</div>
-                <div class="pro-col green">✓</div>
-                <div class="smb-col green">✓</div>
-                <div class="enterprise-col green">✓</div>
-              </div>
-              <div class="table-row">
-                <div class="feature-col">Priority support</div>
-                <div class="starter-col grey">✖</div>
-                <div class="pro-col grey">✖</div>
-                <div class="smb-col green">✓</div>
-                <div class="enterprise-col green">✓</div>
-              </div>
-
-              <div class="table-row" id="faqs">
-                <div class="feature-col" style="background-color: white;"></div>
-                <div class="starter-col" style="background-color: white;">
-                  <button class="btn select table-select stripe-btn" id="price_1HEGlaLq4bTyrlC42dcmlk4E"
-                    role="link">Select</button>
-                </div>
-
-                <div class="pro-col" style="background-color: white;">
-                  <button class="btn select table-select stripe-btn" id="price_1HEGlSLq4bTyrlC4W4ovfizh"
-                    role="link">Select</button>
-                </div>
-                <div class="smb-col" style="background-color: white;"><a class="btn select table-select"
-                    href="custom-plans.html">Contact</a></div>
-                <div class="enterprise-col" style="background-color: white;"><a class="btn select table-select"
-                    href="custom-plans.html">Contact</a></div>
+    <main>
+      <section class="feature-header-area" style="min-height: 40vh">
+        <div class="container">
+          <!-- Section title -->
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-9">
+              <div class="section-title text-center">
+                <h2 style="color: black">Choose the plan that works for you</h2>
+                <br /><br />
+                <h4>
+                  Simple, straightforward pricing with no hidden charges on
+                  plans that scale with your needs
+                </h4>
+                <br /><br />
+                <a
+                  href="trial.html"
+                  class="btn radius-btn"
+                  style="color: white; padding: 20px 25px"
+                  >14 Day Free Trial</a
+                >
               </div>
             </div>
           </div>
         </div>
+      </section>
 
+      <div class="pricing-container" style="margin-bottom: 0">
+        <div class="pricing-switcher">
+          <div class="fieldset">
+            <input
+              type="radio"
+              name="duration-1"
+              value="monthly"
+              id="monthly-1"
+              checked
+            />
+            <label
+              for="monthly-1"
+              style="padding-right: 20px"
+              id="monthly-label"
+              >Monthly</label
+            >
+
+            <div class="confirm-switch" style="display: inherit">
+              <input type="radio" id="confirm-switch" />
+              <label for="confirm-switch"></label>
+              <span class="switch"></span>
+            </div>
+
+            <input
+              type="radio"
+              name="duration-1"
+              value="yearly"
+              id="yearly-1"
+            />
+            <label for="yearly-1" style="padding-left: 20px" id="yearly-label"
+              >Yearly (Save 25%)</label
+            >
+          </div>
+        </div>
+        <ul class="pricing-list bounce-invert">
+          <li class="col-xl-4 col-md-6 outer-pricing-card">
+            <ul class="pricing-wrapper">
+              <li data-type="monthly" class="is-visible">
+                <header class="pricing-header">
+                  <h2 class="plan-title">Starter</h2>
+                  <div class="price">
+                    <span class="currency">$</span>
+                    <span class="value">12</span>
+                    <span class="duration">mo</span>
+                  </div>
+                </header>
+                <div id="pricing_card_list_starter_monthly"></div>
+                <footer class="pricing-footer">
+                  <button
+                    class="btn select stripe-btn"
+                    id="price_1HEGlaLq4bTyrlC42dcmlk4E"
+                    role="link"
+                  >
+                    Select
+                  </button>
+                </footer>
+              </li>
+
+              <li data-type="yearly" class="is-hidden">
+                <header class="pricing-header">
+                  <h2 class="plan-title">Starter</h2>
+                  <div class="price">
+                    <span class="currency">$</span>
+                    <span class="value">9</span>
+                    <span class="duration">mo</span>
+                  </div>
+                </header>
+                <div id="pricing_card_list_starter_yearly"></div>
+                <footer class="pricing-footer">
+                  <button
+                    class="btn select stripe-btn"
+                    id="price_1HEGlaLq4bTyrlC4GBbQifL9"
+                    role="link"
+                  >
+                    Select
+                  </button>
+                </footer>
+              </li>
+            </ul>
+          </li>
+
+          <li class="col-xl-4 col-md-6">
+            <ul class="pricing-wrapper">
+              <li data-type="monthly" class="is-visible">
+                <header class="pricing-header">
+                  <h2 class="plan-title">Professional</h2>
+                  <div class="price">
+                    <span class="currency">$</span>
+                    <span class="value">40</span>
+                    <span class="duration">mo</span>
+                  </div>
+                </header>
+                <div id="pricing_card_list_pro_monthly"></div>
+                <footer class="pricing-footer">
+                  <button
+                    class="btn select stripe-btn"
+                    id="price_1HEGlSLq4bTyrlC4W4ovfizh"
+                    role="link"
+                  >
+                    Select
+                  </button>
+                </footer>
+              </li>
+
+              <li data-type="yearly" class="is-hidden">
+                <header class="pricing-header">
+                  <h2 class="plan-title">Professional</h2>
+                  <div class="price">
+                    <span class="currency">$</span>
+                    <span class="value">30</span>
+                    <span class="duration">mo</span>
+                  </div>
+                </header>
+                <div id="pricing_card_list_pro_yearly"></div>
+                <footer class="pricing-footer">
+                  <button
+                    class="btn select stripe-btn"
+                    id="price_1HEGlSLq4bTyrlC4BI2CZz3b"
+                    role="link"
+                  >
+                    Select
+                  </button>
+                </footer>
+              </li>
+            </ul>
+          </li>
+
+          <li class="col-xl-4 col-md-6 outer-pricing-card">
+            <ul class="pricing-wrapper">
+              <li data-type="monthly" class="is-visible">
+                <header class="pricing-header">
+                  <h2 class="plan-title">Small Business</h2>
+                  <div class="price">
+                    <span class="currency">$</span>
+                    <span class="value">300</span>
+                    <span class="duration">mo</span>
+                  </div>
+                </header>
+                <div id="pricing_card_list_smb_monthly"></div>
+                <footer class="pricing-footer">
+                  <a class="btn select" href="custom-plans.html">Contact Us</a>
+                </footer>
+              </li>
+              <li data-type="yearly" class="is-hidden">
+                <header class="pricing-header">
+                  <h2 class="plan-title">Small Business</h2>
+                  <div class="price">
+                    <span class="currency">$</span>
+                    <span class="value">225</span>
+                    <span class="duration">mo</span>
+                  </div>
+                </header>
+                <div id="pricing_card_list_smb_yearly"></div>
+                <footer class="pricing-footer">
+                  <a class="btn select" href="custom-plans.html">Contact Us</a>
+                </footer>
+              </li>
+            </ul>
+          </li>
+        </ul>
       </div>
-    </div>
 
-    <!-- FAQs Start-->
-    <div class="slider-area" id="faqs">
+      <div id="error-message"></div>
 
-      <div class="single-slider d-flex align-items-center" style="padding-top: 75px;">
-        <div class="container" style="padding: 2em; box-shadow: 0 4px 20px rgba(0,0,0,.12); border-radius: 0.5em;">
-          <h3 style="text-align: center; padding-bottom: 1em; color: black;">
-            Frequently asked questions
-          </h3>
+      <div class="d-block d-md-none" style="padding-top: 60px">
+        <hr />
+      </div>
 
-          <div class="row d-flex">
+      <div id="pricing_special_program_cards"></div>
 
-            <div class="col-lg-6 hero__caption">
-              <h3>
-                How does the <a href="trial.html" style="text-decoration: underline;">free trial</a> work?
-              </h3>
-              <p>
-                The <a href="trial.html" style="text-decoration: underline;">free trial</a> allows access to the
-                <i>Professional</i> plan for 14 days with no credit card required. Simply download Aldras, click 'Start
-                Trial', and begin automating!
-              </p>
-            </div>
+      <div class="d-block d-md-none">
+        <hr />
+      </div>
 
-            <div class="col-lg-6 hero__caption">
-              <h3>
-                Do you offer any discounts?
-              </h3>
-              <p>
-                Yes! Our mission includes additional effort to facilitate the work of students, nonprofits, and those
-                fighting COVID-19. See more about those specialty programs above. Plans with multiple users also come
-                with discounts.
-              </p>
-            </div>
+      <div class="whole-wrap d-none d-md-block">
+        <div
+          class="container box_1170"
+          style="
+            margin-top: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+            border-radius: 0.5em;
+            padding: 0;
+          "
+        >
+          <div class="section-top-border">
+            <h3 class="mb-30" style="text-align: center; color: black">
+              Full feature comparison
+            </h3>
+            <div class="progress-table-wrap">
+              <div class="progress-table">
+                <div class="table-head">
+                  <div class="feature-col"></div>
+                  <div class="plan-title starter-col">Starter</div>
+                  <div class="plan-title pro-col">Professional</div>
+                  <div class="plan-title smb-col">Small Business</div>
+                  <div class="plan-title enterprise-col">Custom</div>
+                </div>
 
-            <div class="col-lg-6 hero__caption">
-              <h3>
-                Can I change my plan?
-              </h3>
-              <p>
-                Yes, you can <a href="change-plan.html" style="text-decoration: underline;">change or cancel your
-                  plan</a> at any time and scale up or down as you desire as your demand ebbs and flows. Billing takes
-                place at the beginning of each service period.
-              </p>
-            </div>
+                <div class="table-head table-section-header">
+                  <div class="feature-col table-section-title">
+                    General features
+                  </div>
+                </div>
+                <div class="table-row">
+                  <div class="feature-col">Users</div>
+                  <div class="starter-col">1</div>
+                  <div class="pro-col">1</div>
+                  <div class="smb-col">10</div>
+                  <div class="enterprise-col">1-100</div>
+                </div>
+                <div class="table-row">
+                  <div class="feature-col">Workflows</div>
+                  <div class="starter-col">Unlimited</div>
+                  <div class="pro-col">Unlimited</div>
+                  <div class="smb-col">Unlimited</div>
+                  <div class="enterprise-col">Unlimited</div>
+                </div>
 
-            <div class="col-lg-6 hero__caption">
-              <h3>
-                How do I access support?
-              </h3>
-              <p>
-                All plans can utilize the <a href="docs.html" style="text-decoration: underline;">Docs</a> and send
-                emails to
-                the Aldras team. Tickets from plans with priority support are addressed first and also have access to
-                phone support and consultation.
-              </p>
-            </div>
+                <div class="table-head table-section-header">
+                  <div class="feature-col table-section-title">
+                    Editing features
+                  </div>
+                </div>
+                <div class="table-row">
+                  <div class="feature-col">Workflow macro recording</div>
+                  <div class="starter-col green">✓</div>
+                  <div class="pro-col green">✓</div>
+                  <div class="smb-col green">✓</div>
+                  <div class="enterprise-col green">✓</div>
+                </div>
+                <div class="table-row">
+                  <div class="feature-col">Graphical workflow manipulation</div>
+                  <div class="starter-col green">✓</div>
+                  <div class="pro-col green">✓</div>
+                  <div class="smb-col green">✓</div>
+                  <div class="enterprise-col green">✓</div>
+                </div>
+                <div class="table-row">
+                  <div class="feature-col">Advanced text-based editor</div>
+                  <div class="starter-col grey">✖</div>
+                  <div class="pro-col green">✓</div>
+                  <div class="smb-col green">✓</div>
+                  <div class="enterprise-col green">✓</div>
+                </div>
+                <div class="table-row">
+                  <div class="feature-col">Loop repetition</div>
+                  <div class="starter-col grey">✖</div>
+                  <div class="pro-col green">✓</div>
+                  <div class="smb-col green">✓</div>
+                  <div class="enterprise-col green">✓</div>
+                </div>
+                <div class="table-row">
+                  <div class="feature-col">Conditional IF statements</div>
+                  <div class="starter-col grey">✖</div>
+                  <div class="pro-col green">✓</div>
+                  <div class="smb-col green">✓</div>
+                  <div class="enterprise-col green">✓</div>
+                </div>
+                <div class="table-row">
+                  <div class="feature-col">Variable assignments</div>
+                  <div class="starter-col grey">✖</div>
+                  <div class="pro-col green">✓</div>
+                  <div class="smb-col green">✓</div>
+                  <div class="enterprise-col green">✓</div>
+                </div>
 
-            <div class="col-lg-6 hero__caption">
-              <h3>
-                What can I automate?
-              </h3>
-              <p>
-                You can program nearly anything that you as a human do to interact with your computer. This includes
-                mouse movements and clicks, keyboard strokes, hotkeys, pauses, and more!
-              </p>
-            </div>
+                <div class="table-head table-section-header">
+                  <div class="feature-col table-section-title">
+                    Execution features
+                  </div>
+                </div>
+                <div class="table-row">
+                  <div class="feature-col">Customizable execution settings</div>
+                  <div class="starter-col green">✓</div>
+                  <div class="pro-col green">✓</div>
+                  <div class="smb-col green">✓</div>
+                  <div class="enterprise-col green">✓</div>
+                </div>
+                <div class="table-row">
+                  <div class="feature-col">Internet connection detection</div>
+                  <div class="starter-col grey">✖</div>
+                  <div class="pro-col green">✓</div>
+                  <div class="smb-col green">✓</div>
+                  <div class="enterprise-col green">✓</div>
+                </div>
+                <div class="table-row">
+                  <div class="feature-col">Clipboard detection</div>
+                  <div class="starter-col grey">✖</div>
+                  <div class="pro-col green">✓</div>
+                  <div class="smb-col green">✓</div>
+                  <div class="enterprise-col green">✓</div>
+                </div>
+                <div class="table-row">
+                  <div class="feature-col">Repeat workflow execution</div>
+                  <div class="starter-col green">✓</div>
+                  <div class="pro-col green">✓</div>
+                  <div class="smb-col green">✓</div>
+                  <div class="enterprise-col green">✓</div>
+                </div>
+                <div class="table-row">
+                  <div class="feature-col">Workflow sharing</div>
+                  <div class="starter-col green">✓</div>
+                  <div class="pro-col green">✓</div>
+                  <div class="smb-col green">✓</div>
+                  <div class="enterprise-col green">✓</div>
+                </div>
+                <div class="table-row">
+                  <div class="feature-col">Common .txt file format</div>
+                  <div class="starter-col grey">✖</div>
+                  <div class="pro-col green">✓</div>
+                  <div class="smb-col green">✓</div>
+                  <div class="enterprise-col green">✓</div>
+                </div>
 
-            <div class="col-lg-6 hero__caption">
-              <h3>
-                What can I not automate?
-              </h3>
-              <p>
-                Unfortunately, due to the unique implementations in different operating systems, programs,
-                and devices, scrolling is very inconsistent and has therefore been removed. See the <a
-                  href="docs.html#recording" style="text-decoration: underline;">Docs</a> for recommendations.
-              </p>
-            </div>
+                <div class="table-head table-section-header">
+                  <div class="feature-col table-section-title">
+                    Administration features
+                  </div>
+                </div>
+                <div class="table-row">
+                  <div class="feature-col">Management portal</div>
+                  <div class="starter-col grey">✖</div>
+                  <div class="pro-col grey">✖</div>
+                  <div class="smb-col">Available</div>
+                  <div class="enterprise-col">Available</div>
+                </div>
+                <div class="table-row">
+                  <div class="feature-col">Floating licenses</div>
+                  <div class="starter-col grey">✖</div>
+                  <div class="pro-col grey">✖</div>
+                  <div class="smb-col">Available</div>
+                  <div class="enterprise-col">Available</div>
+                </div>
+                <div class="table-row">
+                  <div class="feature-col">Email and documentation support</div>
+                  <div class="starter-col green">✓</div>
+                  <div class="pro-col green">✓</div>
+                  <div class="smb-col green">✓</div>
+                  <div class="enterprise-col green">✓</div>
+                </div>
+                <div class="table-row">
+                  <div class="feature-col">Priority support</div>
+                  <div class="starter-col grey">✖</div>
+                  <div class="pro-col grey">✖</div>
+                  <div class="smb-col green">✓</div>
+                  <div class="enterprise-col green">✓</div>
+                </div>
 
+                <div class="table-row" id="faqs">
+                  <div
+                    class="feature-col"
+                    style="background-color: white"
+                  ></div>
+                  <div class="starter-col" style="background-color: white">
+                    <button
+                      class="btn select table-select stripe-btn"
+                      id="price_1HEGlaLq4bTyrlC42dcmlk4E"
+                      role="link"
+                    >
+                      Select
+                    </button>
+                  </div>
 
-            <div class="col-lg-9 hero__caption" style="margin: auto;">
-              <h3 style="text-align: center; padding: 10px 0;">
-                Is Aldras for me?
-              </h3>
-              <p>
-                Aldras is for individuals or organizations that would like to accelerate straightforward repetitive
-                computer tasks to concentrate their own time and effort on more valuable responsibilities. We have
-                seen applications of Aldras in the areas of engineering, customer success, sales, paperwork, data
-                processing, and much more.
-                <br><br>
-                Aldras is about delivering value for people. Even so, we know that Aldras is not for everyone. The
-                essence of Aldras's mission is to save time for its users. Therefore, if the value of the time that you
-                intend to save with Aldras exceeds the cost, Aldras might be a good fit for you.
-                <br><br>
-                In general, if you have less than one hour of repetitive computer work every month, Aldras is likely not
-                the best option at this time. Additionally, if your team has direct access to the developers of the
-                programs that you use in your workflows, you may have already worked with them to streamline your
-                processes.
-              </p>
+                  <div class="pro-col" style="background-color: white">
+                    <button
+                      class="btn select table-select stripe-btn"
+                      id="price_1HEGlSLq4bTyrlC4W4ovfizh"
+                      role="link"
+                    >
+                      Select
+                    </button>
+                  </div>
+                  <div class="smb-col" style="background-color: white">
+                    <a class="btn select table-select" href="custom-plans.html"
+                      >Contact</a
+                    >
+                  </div>
+                  <div class="enterprise-col" style="background-color: white">
+                    <a class="btn select table-select" href="custom-plans.html"
+                      >Contact</a
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- FAQs End -->
 
-  </main>
-  <div id="footer"></div>
+      <!-- FAQs Start-->
+      <div class="slider-area" id="faqs">
+        <div
+          class="single-slider d-flex align-items-center"
+          style="padding-top: 75px"
+        >
+          <div
+            class="container"
+            style="
+              padding: 2em;
+              box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+              border-radius: 0.5em;
+            "
+          >
+            <h3 style="text-align: center; padding-bottom: 1em; color: black">
+              Frequently asked questions
+            </h3>
 
-  <!-- JS here -->
-  <script src="//code.jquery.com/jquery-3.3.1.js"></script>
-  <script>
-    $(function () {
-      $("#header").load("assets/html/header.html");
-      $("#footer").load("assets/html/footer.html");
-      $("#pricing_card_list_starter_monthly").load("assets/html/pricing_card_list_starter.html");
-      $("#pricing_card_list_starter_yearly").load("assets/html/pricing_card_list_starter.html");
-      $("#pricing_card_list_pro_monthly").load("assets/html/pricing_card_list_pro.html");
-      $("#pricing_card_list_pro_yearly").load("assets/html/pricing_card_list_pro.html");
-      $("#pricing_card_list_smb_monthly").load("assets/html/pricing_card_list_smb.html");
-      $("#pricing_card_list_smb_yearly").load("assets/html/pricing_card_list_smb.html");
-      $("#pricing_special_program_cards").load("assets/html/pricing_special_program_cards.html");
-    });
-  </script>
+            <div class="row d-flex">
+              <div class="col-lg-6 hero__caption">
+                <h3>
+                  How does the
+                  <a href="trial.html" style="text-decoration: underline"
+                    >free trial</a
+                  >
+                  work?
+                </h3>
+                <p>
+                  The
+                  <a href="trial.html" style="text-decoration: underline"
+                    >free trial</a
+                  >
+                  allows access to the <i>Professional</i> plan for 14 days with
+                  no credit card required. Simply download Aldras, click 'Start
+                  Trial', and begin automating!
+                </p>
+              </div>
 
-  <script>
-    jQuery(document).ready(function ($) {
-      checkScrolling($('.pricing-body'));
-      $(window).on('resize', function () {
-        window.requestAnimationFrame(function () { checkScrolling($('.pricing-body')) });
+              <div class="col-lg-6 hero__caption">
+                <h3>Do you offer any discounts?</h3>
+                <p>
+                  Yes! Our mission includes additional effort to facilitate the
+                  work of students, nonprofits, and those fighting COVID-19. See
+                  more about those specialty programs above. Plans with multiple
+                  users also come with discounts.
+                </p>
+              </div>
+
+              <div class="col-lg-6 hero__caption">
+                <h3>Can I change my plan?</h3>
+                <p>
+                  Yes, you can
+                  <a href="change-plan.html" style="text-decoration: underline"
+                    >change or cancel your plan</a
+                  >
+                  at any time and scale up or down as you desire as your demand
+                  ebbs and flows. Billing takes place at the beginning of each
+                  service period.
+                </p>
+              </div>
+
+              <div class="col-lg-6 hero__caption">
+                <h3>How do I access support?</h3>
+                <p>
+                  All plans can utilize the
+                  <a href="docs.html" style="text-decoration: underline"
+                    >Docs</a
+                  >
+                  and send emails to the Aldras team. Tickets from plans with
+                  priority support are addressed first and also have access to
+                  phone support and consultation.
+                </p>
+              </div>
+
+              <div class="col-lg-6 hero__caption">
+                <h3>What can I automate?</h3>
+                <p>
+                  You can program nearly anything that you as a human do to
+                  interact with your computer. This includes mouse movements and
+                  clicks, keyboard strokes, hotkeys, pauses, and more!
+                </p>
+              </div>
+
+              <div class="col-lg-6 hero__caption">
+                <h3>What can I not automate?</h3>
+                <p>
+                  Unfortunately, due to the unique implementations in different
+                  operating systems, programs, and devices, scrolling is very
+                  inconsistent and has therefore been removed. See the
+                  <a
+                    href="docs.html#recording"
+                    style="text-decoration: underline"
+                    >Docs</a
+                  >
+                  for recommendations.
+                </p>
+              </div>
+
+              <div class="col-lg-9 hero__caption" style="margin: auto">
+                <h3 style="text-align: center; padding: 10px 0">
+                  Is Aldras for me?
+                </h3>
+                <p>
+                  Aldras is for individuals or organizations that would like to
+                  accelerate straightforward repetitive computer tasks to
+                  concentrate their own time and effort on more valuable
+                  responsibilities. We have seen applications of Aldras in the
+                  areas of engineering, customer success, sales, paperwork, data
+                  processing, and much more.
+                  <br /><br />
+                  Aldras is about delivering value for people. Even so, we know
+                  that Aldras is not for everyone. The essence of Aldras's
+                  mission is to save time for its users. Therefore, if the value
+                  of the time that you intend to save with Aldras exceeds the
+                  cost, Aldras might be a good fit for you.
+                  <br /><br />
+                  In general, if you have less than one hour of repetitive
+                  computer work every month, Aldras is likely not the best
+                  option at this time. Additionally, if your team has direct
+                  access to the developers of the programs that you use in your
+                  workflows, you may have already worked with them to streamline
+                  your processes.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FAQs End -->
+    </main>
+    <div id="footer"></div>
+
+    <!-- JS here -->
+    <script src="//code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+      $(function () {
+        $("#header").load("assets/html/header.html");
+        $("#footer").load("assets/html/footer.html");
+        $("#pricing_card_list_starter_monthly").load(
+          "assets/html/pricing_card_list_starter.html"
+        );
+        $("#pricing_card_list_starter_yearly").load(
+          "assets/html/pricing_card_list_starter.html"
+        );
+        $("#pricing_card_list_pro_monthly").load(
+          "assets/html/pricing_card_list_pro.html"
+        );
+        $("#pricing_card_list_pro_yearly").load(
+          "assets/html/pricing_card_list_pro.html"
+        );
+        $("#pricing_card_list_smb_monthly").load(
+          "assets/html/pricing_card_list_smb.html"
+        );
+        $("#pricing_card_list_smb_yearly").load(
+          "assets/html/pricing_card_list_smb.html"
+        );
+        $("#pricing_special_program_cards").load(
+          "assets/html/pricing_special_program_cards.html"
+        );
       });
-      $('.pricing-body').on('scroll', function () {
-        var selected = $(this);
-        window.requestAnimationFrame(function () { checkScrolling(selected) });
-      });
+    </script>
 
-      function checkScrolling(tables) {
-        tables.each(function () {
-          var table = $(this),
-            totalTableWidth = parseInt(table.children('.pricing-features').width()),
-            tableViewport = parseInt(table.width());
-          if (table.scrollLeft() >= totalTableWidth - tableViewport - 1) {
-            table.parent('li').addClass('is-ended');
-          } else {
-            table.parent('li').removeClass('is-ended');
-          }
+    <script>
+      jQuery(document).ready(function ($) {
+        checkScrolling($(".pricing-body"));
+        $(window).on("resize", function () {
+          window.requestAnimationFrame(function () {
+            checkScrolling($(".pricing-body"));
+          });
         });
-      }
-
-      //switch from monthly to annual pricing tables
-      bouncy_filter($('.pricing-container'));
-
-      function bouncy_filter(container) {
-        container.each(function () {
-          var pricing_table = $(this);
-          var filter_list_container = pricing_table.children('.pricing-switcher'),
-            filter_radios = filter_list_container.find('input[type="radio"]'),
-            pricing_table_wrapper = pricing_table.find('.pricing-wrapper');
-
-          //store pricing table items
-          var table_elements = {};
-          filter_radios.each(function () {
-            var filter_type = $(this).val();
-            table_elements[filter_type] = pricing_table_wrapper.find('li[data-type="' + filter_type + '"]');
+        $(".pricing-body").on("scroll", function () {
+          var selected = $(this);
+          window.requestAnimationFrame(function () {
+            checkScrolling(selected);
           });
+        });
 
-          var m = document.getElementById("monthly-label"),
-            y = document.getElementById("yearly-label"),
-            t = document.getElementById("confirm-switch"),
-            selected_filter = "monthly";
-
-          m.addEventListener("click", function () {
-            t.checked = false;
-            m.style.color = "var(--main-red-color)";
-            y.style.color = "grey";
-            selected_filter = "monthly";
-            showTable(selected_filter);
+        function checkScrolling(tables) {
+          tables.each(function () {
+            var table = $(this),
+              totalTableWidth = parseInt(
+                table.children(".pricing-features").width()
+              ),
+              tableViewport = parseInt(table.width());
+            if (table.scrollLeft() >= totalTableWidth - tableViewport - 1) {
+              table.parent("li").addClass("is-ended");
+            } else {
+              table.parent("li").removeClass("is-ended");
+            }
           });
+        }
 
-          y.addEventListener("click", function () {
-            t.checked = true;
-            y.style.color = "var(--main-red-color)";
-            m.style.color = "grey";
-            selected_filter = "yearly";
-            showTable(selected_filter);
-          });
+        //switch from monthly to annual pricing tables
+        bouncy_filter($(".pricing-container"));
 
-          t.addEventListener("click", function () {
-            if (m.style.color == "grey") {
+        function bouncy_filter(container) {
+          container.each(function () {
+            var pricing_table = $(this);
+            var filter_list_container =
+                pricing_table.children(".pricing-switcher"),
+              filter_radios = filter_list_container.find('input[type="radio"]'),
+              pricing_table_wrapper = pricing_table.find(".pricing-wrapper");
+
+            //store pricing table items
+            var table_elements = {};
+            filter_radios.each(function () {
+              var filter_type = $(this).val();
+              table_elements[filter_type] = pricing_table_wrapper.find(
+                'li[data-type="' + filter_type + '"]'
+              );
+            });
+
+            var m = document.getElementById("monthly-label"),
+              y = document.getElementById("yearly-label"),
+              t = document.getElementById("confirm-switch"),
+              selected_filter = "monthly";
+
+            m.addEventListener("click", function () {
               t.checked = false;
               m.style.color = "var(--main-red-color)";
               y.style.color = "grey";
               selected_filter = "monthly";
-            }
-            else {
+              showTable(selected_filter);
+            });
+
+            y.addEventListener("click", function () {
               t.checked = true;
               y.style.color = "var(--main-red-color)";
               m.style.color = "grey";
               selected_filter = "yearly";
-            }
-            showTable(selected_filter);
-          });
-
-          function showTable(selected_filter) {
-            //give higher z-index to the pricing table items selected by the radio input
-            show_selected_items(table_elements[selected_filter]);
-
-            //rotate each pricing-wrapper 
-            //at the end of the animation hide the not-selected pricing tables and rotate back the .pricing-wrapper
-            if (!Modernizr.cssanimations) {
-              hide_not_selected_items(table_elements, selected_filter);
-              pricing_table_wrapper.removeClass('is-switched');
-            } else {
-              pricing_table_wrapper.addClass('is-switched').eq(0).one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function () {
-                hide_not_selected_items(table_elements, selected_filter);
-                pricing_table_wrapper.removeClass('is-switched');
-                //change rotation direction if .pricing-list has the .bounce-invert class
-                if (pricing_table.find('.pricing-list').hasClass('bounce-invert')) pricing_table_wrapper.toggleClass('reverse-animation');
-              });
-            }
-          }
-        });
-      }
-      function show_selected_items(selected_elements) {
-        selected_elements.addClass('is-selected');
-      }
-
-      function hide_not_selected_items(table_containers, filter) {
-        $.each(table_containers, function (key, value) {
-          if (key != filter) {
-            $(this).removeClass('is-visible is-selected').addClass('is-hidden');
-
-          } else {
-            $(this).addClass('is-visible').removeClass('is-hidden is-selected');
-          }
-        });
-      }
-    });
-  </script>
-
-  <!-- Strip payment processing -->
-  <script src="https://js.stripe.com/v3"></script>
-  <script>
-    (function () {
-      var publishable_key = 'pk_live_51H4T6uLq4bTyrlC4nkZLnyEWZdezPjufrL60Itm9KhhQC6UGyg5usBkkv2EfwMQ3Ju6u0g8HWUzJhxsrpP8NQbY5005UMRA1i6'
-      var stripe = Stripe(publishable_key);
-
-      document.querySelectorAll('.stripe-btn').forEach(checkoutButton => {
-        checkoutButton.addEventListener('click', function () {
-          var targetElementPrice = checkoutButton.id.replace('checkout-button-', '')
-
-          stripe.redirectToCheckout({
-            lineItems: [{ price: targetElementPrice, quantity: 1 }],
-            mode: 'subscription',
-            successUrl: window.location.protocol + '//aldras.com/success',
-            cancelUrl: window.location.protocol + '//aldras.com/pricing',
-          })
-            .then(function (result) {
-              if (result.error) {
-                // Display the localized error message
-                var displayError = document.getElementById('error-message');
-                displayError.textContent = result.error.message;
-                alert(result.error.message)
-              }
+              showTable(selected_filter);
             });
+
+            t.addEventListener("click", function () {
+              if (m.style.color == "grey") {
+                t.checked = false;
+                m.style.color = "var(--main-red-color)";
+                y.style.color = "grey";
+                selected_filter = "monthly";
+              } else {
+                t.checked = true;
+                y.style.color = "var(--main-red-color)";
+                m.style.color = "grey";
+                selected_filter = "yearly";
+              }
+              showTable(selected_filter);
+            });
+
+            function showTable(selected_filter) {
+              //give higher z-index to the pricing table items selected by the radio input
+              show_selected_items(table_elements[selected_filter]);
+
+              //rotate each pricing-wrapper
+              //at the end of the animation hide the not-selected pricing tables and rotate back the .pricing-wrapper
+              if (!Modernizr.cssanimations) {
+                hide_not_selected_items(table_elements, selected_filter);
+                pricing_table_wrapper.removeClass("is-switched");
+              } else {
+                pricing_table_wrapper
+                  .addClass("is-switched")
+                  .eq(0)
+                  .one(
+                    "webkitAnimationEnd oanimationend msAnimationEnd animationend",
+                    function () {
+                      hide_not_selected_items(table_elements, selected_filter);
+                      pricing_table_wrapper.removeClass("is-switched");
+                      //change rotation direction if .pricing-list has the .bounce-invert class
+                      if (
+                        pricing_table
+                          .find(".pricing-list")
+                          .hasClass("bounce-invert")
+                      )
+                        pricing_table_wrapper.toggleClass("reverse-animation");
+                    }
+                  );
+              }
+            }
+          });
+        }
+        function show_selected_items(selected_elements) {
+          selected_elements.addClass("is-selected");
+        }
+
+        function hide_not_selected_items(table_containers, filter) {
+          $.each(table_containers, function (key, value) {
+            if (key != filter) {
+              $(this)
+                .removeClass("is-visible is-selected")
+                .addClass("is-hidden");
+            } else {
+              $(this)
+                .addClass("is-visible")
+                .removeClass("is-hidden is-selected");
+            }
+          });
+        }
+      });
+    </script>
+
+    <!-- Strip payment processing -->
+    <script src="https://js.stripe.com/v3"></script>
+    <script>
+      (function () {
+        var publishable_key =
+          "pk_live_51H4T6uLq4bTyrlC4nkZLnyEWZdezPjufrL60Itm9KhhQC6UGyg5usBkkv2EfwMQ3Ju6u0g8HWUzJhxsrpP8NQbY5005UMRA1i6";
+        var stripe = Stripe(publishable_key);
+
+        document.querySelectorAll(".stripe-btn").forEach((checkoutButton) => {
+          checkoutButton.addEventListener("click", function () {
+            var targetElementPrice = checkoutButton.id.replace(
+              "checkout-button-",
+              ""
+            );
+
+            stripe
+              .redirectToCheckout({
+                lineItems: [{ price: targetElementPrice, quantity: 1 }],
+                mode: "subscription",
+                successUrl: window.location.protocol + "//aldras.com/success",
+                cancelUrl: window.location.protocol + "//aldras.com/pricing",
+              })
+              .then(function (result) {
+                if (result.error) {
+                  // Display the localized error message
+                  var displayError = document.getElementById("error-message");
+                  displayError.textContent = result.error.message;
+                  alert(result.error.message);
+                }
+              });
+          });
         });
+      })();
+    </script>
 
-      })
+    <!-- All JS Custom Plugins Link -->
+    <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
 
-    })();
-  </script>
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- Jquery Mobile Menu -->
+    <script src="./assets/js/jquery.slicknav.min.js"></script>
 
-  <!-- All JS Custom Plugins Link -->
-  <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+    <!-- Jquery Slick , Owl-Carousel Plugins -->
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <!-- Date Picker -->
+    <script src="./assets/js/gijgo.min.js"></script>
+    <!-- One Page, Animated-HeadLin -->
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/animated.headline.js"></script>
+    <script src="./assets/js/jquery.magnific-popup.js"></script>
 
-  <!-- Jquery, Popper, Bootstrap -->
-  <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
-  <script src="./assets/js/popper.min.js"></script>
-  <script src="./assets/js/bootstrap.min.js"></script>
-  <!-- Jquery Mobile Menu -->
-  <script src="./assets/js/jquery.slicknav.min.js"></script>
+    <!-- Scrollup, nice-select, sticky -->
+    <!-- <script src="./assets/js/jquery.scrollUp.min.js"></script> -->
+    <script src="./assets/js/jquery.nice-select.min.js"></script>
+    <script src="./assets/js/jquery.sticky.js"></script>
 
-  <!-- Jquery Slick , Owl-Carousel Plugins -->
-  <script src="./assets/js/owl.carousel.min.js"></script>
-  <script src="./assets/js/slick.min.js"></script>
-  <!-- Date Picker -->
-  <script src="./assets/js/gijgo.min.js"></script>
-  <!-- One Page, Animated-HeadLin -->
-  <script src="./assets/js/wow.min.js"></script>
-  <script src="./assets/js/animated.headline.js"></script>
-  <script src="./assets/js/jquery.magnific-popup.js"></script>
+    <!-- contact js -->
+    <script src="./assets/js/contact.js"></script>
+    <script src="./assets/js/jquery.form.js"></script>
+    <script src="./assets/js/jquery.validate.min.js"></script>
+    <script src="./assets/js/mail-script.js"></script>
+    <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
 
-  <!-- Scrollup, nice-select, sticky -->
-  <!-- <script src="./assets/js/jquery.scrollUp.min.js"></script> -->
-  <script src="./assets/js/jquery.nice-select.min.js"></script>
-  <script src="./assets/js/jquery.sticky.js"></script>
+    <!-- Jquery Plugins, main Jquery -->
+    <script src="./assets/js/plugins.js"></script>
+    <script src="./assets/js/main.js"></script>
 
-  <!-- contact js -->
-  <script src="./assets/js/contact.js"></script>
-  <script src="./assets/js/jquery.form.js"></script>
-  <script src="./assets/js/jquery.validate.min.js"></script>
-  <script src="./assets/js/mail-script.js"></script>
-  <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
-
-  <!-- Jquery Plugins, main Jquery -->
-  <script src="./assets/js/plugins.js"></script>
-  <script src="./assets/js/main.js"></script>
-
-
-  <!-- HubSpot livechat -->
-  <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/8048714.js"></script>
-
-</body>
-
+    <!-- HubSpot livechat -->
+    <script
+      type="text/javascript"
+      id="hs-script-loader"
+      async
+      defer
+      src="//js.hs-scripts.com/8048714.js"
+    ></script>
+  </body>
 </html>
