@@ -774,8 +774,8 @@
               .redirectToCheckout({
                 lineItems: [{ price: targetElementPrice, quantity: 1 }],
                 mode: "subscription",
-                successUrl: window.location.protocol + "//aldras.com/success",
-                cancelUrl: window.location.protocol + "//aldras.com/pricing",
+                successUrl: window.location.protocol + "//aldras.netlifycom/success",
+                cancelUrl: window.location.protocol + "//aldras.netlifycom/pricing",
               })
               .then(function (result) {
                 if (result.error) {
