@@ -3,7 +3,7 @@
 
 <br>
 <div align="center">
-  <a href="https://www.aldras.netlifycom/">
+  <a href="https://aldras.netlify.com/">
     <img src="assets/img/favicon.ico" alt="Logo" width="80" height="80">
   </a>
 
@@ -12,7 +12,7 @@
   <p align="center">
     Full stack website for the Aldras application with user documentation, video tutorials, app download, and payment integration.
     <br>
-    <a href="https://www.aldras.netlifycom/"><strong>Explore »</strong></a>
+    <a href="https://aldras.netlify.com/"><strong>Explore »</strong></a>
     <br>
     <br>
     <a href="https://github.com/aldras-automation/aldras-website/issues">Report Bug</a>
@@ -49,7 +49,7 @@
 ## About The Project
 <br>
 <p align="center" style="padding: 0 10%;">
-  <a href="https://www.aldras.netlifycom/">
+  <a href="https://aldras.netlify.com/">
     <img src="assets/readme/site.png" />
   </a>
 </p>
@@ -122,7 +122,7 @@
 ## Getting Started
 
 To download the open-source version of the application for Windows, navigate to
-[`aldras.netlifycom/download`](https://www.aldras.netlifycom/download) or download the `.exe`
+[`aldras.netlifycom/download`](https://aldras.netlify.com/download) or download the `.exe`
 installer from the repository.
 
 For additional guidance getting started, feel free to review some of the [video
