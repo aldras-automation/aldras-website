@@ -1,6 +1,4 @@
 assets/** linguist-vendored
 assets/css/style.css linguist-detectable
 assets/html/** linguist-detectable
-assets/img/** linguist-detectable
 assets/js/main.js linguist-detectable
-assets/readme/** linguist-detectable
